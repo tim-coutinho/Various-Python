@@ -1,4 +1,3 @@
-@@ -1,1010 +0,0 @@
 id,name,county,state_code,state,zip_codes,type,latitude,longitude,area_code,population,households,median_income,land_area,water_area,time_zone
 5997,Ackley,Franklin County / Hardin County,IA,Iowa,50601,City,42.55170,-93.05227,641,1546,750,44063,6345496,87634,America/Chicago
 5998,Ackworth,Warren County,IA,Iowa,50001,City,41.36694,-93.47271,515,86,18,40000,756303,0,America/Chicago

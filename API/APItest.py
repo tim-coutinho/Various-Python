@@ -13,11 +13,15 @@ def main():
 	yes = ('yes', 'ye', 'y')
 	no = ('no', 'n')
 	bys = {'city':byCity, 'cities':byCity, 'zip':byZip, 'zips':byZip, 'coord':byCoords,'coords':byCoords, 'coordinates':byCoords}
-	city, state, zip, temp, wind, gust = bys[input("By city, zip, or coords? ").lower()]()	# Uses input to call corresponding function with bys dict
 
-	print(f"The weather in {city}, {state} is currently {temp}.")
-	print(f"{city} is currently experiencing {wind} mph winds with gusts up to {gust} miles per hour.")
-	if input("Continue?\n").lower() in yes:
+	try:
+		city, state, zip, temp, wind, gust = bys[input("By city, zip, or coords? ").lower()]()	# Uses input to call corresponding function
+		print(f"The weather in {city}, {state} is currently {temp}.")							# with bys dict
+		print(f"{city} is currently experiencing {wind} mph winds with gusts up to {gust} miles per hour.")
+	except Exception as e:
+		print('Invalid input.')
+
+	if input("Continue? ").lower() in yes:
 		main()
 	print('Farewell!')
 	time.sleep(1)

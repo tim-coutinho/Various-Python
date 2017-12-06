@@ -15,8 +15,8 @@ def main():
 	bys = {'city':byCity, 'cities':byCity, 'zip':byZip, 'zips':byZip, 'coord':byCoords,'coords':byCoords, 'coordinates':byCoords}
 	city, state, zip, temp, wind, gust = bys[input("By city, zip, or coords? ").lower()]()	# Uses input to call corresponding function with bys dict
 
-	print("The weather in {}, {} is currently {}.".format(city, state, temp))
-	print("{} is currently experiencing {} mph winds with gusts up to {} miles per hour.".format(city, wind, gust))
+	print(f"The weather in {city}, {state} is currently {temp}.")
+	print(f"{city} is currently experiencing {wind} mph winds with gusts up to {gust} miles per hour.")
 	if input("Continue?\n").lower() in yes:
 		main()
 	print('Farewell!')
@@ -27,7 +27,7 @@ def byCity(city=None, state=None):
 		state = input("Enter state: ")
 		state = us_state_abbrev.get(state.lower().capitalize(), state)
 		city = input("Enter city: ").replace(" ", "_")
-	with urlopen('http://api.wunderground.com/api/{}/conditions/q/{}/{}.json'.format(key, state, city)) as url:
+	with urlopen(f'http://api.wunderground.com/api/{key}/conditions/q/{state}/{city}.json') as url:
 		data = json.loads(url.read().decode())	# .load() is for files, .loads() is for strings, url.read() returns a string
 	return (data["current_observation"]["display_location"]["city"],
 		    data["current_observation"]["display_location"]["state"],
@@ -38,13 +38,13 @@ def byCity(city=None, state=None):
 
 def byZip():
 	zip = input("Enter zip code: ")
-	with urlopen('http://api.wunderground.com/api/{}/geolookup/q/{}.json'.format(key, zip)) as url:
+	with urlopen(f'http://api.wunderground.com/api/{key}/geolookup/q/{zip}.json') as url:
 		data = json.loads(url.read().decode())
 	return byCity(data["location"]["city"], data["location"]["state"])	# Needed to pull weather condition data, not in zip json
 
 def byCoords():
 	lat, lon = input("Enter latitude, longitude: ").replace(' ', '').split(',')
-	with urlopen('http://api.wunderground.com/api/{}/geolookup/q/{},{}.json'.format(key, lat, lon)) as url:
+	with urlopen(f'http://api.wunderground.com/api/{key}/geolookup/q/{lat},{lon}.json') as url:
 		data = json.loads(url.read().decode())
 	return byCity(data["location"]["city"], data["location"]["state"])	# Needed to pull weather condition data, not in coords json
 

@@ -17,11 +17,10 @@ import pandas as pd
 # 	reader = csv.reader(f)
 # 	next(reader)
 # 	for row in reader:
-# 		if 'zip_code' not in row:
-# 			cities.append(row[1])
-# 			lats.append(float(row[7]))
-# 			lons.append(float(row[8]))
-# 			pops.append(float(row[10]))
+# 		cities.append(row[1])
+# 		lats.append(float(row[7]))
+# 		lons.append(float(row[8]))
+# 		pops.append(float(row[10]))
 
 # for n, cities in enumerate(cities):
 # 	if pops[n] > 50000:

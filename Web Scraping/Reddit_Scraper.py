@@ -11,20 +11,21 @@ MAX_POSTS = 10
 
 def main():
 	subreddit = input('Subreddit: ')
-	csv_file = open(f'top{MAX_POSTS}{subreddit.capitalize()}.csv', 'w', newline='')
-	csv_writer = csv.writer(csv_file)
-	csv_writer.writerow(['Title', 'Link'])
 	with urlopen(f'https://www.reddit.com/r/{subreddit}/') as url:
 		site = BeautifulSoup(url, 'lxml')
-	i = 0
-
 	posts = site.find_all('div', onclick='click_thing(this)')	# Only the actual posts in the subreddit
-	print(f"\nCurrent top {MAX_POSTS} posts in {posts[0]['data-subreddit']}:\n")
+	subreddit = posts[0]['data-subreddit']
 
-	for post in posts:
+	csv_file = open(f'top{MAX_POSTS}{subreddit}.csv', 'w', newline='')
+	csv_writer = csv.writer(csv_file)
+	csv_writer.writerow(['Title', 'Link'])
+
+	print(f"\nCurrent top {MAX_POSTS} posts in {subreddit}:\n")
+	i = 0
+	for post in posts:	# Can't use enumerate, don't always want to increment i
 		if post.find('span', class_='stickied-tagline') is None:	# Is not a stickied post
 			title, link = (post.find('p', class_='title').a.text, post['data-url'])
-			if '/r/' in link:
+			if '/r/' in link:	# If hosted on reddit, only gives last part of url
 				link = 'https://www.reddit.com' + link
 			print(title, link)
 			csv_writer.writerow([title, link])

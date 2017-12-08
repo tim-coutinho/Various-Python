@@ -28,7 +28,7 @@ def printData():
 	city, state, zip, temp, wind, gust = bys[input("By city, zip, or coords? ").lower()]()	# Uses input to call corresponding function
 	print(f"The weather in {city}, {state} is currently {temp}.")							# with bys dict
 	print(f"{city} is currently experiencing {wind} mph winds with gusts up to {gust} miles per hour.")
-	# if input("Show nearby cities' data? ").lower() in yes:
+	# if input("Show nearby cities' data? ").lower() in yes:	# Probably not feasible
 	# 	showNearby(city, state)
 
 def byCity(city=None, state=None):
@@ -57,7 +57,7 @@ def byCoords():
 		data = json.loads(url.read().decode())
 	return byCity(data["location"]["city"], data["location"]["state"])	# Needed to pull weather condition data, doesn't exist in coords json
 
-# def showNearby(city, state):
+# def showNearby(city, state):	# Probably not feasible
 # 	with urlopen(f'http://api.wunderground.com/api/{key}/geolookup/q/{state}/{city}.json') as url:
 # 		data = json.loads(url.read().decode())
 # 	for station in data["location"]["nearby_weather_stations"]["airport"]["station"]:

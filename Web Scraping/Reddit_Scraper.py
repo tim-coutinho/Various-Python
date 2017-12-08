@@ -10,11 +10,12 @@ from urllib.request import urlopen
 MAX_POSTS = 10
 
 def main():
-	subreddit = input('Subreddit: ')
-	with urlopen(f'https://www.reddit.com/r/{subreddit}/') as url:
-		site = BeautifulSoup(url, 'lxml')
-	posts = site.find_all('div', onclick='click_thing(this)')	# Only the actual posts in the subreddit
-	subreddit = posts[0]['data-subreddit']
+	while True:
+		try:
+			subreddit, site, posts = getSubreddit()
+			break
+		except KeyError as e:
+			print('Subreddit does not exist, try again.')
 
 	csv_file = open(f'top{MAX_POSTS}{subreddit}.csv', 'w', newline='')
 	csv_writer = csv.writer(csv_file)
@@ -36,6 +37,14 @@ def main():
 		print('No posts found.')
 
 	csv_file.close()
+
+def getSubreddit():
+	subreddit = input('Subreddit: ')
+	with urlopen(f'https://www.reddit.com/r/{subreddit}/') as url:
+		site = BeautifulSoup(url, 'lxml')
+	posts = site.find_all('div', onclick='click_thing(this)')	# Only the actual posts in the subreddit
+	subreddit = posts[0]['data-subreddit']
+	return (subreddit, site, posts)
 		
 if __name__ == '__main__':
 	main()

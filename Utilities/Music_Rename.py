@@ -1,6 +1,7 @@
 """
 	Utility written to help organize my music files.
-	
+	Lowercases all title/album words in no_upper,
+	moves songs into folders if not in one already.
 	Tim Coutinho
 """
 
@@ -10,8 +11,8 @@ from mutagen.easyid3 import EasyID3
 
 no_upper = ('the', 'of', 'a', 'an', 'and', 'in', 'but','or',
 			'for', 'nor', 'on', 'at', 'to', 'from', 'by')
-good_ext = ('.mp3', '.mp4', '.flac', '.aiff', '.ape', '.tta', '.wv', '.mpc',
-			'.opus', '.spx', '.flac', '.ogg', '.oga', '.ogv', '.asf', '.ofr')
+good_ext = ('.aiff', '.ape', '.asf', '.flac', '.mp3', '.mp4', '.mpc',
+			'.ofr', '.oga', '.ogg', '.ogv', '.opus', '.spx', '.tta', '.wv')
 base = '/Users/tmcou/Music/iTunes/iTunes Media/Music'
 
 
@@ -22,26 +23,27 @@ def main():
 		print(artist)
 		for album in os.listdir():
 			if os.path.isfile(album):
-				os.mkdir('Unknown Album')
-				os.rename(f'{base}/{artist}/{album}',
-						  f'{base}/{artist}/Unknown Album/{album}')
+				make_unknown(artist, album)		# Create Unknown Album folder
 			else:
 				modify_album(artist, album)
+
+
+def make_unknown(artist, album):
+	os.mkdir('Unknown Album')
+	os.rename(f'{base}/{artist}/{album}',
+			  f'{base}/{artist}/Unknown Album/{album}')
 
 
 def modify_album(artist, album):
 	os.chdir(f'{base}/{artist}/{album}')
 	for song in os.listdir():
-		if os.path.splitext(song)[1] in good_ext:
+		if os.path.splitext(song)[1] in good_ext:	# Valid audio extension
 			modify_song(song)
-		# try:
-		# 	modify_song(song)
-		# except Exception:
-		# 	continue
 
 
 def modify_song(song):
 	audio = EasyID3(song)
+	# Removes any leading album identifiers, i.e. 01 and 13 - 
 	song_name = re.sub(r'^\d+\-?\d+\.? ?\-? ', '',
 					   os.path.splitext(song)[0]).lower()
 	try:	# In an album, tag exists

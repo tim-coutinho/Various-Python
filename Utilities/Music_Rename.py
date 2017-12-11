@@ -22,23 +22,22 @@ def main():
 		os.chdir(f'{base}/{artist}')
 		print(artist)
 		for album in os.listdir():
-			if os.path.isfile(album):
-				make_unknown(artist, album)		# Create Unknown Album folder
-				modify_album(artist, f'{base}/{artist}/Unknown Album/{album}')
-			else:
-				modify_album(artist, album)
+			if os.path.isfile(album):  # Create Unknown Album folder
+				album = make_unknown(artist, album)
+			modify_album(artist, album)
 
 
 def make_unknown(artist, song):
 	os.mkdir('Unknown Album')
 	os.rename(f'{base}/{artist}/{song}',
 			  f'{base}/{artist}/Unknown Album/{song}')
+	return 'Unknown Album'
 
 
 def modify_album(artist, album):
 	os.chdir(f'{base}/{artist}/{album}')
 	for song in os.listdir():
-		if os.path.splitext(song)[1] in good_ext:	# Valid audio extension
+		if os.path.splitext(song)[1] in good_ext:  # Valid audio extension
 			modify_song(song)
 
 
@@ -52,7 +51,7 @@ def modify_song(song):
 								        else word.capitalize()
 								        for word
 								        in audio['album'][0].lower().split()])
-	except Exception:	# Not in an album, tag does't exist
+	except Exception:  # Not in an album, tag does't exist
 		pass
 	audio['title'] = ' '.join([word if word.lower() in no_upper
 							        else word.capitalize()

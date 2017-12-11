@@ -24,14 +24,15 @@ def main():
 		for album in os.listdir():
 			if os.path.isfile(album):
 				make_unknown(artist, album)		# Create Unknown Album folder
+				modify_album(artist, f'{base}/{artist}/Unknown Album/{album}')
 			else:
 				modify_album(artist, album)
 
 
-def make_unknown(artist, album):
+def make_unknown(artist, song):
 	os.mkdir('Unknown Album')
-	os.rename(f'{base}/{artist}/{album}',
-			  f'{base}/{artist}/Unknown Album/{album}')
+	os.rename(f'{base}/{artist}/{song}',
+			  f'{base}/{artist}/Unknown Album/{song}')
 
 
 def modify_album(artist, album):
@@ -43,7 +44,7 @@ def modify_album(artist, album):
 
 def modify_song(song):
 	audio = EasyID3(song)
-	# Removes any leading album identifiers, i.e. 01 and 13 - 
+	# Removes any leading album identifiers, i.e. 01 and 13 -
 	song_name = re.sub(r'^\d+\-?\d+\.? ?\-? ', '',
 					   os.path.splitext(song)[0]).lower()
 	try:	# In an album, tag exists

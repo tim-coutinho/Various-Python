@@ -2,6 +2,7 @@
 	Utility written to help organize my music files.
 	Lowercases all title/album words in no_upper,
 	moves songs into folders if not in one already.
+	USE MUSIC - COPY FIRST
 	Tim Coutinho
 """
 
@@ -9,8 +10,8 @@ import os
 import re
 from mutagen.easyid3 import EasyID3
 
-no_upper = ('the', 'of', 'a', 'an', 'and', 'in', 'but','or',
-			'for', 'nor', 'on', 'at', 'to', 'from', 'by')
+no_upper = ('a', 'an', 'and', 'at', 'but', 'by', 'for','from',
+			'in', 'nor', 'of', 'on', 'or', 'the', 'to')
 good_ext = ('.aiff', '.ape', '.asf', '.flac', '.mp3', '.mp4', '.mpc',
 			'.ofr', '.oga', '.ogg', '.ogv', '.opus', '.spx', '.tta', '.wv')
 roman_nums = ('Ii', 'Iii', 'Iv', 'Vi', 'Vii', 'Viii', 'Ix')
@@ -52,17 +53,18 @@ def modify_song(song):
 		modify_tag(song, audio, 'album')
 	except Exception:		# Not in an album, tag does't exist
 		pass
-	# Removes any leading album identifiers, i.e. 01 and 13 -
-	audio['title'] = re.sub(r'^([0-2]?[\d][^\d,]) ?\-?\.? ?\-?', '',
-							song[0].lstrip('0')).lower()
+	if 'title' not in audio:  # Use file name as title
+		# Removes any leading album identifiers, i.e. 01 and 13 -
+		audio['title'] = re.sub(r'^([0-2]?[\d][^\d,]) ?\-?\.? ?\-?',
+								'', song[0].lstrip('0'))
 	modify_tag(song, audio, 'title')
 	audio.save()
 
 
 # Changes a specific tag of a song, either title or album
 def modify_tag(orig, audio, tag):
-	audio[tag] = re.sub(r'(\w+)(/)(\w+)', r'\1 / \3', audio[tag][0])
-	audio[tag] = ' '.join([word if re.sub(r'[:/\-]', '', word.lower())
+	audio[tag] = re.sub(r'(\w+)(/)(\w+)', r'\1 / \3', audio[tag][0]).lower()
+	audio[tag] = ' '.join([word if re.sub(r'[:/\-]', '', word)
 						   in no_upper else word.capitalize()
 						   for word in audio[tag][0].split()])
 	if any(word.strip(':') in roman_nums for word in audio[tag][0].split()):

@@ -55,7 +55,7 @@ def modify_song(song):
 		pass
 	if 'title' not in audio:  # Use file name as title
 		# Removes any leading album identifiers, i.e. 01 and 13 -
-		audio['title'] = re.sub(r'^([0-2]?[\d][^\d,]) ?\-?\.? ?\-?',
+		audio['title'] = re.sub(r'^([0-2]?[\d][^\w\d,])[ \-\.]*',
 								'', song[0].lstrip('0'))
 	modify_tag(song, audio, 'title')
 	audio.save()
@@ -63,6 +63,7 @@ def modify_song(song):
 
 # Changes a specific tag of a song, either title or album
 def modify_tag(orig, audio, tag):
+	# Makes directory navigation easier, adding spaces around any /
 	audio[tag] = re.sub(r'(\w+)(/)(\w+)', r'\1 / \3', audio[tag][0]).lower()
 	audio[tag] = ' '.join([word if re.sub(r'[:/\-]', '', word)
 						   in no_upper else word.capitalize()
@@ -71,12 +72,16 @@ def modify_tag(orig, audio, tag):
 		for word in audio[tag][0].split():
 			if word.strip(':') in roman_nums:
 				audio[tag] = audio[tag][0].replace(word, word.upper())
-	c = '_'
 	while '_' in audio[tag][0]:
 		c = input(f'What character should replace the _ in {audio[tag][0]}? ')
 		audio[tag] = audio[tag][0].replace('_', c, 1)
+	match = re.match(r'.*((?:\(|:) *[a-z]).*', audio[tag][0])
+	if match:  # Capitalizes any words in tag following a ( or :
+		audio[tag] = audio[tag][0].replace(match.group(1),
+										   match.group(1).upper())
 	# Capitalize the first word regardless
 	audio[tag] = audio[tag][0][0].upper() + audio[tag][0][1:]
+	
 	# sub = re.sub(r"[/:\?]", "_", audio[tag][0])
 	# if tag == 'title' and 'album' in audio:  # Rename file to new song title
 	# 	os.rename(f'{base}/{audio["artist"][0]}/{audio["album"][0].replace("/", "_")}/{"".join(orig)}',

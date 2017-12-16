@@ -1,10 +1,11 @@
 # Various-Python
-API
 
-Data Visualization
+API - Projects to test/learn how to use APIs.
 
-Math and Theory
+Data Visualization - Projects to practice data visualization using matplotlib, pandas, and csv files.
 
-Utilities
+Math and Theory - Currently, university homework assignments relating to math and theory, i.e. Deterministic Finite State Automata.
 
-Web Scraping
+Utilities - Scripts to help me do small useful things with my files.
+
+Web Scraping - Projects relating to web scraping, beautiful soup, html parsing, etc.

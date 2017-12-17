@@ -87,15 +87,21 @@ def modify_tag(orig, audio, tag):
 	# Finally, capitalize the first word regardless
 	audio[tag] = audio[tag][0][0].upper() + audio[tag][0][1:]
 
-	sub = re.sub(r"[/:\?]", "_", audio[tag][0])
+	# sub = re.sub(r"[/:\?]", "_", audio[tag][0])
 	# if tag == 'title' and 'album' in audio:  # Rename file to new song title
-	# 	os.rename(pathify(base,audio['artist'][0],audio['album'][0].replace('/', '_'),''.join(orig)),
-	# 			  pathify(base,audio['artist'][0],audio['album'][0].replace('/', '_'),sub)+orig[1])
-	# 	os.remove(pathify(base,audio['artist'][0],audio['album'][0].replace('/', '_'),''.join(orig)))
+	# 	os.rename(pathify(base,audio['artist'][0],
+	# 					  audio['album'][0].replace('/', '_'),''.join(orig)),
+	# 			  pathify(base,audio['artist'][0],
+	# 			  		  audio['album'][0].replace('/', '_'),sub)+orig[1])
+	# 	os.remove(pathify(base,audio['artist'][0],
+	# 					  audio['album'][0].replace('/', '_'),''.join(orig)))
 	# elif tag == 'title':
-	# 	os.rename(pathify(base,audio['artist'][0],'Unknown Album',''.join(orig)),
-	# 			  pathify(base,audio['artist'][0],'Unknown Album',sub)+orig[1])
-	# 	os.remove(pathify(base,audio['artist'][0],'Unknown Album',''.join(orig)))
+	# 	os.rename(pathify(base,audio['artist'][0],
+	# 					  'Unknown Album',''.join(orig)),
+	# 			  pathify(base,audio['artist'][0],
+	# 			  		  'Unknown Album',sub)+orig[1])
+	# 	os.remove(pathify(base,audio['artist'][0],
+	# 					  'Unknown Album',''.join(orig)))
 
 
 if __name__ == '__main__':

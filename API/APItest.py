@@ -6,6 +6,7 @@
 
 import time
 import json
+from datetime import datetime
 from urllib.request import urlopen
 from constants import key, us_state_abbrev
 
@@ -26,11 +27,13 @@ def main():
 
 
 def printData():
-	bys = {'city':byCity, 'cities':byCity, 'zip':byZip, 'zips':byZip, 'coord':byCoords,'coords':byCoords, 'coordinates':byCoords}
-	city, state, zip, temp, wind, gust = bys[input("By city, zip, or coords? ").lower()]()	# Uses input to call corresponding function
-	print(f"The weather in {city}, {state} is currently {temp}.")							# with bys dict
+	bys = {'city':byCity, 'cities':byCity, 'zip':byZip, 'zips':byZip,
+		   'coord':byCoords,'coords':byCoords, 'coordinates':byCoords}
+	# Uses bys dict to call corresponding function based on input
+	city, state, zip, temp, wind, gust, time = bys[input("By city, zip, or coords? ").lower()]()
+	print(f"As of {time}, the weather in {city}, {state} is {temp}.")
 	print(f"{city} is currently experiencing {wind} mph winds with gusts up to {gust} miles per hour.")
-	# if input("Show nearby cities' data? ").lower() in yes:	# Probably not feasible
+	# if input("Show nearby cities' data? ").lower() in yes:
 	# 	showNearby(city, state)
 
 
@@ -40,13 +43,14 @@ def byCity(city=None, state=None):
 		state = us_state_abbrev.get(state.lower().capitalize(), state)
 		city = input("Enter city: ").replace(" ", "_")
 	with urlopen(f'http://api.wunderground.com/api/{key}/conditions/q/{state}/{city}.json') as url:
-		data = json.loads(url.read().decode())	# .load() is for files, .loads() is for strings, url.read() returns a string
+		data = json.loads(url.read().decode())
 	return (data["current_observation"]["display_location"]["city"],
 		    data["current_observation"]["display_location"]["state"],
 		    data["current_observation"]["display_location"]["zip"],
 		    data["current_observation"]["temperature_string"],
 		    data["current_observation"]["wind_mph"],
-		    data["current_observation"]["wind_gust_mph"])
+		    data["current_observation"]["wind_gust_mph"],
+		    data["current_observation"]["observation_time"].split(', ')[1])
 
 
 def byZip():

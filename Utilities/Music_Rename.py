@@ -16,12 +16,13 @@ good_ext = ('.aiff', '.ape', '.asf', '.flac', '.mp3', '.mp4', '.mpc',
 			'.ofr', '.oga', '.ogg', '.ogv', '.opus', '.spx', '.tta', '.wv')
 roman_nums = ('Ii', 'Iii', 'Iv', 'Vi', 'Vii', 'Viii', 'Ix')
 base = '/Users/tmcou/Music/iTunes/iTunes Media/Music - Copy'
+pathify = lambda *args: '\\'.join(args)
 
 
 def main():
 	os.chdir(base)
 	for artist in os.listdir():
-		os.chdir(f'{base}/{artist}')
+		os.chdir(pathify(base, artist))
 		print(artist)
 		for album in os.listdir():
 			if os.path.isfile(album):  # Create Unknown Album folder
@@ -32,14 +33,14 @@ def main():
 # Moves a song from the artist folder to an Unknown Album folder
 def make_unknown(artist, song):
 	os.mkdir('Unknown Album')
-	os.rename(f'{base}/{artist}/{song}',
-			  f'{base}/{artist}/Unknown Album/{song}')
+	os.rename(pathify(base,artist,song),
+			  pathify(base,artist,'Unknown Album',song))
 	return 'Unknown Album'
 
 
 # Modifies all valid audio files in an album
 def modify_album(artist, album):
-	os.chdir(f'{base}/{artist}/{album}')
+	os.chdir(pathify(base,artist,album))
 	for song in os.listdir():
 		song = os.path.splitext(song)
 		if song[1] in good_ext:  # Valid audio extension
@@ -86,15 +87,15 @@ def modify_tag(orig, audio, tag):
 	# Finally, capitalize the first word regardless
 	audio[tag] = audio[tag][0][0].upper() + audio[tag][0][1:]
 
-	# sub = re.sub(r"[/:\?]", "_", audio[tag][0])
+	sub = re.sub(r"[/:\?]", "_", audio[tag][0])
 	# if tag == 'title' and 'album' in audio:  # Rename file to new song title
-	# 	os.rename(f'{base}/{audio["artist"][0]}/{audio["album"][0].replace("/", "_")}/{"".join(orig)}',
-	# 			  f'{base}/{audio["artist"][0]}/{audio["album"][0].replace("/", "_")}/{sub}{orig[1]}')
-	# 	# os.remove(f'{base}/{audio["artist"][0]}/{audio["album"][0].replace("/", "_")}/{"".join(orig)}')
+	# 	os.rename(pathify(base,audio['artist'][0],audio['album'][0].replace('/', '_'),''.join(orig)),
+	# 			  pathify(base,audio['artist'][0],audio['album'][0].replace('/', '_'),sub)+orig[1])
+	# 	os.remove(pathify(base,audio['artist'][0],audio['album'][0].replace('/', '_'),''.join(orig)))
 	# elif tag == 'title':
-	# 	os.rename(f'{base}/{audio["artist"][0]}/Unknown Album/{"".join(orig)}',
-	# 			  f'{base}/{audio["artist"][0]}/Unknown Album/{sub}{orig[1]}')
-	# 	# os.remove(f'{base}/{audio["artist"][0]}/Unknown Album/{"".join(orig)}')
+	# 	os.rename(pathify(base,audio['artist'][0],'Unknown Album',''.join(orig)),
+	# 			  pathify(base,audio['artist'][0],'Unknown Album',sub)+orig[1])
+	# 	os.remove(pathify(base,audio['artist'][0],'Unknown Album',''.join(orig)))
 
 
 if __name__ == '__main__':

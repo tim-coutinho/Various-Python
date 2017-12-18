@@ -38,7 +38,8 @@ def button(x,y,w,h,color1,color2=None,msg=None,msg_color=black,func=None):
 	if mouse[0] in range(x, x+w) and mouse[1] in range(y, y+h):
 		color = color2 if color2 else color1
 		if click[0] == 1 and func:
-			func()
+			for f in func:
+				f()
 
 	pg.draw.rect(game_display, color, (x,y,w,h))
 	game_display.blit(text, text_rect)
@@ -93,11 +94,13 @@ def main_loop():
 		game_display.fill(white)
 
 		button(int(display_w*(1/5)),int(display_h/2),100,50,
-			   green,blue,msg='Scatter',func=draw_scatter)
+			   green,blue,msg='Scatter',func=(draw_scatter,))
 		button(int(display_w*(2/5)),int(display_h/2),100,50,
-			   blue,green,msg = 'Hex',msg_color=white,func=draw_hex)
+			   blue,green,msg = 'Hex',msg_color=white,func=(draw_hex,))
 		button(int(display_w*(3/5)),int(display_h/2),100,50,
-			   red,msg = 'Basemap',msg_color=white,func=show_basemap)
+			   red,msg = 'Basemap',msg_color=white,func=(show_basemap,))
+		button(int(display_w*(2/5)),int(display_h/1.5),100,50,
+			   red,msg = 'Quit',msg_color=white,func=(pg.quit,quit))
 
 		pg.display.update()
 		clock.tick(20)

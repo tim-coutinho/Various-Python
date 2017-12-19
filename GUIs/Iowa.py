@@ -1,8 +1,8 @@
-"""
-	Expands on the data visualization aspect of Iowa.py, adds
-	a GUI, buttons, etc.
+'''
+	Expands on the data visualization aspect
+	of Iowa.py, adds a GUI, buttons, etc.
 	Tim Coutinho
-"""
+'''
 
 import csv
 import pygame as pg
@@ -25,7 +25,6 @@ yellow = (255,255,0)
 cyan = (0,255,255)
 magenta = (255,0,255)
 
-pg.init()
 game_display = pg.display.set_mode((display_w,display_h))
 pg.display.set_caption('Iowa')
 clock = pg.time.Clock()
@@ -40,7 +39,7 @@ def button(x,y,w,h,color1,color2=None,msg=None,msg_color=black,func=None):
 	text_rect.center = ((x + w/2, y + h/2))
 
 	if mouse[0] in range(x, x+w) and mouse[1] in range(y, y+h):
-		color = color2 if color2 else color1
+		color = color2 or color1  # Sets to color1 if color2 is None
 		if click[0] == 1 and func:
 			for f in func:
 				f()
@@ -108,6 +107,12 @@ def main_loop():
 		clock.tick(20)
 
 
-main_loop()
-pg.quit()
-quit()
+def main():
+	pg.init()
+	main_loop()
+	pg.quit()
+	quit()
+
+
+if __name__ == '__main__':
+	main()

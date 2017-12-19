@@ -17,9 +17,12 @@ display_h = 600
 
 white = (255,255,255)
 black = (0,0,0)
-red = (200,0,0)
+red = (255,0,0)
 green = (0,255,0)
 blue = (0,0,200)
+yellow = (255,255,0)
+cyan = (0,255,255)
+magenta = (255,0,255)
 
 pg.init()
 game_display = pg.display.set_mode((display_w,display_h))
@@ -53,18 +56,16 @@ def make_text(msg, font, color):
 def draw_scatter():
 	df.plot.scatter(x='longitude',y='latitude',s=df['population']/500,
 					title='Iowa City Population')
-	plt.show()
 
 
 def draw_hex():
 	df.plot.hexbin(x='longitude',y='latitude',gridsize=20,
 				   title='Iowa City Density',cmap='coolwarm')
-	plt.show()
 
 
-def show_basemap():
+def draw_basemap():
 	m = Basemap(projection='mill',llcrnrlat=40,llcrnrlon=-97,
-									urcrnrlat=44,urcrnrlon=-90)
+								  urcrnrlat=44,urcrnrlon=-90)
 	m.drawstates(color='k')
 	cities, pops, lats, lons = [], [], [], []
 
@@ -82,8 +83,6 @@ def show_basemap():
 			xpt, ypt = m(lons[n], lats[n])
 			m.plot(xpt, ypt, 'co', markersize=5)
 
-	plt.show()
-
 
 def main_loop():
 	while True:
@@ -93,14 +92,16 @@ def main_loop():
 				quit()
 		game_display.fill(white)
 
-		button(int(display_w*(1/5)),int(display_h/2),100,50,
-			   green,blue,msg='Scatter',func=(draw_scatter,))
-		button(int(display_w*(2/5)),int(display_h/2),100,50,
-			   blue,green,msg = 'Hex',msg_color=white,func=(draw_hex,))
-		button(int(display_w*(3/5)),int(display_h/2),100,50,
-			   red,msg = 'Basemap',msg_color=white,func=(show_basemap,))
-		button(int(display_w*(2/5)),int(display_h/1.5),100,50,
-			   red,msg = 'Quit',msg_color=white,func=(pg.quit,quit))
+		button(int(display_w*.25 - 50),int(display_h*.4),100,50,green,blue,
+			   msg='Scatter',func=(draw_scatter,plt.show))
+		button(int(display_w*.5 - 50),int(display_h*.4),100,50,blue,green,
+			   msg='Hex',msg_color=white,func=(draw_hex,plt.show))
+		button(int(display_w*.75 - 50),int(display_h*.4),100,50,magenta,cyan,
+			   msg='Basemap',func=(draw_basemap,plt.show))
+		button(int(display_w*.5 - 50),int(display_h*.6),100,50,cyan,yellow,
+			   msg='All',func=(draw_scatter,draw_hex,draw_basemap,plt.show))
+		button(int(display_w*.5 - 50),int(display_h*.9),100,50,black,red,
+			   msg='Quit',msg_color=white,func=(pg.quit,quit))
 
 		pg.display.update()
 		clock.tick(20)

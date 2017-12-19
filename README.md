@@ -4,6 +4,8 @@ API - Projects to test/learn how to use APIs.
 
 Data Visualization - Projects to practice data visualization using matplotlib, pandas, and csv files.
 
+GUIs - Projects using PyGame, tKinter, etc.
+
 Math and Theory - Currently, university homework assignments relating to math and theory, i.e. Deterministic Finite State Automata.
 
 Utilities - Scripts to help me do small useful things with my files.

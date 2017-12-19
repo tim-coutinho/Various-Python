@@ -16,21 +16,17 @@ default_font = 'Calibri'
 display_w = 800
 display_h = 600
 
-white = (255,255,255)
-black = (0,0,0)
-red = (255,0,0)
-green = (0,255,0)
-blue = (0,0,200)
-yellow = (255,255,0)
-cyan = (0,255,255)
-magenta = (255,0,255)
+colors = {'white': (255,255,255),'black': (0,0,0),'red': (255,0,0),
+		  'green': (0,255,0),'blue': (0,0,200),'yellow': (255,255,0),
+		  'cyan': (0,255,255),'magenta': (255,0,255)}
 
 game_display = pg.display.set_mode((display_w,display_h))
 pg.display.set_caption('Iowa')
 clock = pg.time.Clock()
 
 
-def button(x,y,w,h,color1,color2=None,msg=None,msg_color=black,func=None):
+def button(x,y,w,h,color1,color2=None,msg=None,
+		   msg_color=colors['black'],func=None):
 	color = color1
 	mouse = pg.mouse.get_pos()
 	click = pg.mouse.get_pressed()
@@ -69,7 +65,7 @@ def draw_basemap():
 	m.drawstates(color='k')
 	cities, pops, lats, lons = [], [], [], []
 
-	with open('iowa_cities.csv', 'r') as f:
+	with open('iowa_cities.csv') as f:
 		reader = csv.reader(f)
 		next(reader)
 		for row in reader:
@@ -90,18 +86,23 @@ def main_loop():
 			if event.type == pg.QUIT:
 				pg.quit()
 				quit()
-		game_display.fill(white)
+		game_display.fill(colors['white'])
 
-		button(int(display_w*.25 - 50),int(display_h*.4),100,50,green,blue,
-			   msg='Scatter',func=(draw_scatter,plt.show))
-		button(int(display_w*.5 - 50),int(display_h*.4),100,50,blue,green,
-			   msg='Hex',msg_color=white,func=(draw_hex,plt.show))
-		button(int(display_w*.75 - 50),int(display_h*.4),100,50,magenta,cyan,
-			   msg='Basemap',func=(draw_basemap,plt.show))
-		button(int(display_w*.5 - 50),int(display_h*.6),100,50,cyan,yellow,
-			   msg='All',func=(draw_scatter,draw_hex,draw_basemap,plt.show))
-		button(int(display_w*.5 - 50),int(display_h*.9),100,50,black,red,
-			   msg='Quit',msg_color=white,func=(pg.quit,quit))
+		button(int(display_w*.25 - 50),int(display_h*.4),100,50,colors['green'],
+			   colors['blue'],msg='Scatter',
+			   func=(draw_scatter,plt.show))
+		button(int(display_w*.5 - 50),int(display_h*.4),100,50,colors['blue'],
+			   colors['green'],msg='Hex',msg_color=colors['white'],
+			   func=(draw_hex,plt.show))
+		button(int(display_w*.75 - 50),int(display_h*.4),100,50,colors['magenta'],
+			   colors['cyan'],msg='Basemap',
+			   func=(draw_basemap,plt.show))
+		button(int(display_w*.5 - 50),int(display_h*.6),100,50,colors['cyan'],
+			   colors['yellow'],msg='All',
+			   func=(draw_scatter,draw_hex,draw_basemap,plt.show))
+		button(int(display_w*.5 - 50),int(display_h*.9),100,50,colors['black'],
+			   colors['red'],msg='Quit',msg_color=colors['white'],
+			   func=(pg.quit,quit))
 
 		pg.display.update()
 		clock.tick(20)

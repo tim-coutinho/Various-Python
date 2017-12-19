@@ -1,0 +1,1010 @@
+id,name,county,state_code,state,zip_codes,type,latitude,longitude,area_code,population,households,median_income,land_area,water_area,time_zone
+5997,Ackley,Franklin County / Hardin County,IA,Iowa,50601,City,42.55170,-93.05227,641,1546,750,44063,6345496,87634,America/Chicago
+5998,Ackworth,Warren County,IA,Iowa,50001,City,41.36694,-93.47271,515,86,18,40000,756303,0,America/Chicago
+5999,Adair,Adair County / Guthrie County,IA,Iowa,50002,City,41.50015,-94.64295,641,716,387,48188,5692351,43131,America/Chicago
+6000,Adel,Dallas County,IA,Iowa,50003,City,41.61443,-94.01745,515,4293,1591,56319,12128962,45774,America/Chicago
+6001,Afton,Union County,IA,Iowa,50830,City,41.02749,-94.19801,641,832,411,42137,2555195,0,America/Chicago
+6002,Agency,Wapello County,IA,Iowa,52530,City,40.99502,-92.30685,641,635,302,37857,1683184,0,America/Chicago
+6003,Ainsworth,Washington County,IA,Iowa,52201,City,41.28891,-91.55238,319,584,185,42212,968090,0,America/Chicago
+6004,Akron,Plymouth County,IA,Iowa,51001,City,42.82888,-96.55948,712,1465,615,41161,3204051,0,America/Chicago
+6005,Albert City,Buena Vista County,IA,Iowa,50510,City,42.78192,-94.94860,712,685,274,44342,1410863,0,America/Chicago
+6006,Albia,Monroe County,IA,Iowa,52531,City,41.02667,-92.80575,641,3785,1603,44230,8252356,0,America/Chicago
+6007,Albion,Marshall County,IA,Iowa,50005,City,42.11249,-92.98853,641,469,196,53750,1541417,0,America/Chicago
+6008,Alburnett,Linn County,IA,Iowa,52202,City,42.14833,-91.61851,319,699,224,66875,2119208,6646,America/Chicago
+6009,Alden,Hardin County,IA,Iowa,50006,City,42.52026,-93.37604,515,762,321,48173,4424406,39849,America/Chicago
+6010,Alexander,Franklin County,IA,Iowa,50420,City,42.80580,-93.47659,641,168,63,39375,11054932,0,America/Chicago
+6011,Algona,Kossuth County,IA,Iowa,50511,City,43.06997,-94.23302,515,5515,2532,50512,11654201,16085,America/Chicago
+6012,Alleman,Polk County,IA,Iowa,50007 / 50244,City,41.81999,-93.61161,515,455,182,81818,6995552,0,America/Chicago
+6013,Allerton,Wayne County,IA,Iowa,50008,City,40.70640,-93.36521,641,502,207,39688,2948535,1619,America/Chicago
+6014,Allison,Butler County,IA,Iowa,50602,City,42.75275,-92.79519,319,1013,468,52750,7593442,0,America/Chicago
+6015,Alta,Buena Vista County,IA,Iowa,51002,City,42.67359,-95.29055,712,1933,827,46458,2791436,0,America/Chicago
+6016,Alta Vista,Chickasaw County,IA,Iowa,50603,City,43.19858,-92.41712,641,260,126,40000,1957220,0,America/Chicago
+6017,Alton,Sioux County,IA,Iowa,51003,City,42.98749,-96.01057,712,1271,503,62232,4923621,0,America/Chicago
+6018,Altoona,Polk County,IA,Iowa,50009 / 50035 / 50317 / 50327,City,41.64416,-93.46466,515,17938,5928,69748,24306270,0,America/Chicago
+6019,Alvord,Lyon County,IA,Iowa,51230,City,43.34220,-96.30114,712,204,88,53750,712754,0,America/Chicago
+6020,Amana,Iowa County,IA,Iowa,52203 / 52204,CDP,41.80001,-91.87073,319,334,187,68625,2917043,0,America/Chicago
+6021,Ames,Story County,IA,Iowa,50010 / 50011 / 50012 / 50013 / 50014,City,42.03471,-93.61994,515,66191,24004,41616,64894500,521634,America/Chicago
+6022,Anamosa,Jones County,IA,Iowa,52205,City,42.10834,-91.28516,319,5430,1882,41092,6536790,23963,America/Chicago
+6023,Anderson,Fremont County,IA,Iowa,51652,CDP,40.80139,-95.60416,712,12,0,43531,851814,0,America/Chicago
+6024,Andover,Clinton County,IA,Iowa,52701,City,41.97919,-90.25180,563,99,33,54063,496217,0,America/Chicago
+6025,Andrew,Jackson County,IA,Iowa,52030,City,42.15363,-90.59235,563,423,152,44583,690480,0,America/Chicago
+6026,Anita,Cass County,IA,Iowa,50020,City,41.44527,-94.76470,712,943,418,40429,4606516,0,America/Chicago
+6027,Ankeny,Polk County,IA,Iowa,50021 / 50023 / 50226 / 50313,City,41.72971,-93.60577,515,58627,19569,75465,76091403,0,America/Chicago
+6028,Anthon,Woodbury County,IA,Iowa,51004,City,42.38832,-95.86668,712,566,287,37159,1828415,0,America/Chicago
+6029,Aplington,Butler County,IA,Iowa,50604,City,42.58415,-92.88436,319,1068,454,51838,2156758,0,America/Chicago
+6030,Arcadia,Carroll County,IA,Iowa,51430,City,42.08721,-95.04610,712,467,193,54010,2549298,0,America/Chicago
+6031,Archer,O'Brien County,IA,Iowa,51231,City,43.11526,-95.74585,712,127,64,46667,243141,0,America/Chicago
+6032,Aredale,Butler County,IA,Iowa,50605,City,42.83303,-93.00547,641,73,28,25000,2569353,0,America/Chicago
+6033,Arion,Crawford County,IA,Iowa,51520 / 51528,City,41.94916,-95.46361,712,106,67,40750,1229681,0,America/Chicago
+6034,Arispe,Union County,IA,Iowa,50830 / 50831 / 50861,City,40.94944,-94.21912,641,99,34,36000,1338961,3486,America/Chicago
+6035,Arlington,Fayette County,IA,Iowa,50606,City,42.74915,-91.67127,563,406,214,41500,2715152,0,America/Chicago
+6036,Armstrong,Emmet County,IA,Iowa,50514,City,43.39607,-94.47831,712,885,404,47000,2267792,0,America/Chicago
+6037,Arnolds Park,Dickinson County,IA,Iowa,51331 / 51351,City,43.37274,-95.12388,712,1256,597,46518,4076176,2069,America/Chicago
+6038,Arthur,Ida County,IA,Iowa,51431,City,42.33471,-95.34750,712,203,92,40833,393675,0,America/Chicago
+6039,Asbury,Dubuque County,IA,Iowa,52002,City,42.51445,-90.75152,563,5475,1696,89559,8195689,0,America/Chicago
+6040,Ashton,Osceola County,IA,Iowa,51232,City,43.31136,-95.79113,712,423,211,46250,2569893,13744,America/Chicago
+6041,Aspinwall,Crawford County,IA,Iowa,51432 / 51455,City,41.91193,-95.13555,712,39,10,57500,460078,0,America/Chicago
+6042,Atalissa,Muscatine County,IA,Iowa,52720,City,41.57114,-91.16599,563,306,124,57500,360411,0,America/Chicago
+6043,Athelstan,Taylor County,IA,Iowa,50836,CDP,40.57224,-94.54220,641,45,13,35594,336999,0,America/Chicago
+6044,Atkins,Benton County,IA,Iowa,52206,City,41.99694,-91.86213,319,1846,659,84917,2829789,0,America/Chicago
+6045,Atlantic,Cass County,IA,Iowa,50022,City,41.40360,-95.01388,712,6659,3291,37397,21539909,85504,America/Chicago
+6046,Auburn,Sac County,IA,Iowa,51433,City,42.25137,-94.87776,712,311,125,38021,1289829,0,America/Chicago
+6047,Audubon,Audubon County,IA,Iowa,50025,City,41.71804,-94.93249,712,1970,955,37983,4872820,0,America/Chicago
+6048,Aurelia,Cherokee County,IA,Iowa,51005,City,42.71276,-95.43667,712,990,440,50556,2627290,0,America/Chicago
+6049,Aurora,Buchanan County,IA,Iowa,50607,City,42.61887,-91.72850,319,170,83,47321,1484633,0,America/Chicago
+6050,Avoca,Pottawattamie County,IA,Iowa,51521,City,41.47666,-95.33805,712,1513,612,50735,6169979,0,America/Chicago
+6051,Ayrshire,Palo Alto County,IA,Iowa,50515,City,43.03913,-94.83276,712,139,84,28750,536291,0,America/Chicago
+6052,Badger,Webster County,IA,Iowa,50516,City,42.61441,-94.14607,515,548,212,60536,2827948,0,America/Chicago
+6053,Bagley,Guthrie County,IA,Iowa,50026,City,41.84610,-94.42997,641,293,136,45556,800795,0,America/Chicago
+6054,Baldwin,Jackson County,IA,Iowa,52207,City,42.07418,-90.84153,563,106,57,33125,940150,0,America/Chicago
+6055,Balltown,Dubuque County,IA,Iowa,52073,City,42.63805,-90.86874,563,64,33,55938,185213,0,America/Chicago
+6056,Bancroft,Kossuth County,IA,Iowa,50517,City,43.29274,-94.21802,515,709,307,44375,1425870,0,America/Chicago
+6057,Bankston,Dubuque County,IA,Iowa,52045,City,42.51861,-90.96124,563,25,22,113393,707503,0,America/Chicago
+6058,Barnes City,Mahaska County / Poweshiek County,IA,Iowa,50027 / 50171,City,41.50706,-92.46962,641,173,106,37500,1534338,0,America/Chicago
+6059,Barnum,Webster County,IA,Iowa,50518,City,42.50858,-94.36525,515,189,82,53750,950811,0,America/Chicago
+6060,Bartlett,Fremont County,IA,Iowa,51654,CDP,40.88500,-95.79500,712,11,0,43531,1036615,0,America/Chicago
+6061,Bassett,Chickasaw County,IA,Iowa,50645,City,43.06303,-92.51546,641,64,33,47813,954641,0,America/Chicago
+6062,Batavia,Jefferson County,IA,Iowa,52533,City,40.99418,-92.16740,641,535,272,39808,1541246,0,America/Chicago
+6063,Battle Creek,Ida County,IA,Iowa,51006,City,42.31554,-95.59861,712,678,330,38056,1291173,0,America/Chicago
+6064,Baxter,Jasper County,IA,Iowa,50028,City,41.82610,-93.15159,641,1110,384,53500,1692688,0,America/Chicago
+6065,Bayard,Guthrie County,IA,Iowa,50029,City,41.85193,-94.55831,712,457,181,47721,1186283,0,America/Chicago
+6066,Beacon,Mahaska County,IA,Iowa,52534 / 52577,City,41.27695,-92.67964,641,477,223,32917,2589812,0,America/Chicago
+6067,Beaconsfield,Ringgold County,IA,Iowa,50074,City,40.80777,-94.05051,641,15,14,14375,1859429,1540,America/Chicago
+6068,Beaman,Grundy County,IA,Iowa,50609,City,42.21971,-92.82353,641,190,88,53750,483330,20429,America/Chicago
+6069,Beaver,Boone County,IA,Iowa,50031 / 50212,City,42.03831,-94.14218,515,48,31,51250,637706,0,America/Chicago
+6070,Beaverdale,Des Moines County,IA,Iowa,52601 / 52655,CDP,40.84670,-91.20848,319,1231,431,57232,6303964,47414,America/Chicago
+6071,Bedford,Taylor County,IA,Iowa,50833,City,40.66693,-94.72136,712,1410,649,34750,4150832,19724,America/Chicago
+6072,Belle Plaine,Benton County,IA,Iowa,52208,City,41.89694,-92.27824,319,2454,1047,39732,8338645,30096,America/Chicago
+6073,Bellevue,Jackson County,IA,Iowa,52031,City,42.25863,-90.42291,563,2177,943,44089,3541197,179755,America/Chicago
+6074,Belmond,Wright County,IA,Iowa,50421,City,42.84608,-93.61410,641,2324,1096,38511,7377626,0,America/Chicago
+6075,Bennett,Cedar County,IA,Iowa,52721,City,41.74030,-90.97376,563,396,172,50556,505747,0,America/Chicago
+6076,Bentley,Pottawattamie County,IA,Iowa,51559 / 51576,CDP,41.37694,-95.62028,712,111,51,110625,2658783,0,America/Chicago
+6077,Benton,Ringgold County,IA,Iowa,50835,City,40.70332,-94.35829,641,43,25,57969,1740956,5631,America/Chicago
+6078,Berkley,Boone County,IA,Iowa,50220,City,41.94498,-94.11468,515,32,13,38750,520580,0,America/Chicago
+6079,Bernard,Dubuque County,IA,Iowa,52032,City,42.31223,-90.83180,563,110,58,53750,240330,0,America/Chicago
+6080,Bertram,Linn County,IA,Iowa,52403,City,41.94973,-91.53545,319,295,126,93750,4345642,0,America/Chicago
+6081,Bettendorf,Scott County,IA,Iowa,52722 / 52753 / 52767 / 52807,City,41.52448,-90.51569,319 / 563,35727,13822,75373,55166377,2962708,America/Chicago
+6082,Bevington,Madison County / Warren County,IA,Iowa,50033 / 50229 / 50240,City,41.35995,-93.78424,515,68,20,39167,1167330,19620,America/Chicago
+6083,Birmingham,Van Buren County,IA,Iowa,52535,City,40.87891,-91.94712,319,429,232,40833,2733974,5255,America/Chicago
+6084,Blairsburg,Hamilton County,IA,Iowa,50034,City,42.47998,-93.64299,515,210,52,52500,1671694,0,America/Chicago
+6085,Blairstown,Benton County,IA,Iowa,52209,City,41.90944,-92.08435,319,669,283,50729,1429984,0,America/Chicago
+6086,Blakesburg,Wapello County,IA,Iowa,52536,City,40.96223,-92.63408,641,282,146,32500,695902,0,America/Chicago
+6087,Blanchard,Page County,IA,Iowa,51630,City,40.57916,-95.22165,712,37,16,59375,590412,0,America/Chicago
+6088,Blencoe,Monona County,IA,Iowa,51523,City,41.93027,-96.08085,712,206,97,39792,1961393,0,America/Chicago
+6089,Blockton,Taylor County,IA,Iowa,50836,City,40.61555,-94.47718,641,191,80,30938,1672438,11144,America/Chicago
+6090,Bloomfield,Davis County,IA,Iowa,52537,City,40.75169,-92.41491,641,2643,1156,42234,5852253,70306,America/Chicago
+6091,Blue Grass,Muscatine County / Scott County,IA,Iowa,52726,City,41.50958,-90.76488,563,1699,565,64185,7564286,0,America/Chicago
+6092,Bode,Humboldt County,IA,Iowa,50519,City,42.86830,-94.28969,515,290,130,41250,1055049,0,America/Chicago
+6093,Bolan,Worth County,IA,Iowa,50448,CDP,43.37191,-93.11937,641,35,13,39590,7489425,0,America/Chicago
+6094,Bonaparte,Van Buren County,IA,Iowa,52620,City,40.69809,-91.80322,319,414,164,30909,945922,0,America/Chicago
+6095,Bondurant,Polk County,IA,Iowa,50009 / 50035,City,41.70054,-93.46216,515,5796,1477,63542,22138396,56530,America/Chicago
+6096,Boone,Boone County,IA,Iowa,50036 / 50037 / 50099,City,42.05970,-93.88023,515,12611,5375,46486,23429427,3221,America/Chicago
+6097,Bouton,Dallas County,IA,Iowa,50039,City,41.85137,-94.00912,515,128,62,40625,279710,0,America/Chicago
+6098,Boxholm,Boone County,IA,Iowa,50040 / 50217 / 50223,City,42.17581,-94.10607,515,196,102,33750,2595646,0,America/Chicago
+6099,Boyden,Sioux County,IA,Iowa,51234,City,43.19109,-96.00585,712,695,283,59250,1768006,0,America/Chicago
+6100,Braddyville,Page County,IA,Iowa,51631,City,40.57888,-95.02998,712,153,72,50500,1374709,0,America/Chicago
+6101,Bradford,Franklin County,IA,Iowa,50041 / 50126,CDP,42.63303,-93.24492,641,65,44,42813,1406079,0,America/Chicago
+6102,Bradgate,Humboldt County,IA,Iowa,50520,City,42.80303,-94.41803,515,83,32,35000,900589,5128,America/Chicago
+6103,Brandon,Buchanan County,IA,Iowa,52210,City,42.31444,-92.00212,319,306,139,43750,816849,0,America/Chicago
+6104,Brayton,Audubon County,IA,Iowa,50042,City,41.54443,-94.92415,712,117,73,37321,1596973,0,America/Chicago
+6105,Breda,Carroll County,IA,Iowa,51436,City,42.18165,-94.97693,712,473,196,59375,1919722,0,America/Chicago
+6106,Bridgewater,Adair County,IA,Iowa,50837,City,41.24499,-94.66886,641,157,71,44107,748447,0,America/Chicago
+6107,Brighton,Washington County,IA,Iowa,52540,City,41.17474,-91.81961,319,659,257,39107,2022504,0,America/Chicago
+6108,Bristow,Butler County,IA,Iowa,50611,City,42.77386,-92.90742,641,158,75,37188,2422426,0,America/Chicago
+6109,Britt,Hancock County,IA,Iowa,50423,City,43.09774,-93.80189,641,1958,867,44432,3274114,0,America/Chicago
+6110,Bronson,Woodbury County,IA,Iowa,51007,City,42.41083,-96.21391,712,323,120,68750,791753,0,America/Chicago
+6111,Brooklyn,Poweshiek County,IA,Iowa,52211,City,41.73361,-92.44546,641,1413,597,47284,3252233,0,America/Chicago
+6112,Brunsville,Plymouth County,IA,Iowa,51008,City,42.80971,-96.26919,712,150,48,56250,611429,0,America/Chicago
+6113,Buckeye,Hardin County,IA,Iowa,50006 / 50043,City,42.41720,-93.37493,515,108,34,41786,2580056,0,America/Chicago
+6114,Buck Grove,Crawford County,IA,Iowa,51528,City,41.91804,-95.39611,712,42,14,30000,940958,0,America/Chicago
+6115,Buffalo,Scott County,IA,Iowa,52726 / 52728 / 52802 / 52804,City,41.45642,-90.72347,319 / 563,1294,517,44922,17533335,97950,America/Chicago
+6116,Buffalo Center,Winnebago County,IA,Iowa,50424,City,43.38579,-93.94662,641,902,406,41087,2781319,0,America/Chicago
+6117,Burchinal,Cerro Gordo County,IA,Iowa,50469,CDP,43.06524,-93.27826,641,62,19,46042,199660,0,America/Chicago
+6118,Burlington,Des Moines County,IA,Iowa,52601 / 52655,City,40.80754,-91.11292,319,25277,10744,39586,37443266,1977659,America/Chicago
+6119,Burr Oak,Winneshiek County,IA,Iowa,52101,CDP,43.45886,-91.86543,563,204,118,46944,1786228,0,America/Chicago
+6120,Burt,Kossuth County,IA,Iowa,50522,City,43.19746,-94.21969,515,505,200,39333,1127107,0,America/Chicago
+6121,Bussey,Marion County,IA,Iowa,50044,City,41.20445,-92.88270,641,414,200,36250,861875,0,America/Chicago
+6122,Calamus,Clinton County,IA,Iowa,52729,City,41.82586,-90.75820,563,409,178,55000,1250436,0,America/Chicago
+6123,California Junction,Harrison County,IA,Iowa,51555,CDP,41.55860,-95.99473,712,94,71,24914,1192780,0,America/Chicago
+6124,Callender,Webster County,IA,Iowa,50523,City,42.36192,-94.29580,515,363,165,45313,1356287,0,America/Chicago
+6125,Calmar,Winneshiek County,IA,Iowa,52132,City,43.18358,-91.86405,563,953,467,44297,2865779,0,America/Chicago
+6126,Calumet,O'Brien County,IA,Iowa,51009,City,42.94637,-95.55001,712,169,97,59063,688550,0,America/Chicago
+6127,Camanche,Clinton County,IA,Iowa,52730,City,41.78809,-90.25624,319 / 563,4325,1983,56318,22485003,1948087,America/Chicago
+6128,Cambridge,Story County,IA,Iowa,50046,City,41.89832,-93.52910,515,815,295,54196,3431867,2656,America/Chicago
+6129,Cantril,Van Buren County,IA,Iowa,52542,City,40.64420,-92.06990,319,218,95,34583,1317402,0,America/Chicago
+6130,Carbon,Adams County,IA,Iowa,50839,City,41.04999,-94.82331,641,31,18,28750,1828417,0,America/Chicago
+6131,Carlisle,Polk County / Warren County,IA,Iowa,50047,City,41.51800,-93.48515,515,4249,1570,57794,14437440,10044,America/Chicago
+6132,Carpenter,Mitchell County,IA,Iowa,50426 / 50472,City,43.41496,-93.01492,641,107,49,36875,415144,0,America/Chicago
+6133,Carroll,Carroll County,IA,Iowa,51401,City,42.06582,-94.86693,712,9947,4325,43078,14840883,0,America/Chicago
+6134,Carson,Pottawattamie County,IA,Iowa,51525,City,41.23666,-95.41806,712,815,323,47039,1836044,0,America/Chicago
+6135,Carter Lake,Pottawattamie County,IA,Iowa,51510,City,41.29055,-95.91807,712,3784,1488,48333,4841210,387357,America/Chicago
+6136,Cascade,Dubuque County / Jones County,IA,Iowa,52033,City,42.30179,-91.00467,563,2281,866,47344,4985031,0,America/Chicago
+6137,Casey,Adair County / Guthrie County,IA,Iowa,50048,City,41.50746,-94.52127,641,399,158,40000,1914130,0,America/Chicago
+6138,Castalia,Winneshiek County,IA,Iowa,52133,City,43.11192,-91.67626,563,166,88,45357,1495004,0,America/Chicago
+6139,Castana,Monona County,IA,Iowa,51010,City,42.07443,-95.90862,712,136,60,22143,2398574,0,America/Chicago
+6140,Cedar Falls,Black Hawk County,IA,Iowa,50613 / 50614,City,42.52776,-92.44547,319,41390,14566,55808,74891930,2213961,America/Chicago
+6141,Cedar Rapids,Linn County,IA,Iowa,52227 / 52228 / 52233 / 52302 / 52324 / 52338 / 52401 / 52402 / 52403 / 52404 / 52405 / 52406 / 52407 / 52408 / 52409 / 52410 / 52411 / 52497 / 52498 / 52499,City,42.00833,-91.64407,319,131127,53328,53581,183340874,3295742,America/Chicago
+6142,Center Junction,Jones County,IA,Iowa,52212,CDP,42.11612,-91.08709,563,111,48,55000,1901746,0,America/Chicago
+6143,Center Point,Linn County,IA,Iowa,52213,City,42.19083,-91.78518,319,2524,876,79545,6724829,0,America/Chicago
+6144,Centerville,Appanoose County,IA,Iowa,52544,City,40.73418,-92.87409,641,5345,2443,31270,12627894,76988,America/Chicago
+6145,Central City,Linn County,IA,Iowa,52214,City,42.20388,-91.52406,319,1276,551,54453,2448506,54926,America/Chicago
+6146,Centralia,Dubuque County,IA,Iowa,52068,City,42.47222,-90.83707,563,131,55,50938,1460487,0,America/Chicago
+6147,Chapin,Franklin County,IA,Iowa,50427 / 50475,CDP,42.83358,-93.22215,641,161,48,66875,255254,0,America/Chicago
+6148,Chariton,Lucas County,IA,Iowa,50049,City,41.01389,-93.30660,641,4191,1924,33167,9884680,0,America/Chicago
+6149,Charles City,Floyd County,IA,Iowa,50616,City,43.06636,-92.67241,641,7457,3438,39053,16099645,224740,America/Chicago
+6150,Charlotte,Clinton County,IA,Iowa,52731,City,41.96030,-90.46513,563,368,154,47955,1489594,0,America/Chicago
+6151,Charter Oak,Crawford County,IA,Iowa,51439,City,42.06832,-95.59167,712,483,256,49167,1250356,2725,America/Chicago
+6152,Chatsworth,Sioux County,IA,Iowa,51011,City,42.91610,-96.51642,712,79,24,48750,1275287,0,America/Chicago
+6153,Chelsea,Tama County,IA,Iowa,52215,City,41.91916,-92.39463,641,261,82,41000,2614881,0,America/Chicago
+6154,Cherokee,Cherokee County,IA,Iowa,51012,City,42.74943,-95.55167,712,4998,2368,40811,16941612,62863,America/Chicago
+6155,Chester,Howard County,IA,Iowa,52134,City,43.49108,-92.36045,563,124,99,37813,3465013,0,America/Chicago
+6156,Chillicothe,Wapello County,IA,Iowa,52548,City,41.08557,-92.52936,641,96,41,45536,588294,34434,America/Chicago
+6157,Churdan,Greene County,IA,Iowa,50050,City,42.15193,-94.47442,515,369,173,38125,5473336,7680,America/Chicago
+6158,Cincinnati,Appanoose County,IA,Iowa,52549,City,40.63085,-92.92465,641,346,156,33500,4518930,0,America/Chicago
+6159,Clare,Webster County,IA,Iowa,50524,City,42.58719,-94.34552,515,141,89,54583,1311977,0,America/Chicago
+6160,Clarence,Cedar County,IA,Iowa,52216,City,41.88891,-91.05654,563,977,437,44196,1750511,0,America/Chicago
+6161,Clarinda,Page County,IA,Iowa,51632,City,40.74194,-95.03831,712,5385,2059,42551,13433110,85563,America/Chicago
+6162,Clarion,Wright County,IA,Iowa,50525 / 50526,City,42.73164,-93.73299,515,2765,1101,37583,8436347,0,America/Chicago
+6163,Clarksville,Butler County,IA,Iowa,50619,City,42.78470,-92.66769,319,1392,541,43750,3454512,99645,America/Chicago
+6164,Clayton,Clayton County,IA,Iowa,52049,City,42.90388,-91.14735,563,42,28,48750,1280261,0,America/Chicago
+6165,Clearfield,Ringgold County / Taylor County,IA,Iowa,50840,City,40.80065,-94.48307,641,343,161,32266,3253721,2993,America/Chicago
+6166,Clear Lake,Cerro Gordo County,IA,Iowa,50428,City,43.13802,-93.37937,641,7589,3272,49219,27962840,6834997,America/Chicago
+6167,Cleghorn,Cherokee County,IA,Iowa,51014,City,42.81221,-95.71279,712,226,104,46000,582566,0,America/Chicago
+6168,Clemons,Marshall County,IA,Iowa,50051,City,42.11388,-93.15604,641,148,51,58750,699184,0,America/Chicago
+6169,Clermont,Fayette County,IA,Iowa,52135,City,43.00359,-91.65237,563,602,273,42813,3181839,0,America/Chicago
+6170,Climbing Hill,Woodbury County,IA,Iowa,51015 / 51026,CDP,42.34166,-96.07780,712,172,58,84063,3316651,0,America/Chicago
+6171,Clinton,Clinton County,IA,Iowa,52730 / 52732 / 52733 / 52736,City,41.84447,-90.18874,319 / 563,25719,11203,41813,91046168,7399337,America/Chicago
+6172,Clio,Wayne County,IA,Iowa,50052,City,40.63501,-93.45133,641,81,47,42083,1946162,0,America/Chicago
+6173,Clive,Dallas County / Polk County,IA,Iowa,50323 / 50325,City,41.61324,-93.79787,515,17546,6144,93160,19604616,283291,America/Chicago
+6174,Clutier,Tama County,IA,Iowa,52217,City,42.07944,-92.40213,319,209,101,38125,1965033,0,America/Chicago
+6175,Coalville,Webster County,IA,Iowa,50501,CDP,42.44525,-94.12579,515,646,262,41875,5653709,191760,America/Chicago
+6176,Coburg,Montgomery County,IA,Iowa,51566,City,40.91749,-95.26443,712,40,17,43125,752776,0,America/Chicago
+6177,Coggon,Linn County,IA,Iowa,52218,City,42.28082,-91.53044,319,667,275,51719,1617494,51827,America/Chicago
+6178,Coin,Page County,IA,Iowa,51636,City,40.65444,-95.23026,712,183,92,43125,2073295,0,America/Chicago
+6179,Colesburg,Delaware County,IA,Iowa,52035,City,42.63944,-91.20208,563,396,167,53594,751208,0,America/Chicago
+6180,Colfax,Jasper County,IA,Iowa,50054,City,41.67777,-93.24521,515,2042,772,44706,6118721,585870,America/Chicago
+6181,College Springs,Page County,IA,Iowa,51630 / 51637,City,40.61916,-95.12081,712,207,86,31786,2836546,0,America/Chicago
+6182,Collins,Story County,IA,Iowa,50055,City,41.90277,-93.30632,641,477,176,55000,1267159,12911,America/Chicago
+6183,Colo,Story County,IA,Iowa,50056,City,42.01777,-93.31521,641,852,331,49688,2750912,0,America/Chicago
+6184,Columbus City,Louisa County,IA,Iowa,52737,City,41.25864,-91.37432,319,370,153,56103,618557,0,America/Chicago
+6185,Columbus Junction,Louisa County,IA,Iowa,52738,City,41.28003,-91.36071,319,1848,728,49167,5666846,0,America/Chicago
+6186,Colwell,Floyd County,IA,Iowa,50616 / 50620,City,43.15581,-92.59407,641,71,28,46250,475799,0,America/Chicago
+6187,Conesville,Muscatine County,IA,Iowa,52739,City,41.38197,-91.34988,319,415,170,42692,928633,0,America/Chicago
+6188,Conrad,Grundy County,IA,Iowa,50621,City,42.22471,-92.87465,641,1086,461,45313,3205652,0,America/Chicago
+6189,Conroy,Iowa County,IA,Iowa,52220 / 52301 / 52361,CDP,41.72917,-91.99768,319,335,177,46758,1974497,0,America/Chicago
+6190,Conway,Taylor County,IA,Iowa,50833,City,40.74860,-94.61886,641,41,8,35625,572430,2050,America/Chicago
+6191,Coon Rapids,Carroll County / Guthrie County,IA,Iowa,50058,City,41.87477,-94.67845,712,1261,544,44674,4618598,0,America/Chicago
+6192,Coppock,Henry County / Jefferson County / Washington County,IA,Iowa,52654,City,41.16424,-91.71482,319,47,29,29531,608084,26463,America/Chicago
+6193,Coralville,Johnson County,IA,Iowa,52240 / 52241 / 52246 / 52317 / 52319,City,41.67640,-91.58045,319,20397,7786,58744,32541781,87504,America/Chicago
+6194,Corley,Shelby County,IA,Iowa,51537,CDP,41.57860,-95.33028,712,28,31,19000,154735,0,America/Chicago
+6195,Corning,Adams County,IA,Iowa,50841,City,40.98999,-94.74081,641,1486,731,41849,4116704,9352,America/Chicago
+6196,Correctionville,Woodbury County,IA,Iowa,51016,City,42.47499,-95.78557,712,805,340,40119,1474143,0,America/Chicago
+6197,Corwith,Hancock County,IA,Iowa,50430,City,42.99274,-93.95745,515,265,124,37857,3826274,0,America/Chicago
+6198,Corydon,Wayne County,IA,Iowa,50060,City,40.75695,-93.31882,641,1603,631,43646,3607608,0,America/Chicago
+6199,Cotter,Louisa County,IA,Iowa,52738,City,41.29197,-91.46155,319,47,24,55500,635742,0,America/Chicago
+6200,Coulter,Franklin County,IA,Iowa,50431 / 50441 / 50452,City,42.73720,-93.36993,641,268,126,51250,6347773,0,America/Chicago
+6201,Council Bluffs,Pottawattamie County,IA,Iowa,51501 / 51502 / 51503,City,41.26194,-95.86083,712,62524,24770,45551,111059820,6849464,America/Chicago
+6202,Craig,Plymouth County,IA,Iowa,51031,City,42.89582,-96.30975,712,89,33,78125,234967,0,America/Chicago
+6203,Crawfordsville,Washington County,IA,Iowa,52621,City,41.21456,-91.53731,319,270,119,41719,950326,0,America/Chicago
+6204,Crescent,Pottawattamie County,IA,Iowa,51526,City,41.36500,-95.85807,712,617,214,81731,2824413,9261,America/Chicago
+6205,Cresco,Howard County,IA,Iowa,52136,City,43.38136,-92.11405,563,3808,1576,47426,8671344,0,America/Chicago
+6206,Creston,Union County,IA,Iowa,50801,City,41.05860,-94.36135,641,7829,3335,40782,13435954,163699,America/Chicago
+6207,Cromwell,Union County,IA,Iowa,50842,City,41.03943,-94.46191,641,106,42,62500,751181,0,America/Chicago
+6208,Crystal Lake,Hancock County,IA,Iowa,50432,City,43.22329,-93.79244,641,242,109,34432,660041,0,America/Chicago
+6209,Cumberland,Cass County,IA,Iowa,50843,City,41.27416,-94.87026,712,251,133,26953,1555633,0,America/Chicago
+6210,Cumming,Warren County,IA,Iowa,50061 / 50211,City,41.48332,-93.76244,515,408,162,105000,6617921,26333,America/Chicago
+6211,Curlew,Palo Alto County,IA,Iowa,50527,City,42.97886,-94.74109,712,56,36,31429,1961909,0,America/Chicago
+6212,Cushing,Woodbury County,IA,Iowa,51018,City,42.46471,-95.67501,712,223,82,36667,833637,0,America/Chicago
+6213,Cylinder,Palo Alto County,IA,Iowa,50528,City,43.08886,-94.55303,712,85,25,54750,205861,0,America/Chicago
+6214,Dakota City,Humboldt County,IA,Iowa,50529 / 50548,City,42.72219,-94.19718,515,805,345,42708,1909982,97731,America/Chicago
+6215,Dallas Center,Dallas County,IA,Iowa,50063,City,41.68443,-93.96106,515,1746,598,69265,13653395,0,America/Chicago
+6216,Dana,Greene County,IA,Iowa,50064,City,42.10748,-94.24080,515,69,31,30694,729022,0,America/Chicago
+6217,Danbury,Woodbury County,IA,Iowa,51019,City,42.23416,-95.72223,712,338,163,43906,1048625,0,America/Chicago
+6218,Danville,Des Moines County,IA,Iowa,52623,City,40.86448,-91.31460,319,926,385,50694,1954476,0,America/Chicago
+6219,Davenport,Scott County,IA,Iowa,52801 / 52802 / 52803 / 52804 / 52805 / 52806 / 52807 / 52808 / 52809,City,41.52364,-90.57764,319 / 563,102612,41100,47343,162885999,5501339,America/Chicago
+6220,Davis City,Decatur County,IA,Iowa,50065,City,40.63917,-93.81161,641,193,110,26875,1527837,0,America/Chicago
+6221,Dawson,Dallas County,IA,Iowa,50066,City,41.84276,-94.22246,515,132,70,35938,1281651,0,America/Chicago
+6222,Dayton,Webster County,IA,Iowa,50530,City,42.26136,-94.06857,515,802,327,41406,2191789,0,America/Chicago
+6223,Decatur City,Decatur County,IA,Iowa,50067 / 50144,City,40.74194,-93.83383,641,186,87,41250,1029372,7906,America/Chicago
+6224,Decorah,Winneshiek County,IA,Iowa,52101,City,43.30331,-91.78571,319 / 563,7918,2984,50388,18429248,64833,America/Chicago
+6225,Dedham,Carroll County,IA,Iowa,51440,City,41.90610,-94.82221,712,262,90,55000,1499716,0,America/Chicago
+6226,Deep River,Poweshiek County,IA,Iowa,52222,City,41.58028,-92.37491,641,269,129,38750,1101368,0,America/Chicago
+6227,Defiance,Shelby County,IA,Iowa,51527,City,41.82415,-95.34278,712,277,98,43500,1020398,0,America/Chicago
+6228,Delaware,Delaware County,IA,Iowa,52036 / 52057 / 52223,City,42.47527,-91.34542,563,155,71,48438,2073249,28633,America/Chicago
+6229,Delhi,Delaware County,IA,Iowa,52223,City,42.42971,-91.33098,563,471,208,55000,2522207,140613,America/Chicago
+6230,Delmar,Clinton County,IA,Iowa,52037,City,42.00225,-90.60708,563,496,202,49762,1967459,0,America/Chicago
+6231,Deloit,Crawford County,IA,Iowa,51441,City,42.09777,-95.32250,712,261,152,33500,1080211,0,America/Chicago
+6232,Delphos,Ringgold County,IA,Iowa,50860,City,40.66360,-94.33940,641,25,10,11000,576330,1486,America/Chicago
+6233,Delta,Keokuk County,IA,Iowa,52550,City,41.32279,-92.33018,641,316,130,23750,2415731,0,America/Chicago
+6234,Denison,Crawford County,IA,Iowa,51442,City,42.01777,-95.35528,712,8308,2618,44622,16917594,87403,America/Chicago
+6235,Denmark,Lee County,IA,Iowa,52624 / 52627 / 52656 / 52658,CDP,40.74171,-91.33737,319,309,178,40833,4301800,6929,America/Chicago
+6236,Denver,Bremer County,IA,Iowa,50622,City,42.67137,-92.33740,319,1841,708,55500,4248318,35147,America/Chicago
+6237,Derby,Lucas County,IA,Iowa,50068,City,40.93167,-93.45632,641,113,58,48750,673593,0,America/Chicago
+6238,Des Moines,Polk County / Warren County,IA,Iowa,50009 / 50047 / 50211 / 50301 / 50302 / 50303 / 50304 / 50305 / 50306 / 50307 / 50308 / 50309 / 50310 / 50311 / 50312 / 50313 / 50314 / 50315 / 50316 / 50317 / 50318 / 50319 / 50320 / 50321 / 50322 / 50328 / 50329 / 50330 / 50331 / 50332 / 50333 / 50334 / 50335 / 50336 / 50339 / 50340 / 50347 / 50359 / 50360 / 50361 / 50362 / 50363 / 50364 / 50367 / 50368 / 50369 / 50380 / 50381 / 50391 / 50392 / 50393 / 50394 / 50395 / 50396 / 50397 / 50936 / 50940 / 50947 / 50950 / 50980 / 50981 / 50982 / 50983,City,41.57259,-93.61024,515,215472,81717,46290,230329944,4657227,America/Chicago
+6239,De Soto,Dallas County,IA,Iowa,50003 / 50069 / 50261,City,41.53166,-94.00967,515,1041,423,56250,3950822,5932,America/Chicago
+6240,DeWitt,Clinton County,IA,Iowa,52742,City,41.82278,-90.54278,563,5233,2208,58750,15490000,0,America/Chicago
+6241,De Witt,Clinton County,IA,Iowa,52742,City,41.82336,-90.53819,319 / 563,5233,2171,58750,15505961,0,America/Chicago
+6242,Dexter,Dallas County,IA,Iowa,50070,City,41.51832,-94.22635,515,600,337,54688,3242414,0,America/Chicago
+6243,Diagonal,Ringgold County,IA,Iowa,50845,City,40.80943,-94.34218,641,326,118,37222,2341151,4786,America/Chicago
+6244,Diamondhead Lake,Guthrie County,IA,Iowa,50070,CDP,41.55209,-94.26222,515,343,134,88750,1614328,411400,America/Chicago
+6245,Dickens,Clay County,IA,Iowa,51333,City,43.13136,-95.02360,712,179,71,45625,2120397,0,America/Chicago
+6246,Dike,Grundy County,IA,Iowa,50624,City,42.46415,-92.62825,319,1280,582,67500,3616762,0,America/Chicago
+6247,Dixon,Scott County,IA,Iowa,52745,City,41.74280,-90.78237,563,247,91,44688,323221,0,America/Chicago
+6248,Dolliver,Emmet County,IA,Iowa,50531,City,43.46440,-94.62526,712,63,29,49583,942727,0,America/Chicago
+6249,Donahue,Scott County,IA,Iowa,52746,City,41.69475,-90.67542,563,368,137,78750,918646,0,America/Chicago
+6250,Donnellson,Lee County,IA,Iowa,52625,City,40.64282,-91.56460,319,885,349,37656,3267755,0,America/Chicago
+6251,Doon,Lyon County,IA,Iowa,51235,City,43.27942,-96.23280,712,597,231,52708,1485169,0,America/Chicago
+6252,Douds,Van Buren County,IA,Iowa,52551,CDP,40.83947,-92.08657,641,47,36,37857,5728517,261817,America/Chicago
+6253,Dougherty,Cerro Gordo County,IA,Iowa,50433,City,42.92219,-93.04214,641,56,36,49375,1422878,0,America/Chicago
+6254,Dow City,Crawford County,IA,Iowa,51528,City,41.92888,-95.49389,712,495,224,36750,827409,0,America/Chicago
+6255,Dows,Franklin County / Wright County,IA,Iowa,50071,City,42.66182,-93.50549,515,511,243,36875,1992375,66777,America/Chicago
+6256,Drakesville,Davis County,IA,Iowa,52552,City,40.79835,-92.48158,641,188,88,30625,637324,0,America/Chicago
+6257,Dubuque,Dubuque County,IA,Iowa,52001 / 52002 / 52003 / 52004 / 52068 / 52099,City,42.50056,-90.66457,319 / 563,58531,23901,47450,78952077,2802123,America/Chicago
+6258,Dumont,Butler County,IA,Iowa,50625,City,42.75192,-92.97547,641,623,285,47917,4547619,0,America/Chicago
+6259,Duncan,Hancock County,IA,Iowa,50423 / 50438,CDP,43.10468,-93.71133,641,113,30,55000,2034239,18519,America/Chicago
+6260,Duncombe,Webster County,IA,Iowa,50532,City,42.47053,-93.99356,515,392,165,37188,5198348,0,America/Chicago
+6261,Dundee,Delaware County,IA,Iowa,52038,City,42.57915,-91.54654,563,170,65,42083,938453,0,America/Chicago
+6262,Dunkerton,Black Hawk County,IA,Iowa,50626,City,42.56999,-92.16046,319,835,313,55938,2760320,25976,America/Chicago
+6263,Dunlap,Crawford County / Harrison County,IA,Iowa,51529,City,41.85247,-95.60125,712,978,498,50000,2924328,41814,America/Chicago
+6264,Durango,Dubuque County,IA,Iowa,52039,City,42.56028,-90.77568,563,20,7,35625,109605,0,America/Chicago
+6265,Durant,Cedar County / Muscatine County / Scott County,IA,Iowa,52747 / 52778,City,41.60148,-90.91194,563,1823,823,60625,2872600,0,America/Chicago
+6266,Dyersville,Delaware County / Dubuque County,IA,Iowa,52040 / 52041 / 52078,City,42.48149,-91.11660,319 / 563,4196,1768,49392,17591244,17223,America/Chicago
+6267,Dysart,Tama County,IA,Iowa,52224,City,42.17166,-92.30630,319,1355,593,56875,3225037,0,America/Chicago
+6268,Eagle Grove,Wright County,IA,Iowa,50533,City,42.66414,-93.90439,515,3427,1411,39654,10464911,0,America/Chicago
+6269,Earlham,Madison County,IA,Iowa,50072,City,41.49193,-94.12412,515,1397,635,59455,2505403,0,America/Chicago
+6270,Earling,Shelby County,IA,Iowa,51530,City,41.77554,-95.41750,712,420,168,44000,1560830,0,America/Chicago
+6271,Earlville,Delaware County,IA,Iowa,52041,City,42.48166,-91.27236,563,787,343,59464,1431062,0,America/Chicago
+6272,Early,Sac County,IA,Iowa,50535,City,42.46137,-95.15194,712,524,308,40000,1013501,0,America/Chicago
+6273,East Amana,Iowa County,IA,Iowa,52203,CDP,41.80917,-91.85101,319,46,17,38281,1849227,0,America/Chicago
+6274,East Peru,Madison County,IA,Iowa,50222,City,41.22694,-93.92634,641,126,38,25000,2423969,0,America/Chicago
+6275,Eddyville,Mahaska County / Monroe County / Wapello County,IA,Iowa,52553,City,41.15921,-92.62979,641,1005,469,46518,3059524,0,America/Chicago
+6276,Edgewood,Clayton County / Delaware County,IA,Iowa,52042,City,42.64423,-91.40169,563,861,378,48214,2201381,0,America/Chicago
+6277,Elberon,Tama County,IA,Iowa,52225,City,42.00611,-92.31685,319,193,60,53333,1692485,0,America/Chicago
+6278,Eldon,Wapello County,IA,Iowa,52554,City,40.91863,-92.22296,641,916,481,33083,2882353,18358,America/Chicago
+6279,Eldora,Hardin County,IA,Iowa,50627,City,42.36082,-93.09965,641,2661,997,46776,11209794,0,America/Chicago
+6280,Eldridge,Scott County,IA,Iowa,52748 / 52807,City,41.65809,-90.58458,319 / 563,6297,2274,57750,24733095,0,America/Chicago
+6281,Elgin,Fayette County,IA,Iowa,52141,City,42.95748,-91.63071,563,644,355,44779,1714026,0,America/Chicago
+6282,Elkader,Clayton County,IA,Iowa,52043,City,42.85387,-91.40542,563,1213,598,46136,3571118,101883,America/Chicago
+6283,Elkhart,Polk County,IA,Iowa,50073,City,41.79165,-93.52216,515,783,303,51750,4085964,0,America/Chicago
+6284,Elk Horn,Shelby County,IA,Iowa,51531,City,41.59166,-95.05999,712,637,222,48000,1993143,0,America/Chicago
+6285,Elkport,Clayton County,IA,Iowa,52042 / 52044 / 52048,City,42.73971,-91.27791,563,38,15,30250,645771,0,America/Chicago
+6286,Elk Run Heights,Black Hawk County,IA,Iowa,50667 / 50703 / 50707,City,42.46693,-92.25657,319,1129,436,52188,2751614,7782,America/Chicago
+6287,Elliott,Montgomery County,IA,Iowa,51532,City,41.14916,-95.16388,712,326,161,45250,1079677,0,America/Chicago
+6288,Ellston,Ringgold County,IA,Iowa,50074,City,40.84027,-94.10856,641,43,10,63750,575918,0,America/Chicago
+6289,Ellsworth,Hamilton County,IA,Iowa,50075,City,42.31276,-93.57882,515,503,225,53393,2324029,0,America/Chicago
+6290,Elma,Howard County,IA,Iowa,50628,City,43.24664,-92.43601,641,535,296,38889,3337307,0,America/Chicago
+6291,Ely,Linn County,IA,Iowa,52227,City,41.87362,-91.58518,319,2150,704,96667,3731140,10462,America/Chicago
+6292,Emerson,Mills County,IA,Iowa,51533,City,41.01722,-95.40222,712,437,173,51645,663400,0,America/Chicago
+6293,Emmetsburg,Palo Alto County,IA,Iowa,50536,City,43.11274,-94.68304,712,3758,1619,41964,9868761,421897,America/Chicago
+6294,Epworth,Dubuque County,IA,Iowa,52045,City,42.44500,-90.93208,563,1950,717,70380,4173550,0,America/Chicago
+6295,Essex,Page County,IA,Iowa,51638,City,40.83361,-95.30832,712,762,394,48500,3897439,0,America/Chicago
+6296,Estherville,Emmet County,IA,Iowa,51334,City,43.40163,-94.83276,712,5942,2491,43536,13889294,0,America/Chicago
+6297,Evansdale,Black Hawk County,IA,Iowa,50707,City,42.46915,-92.28102,319,4786,2006,43492,10487156,168986,America/Chicago
+6298,Everly,Clay County,IA,Iowa,51338,City,43.15997,-95.32750,712,571,236,56250,2706946,42626,America/Chicago
+6299,Exira,Audubon County,IA,Iowa,50076,City,41.59082,-94.87554,712,795,421,36442,2632347,0,America/Chicago
+6300,Exline,Appanoose County,IA,Iowa,52555,City,40.64918,-92.84048,641,157,70,33333,2568464,0,America/Chicago
+6301,Fairbank,Buchanan County / Fayette County,IA,Iowa,50629,City,42.64014,-92.04779,319,1114,453,58472,1848118,50215,America/Chicago
+6302,Fairfax,Linn County,IA,Iowa,52228,City,41.91945,-91.78101,319,2563,831,87548,4993772,81565,America/Chicago
+6303,Fairfield,Jefferson County,IA,Iowa,52556 / 52557,City,41.00863,-91.96267,641,10206,3961,37162,16578066,408265,America/Chicago
+6304,Farley,Dubuque County,IA,Iowa,52040 / 52046,City,42.44278,-91.00625,563,1688,571,75583,4173501,0,America/Chicago
+6305,Farmersburg,Clayton County,IA,Iowa,52047,City,42.96110,-91.36791,563,277,109,40938,1039865,0,America/Chicago
+6306,Farmington,Van Buren County,IA,Iowa,52626,City,40.64031,-91.74294,319,641,302,38056,1213538,0,America/Chicago
+6307,Farnhamville,Calhoun County / Webster County,IA,Iowa,50538,City,42.27648,-94.40771,515,359,175,39375,1690677,16957,America/Chicago
+6308,Farragut,Fremont County,IA,Iowa,51639,City,40.72194,-95.48082,712,441,224,47813,1051419,0,America/Chicago
+6309,Fayette,Fayette County,IA,Iowa,52142,City,42.84193,-91.80211,563,1477,357,28125,3826595,0,America/Chicago
+6310,Fenton,Kossuth County,IA,Iowa,50539,City,43.21969,-94.43053,515,261,134,49583,890163,0,America/Chicago
+6311,Ferguson,Marshall County,IA,Iowa,50078,City,41.93693,-92.86575,641,126,61,45893,660700,0,America/Chicago
+6312,Fertile,Worth County,IA,Iowa,50434,City,43.26440,-93.41826,641,375,151,43393,2432030,0,America/Chicago
+6313,Floris,Davis County,IA,Iowa,52537 / 52560,City,40.86502,-92.33296,641,141,62,44286,1253383,0,America/Chicago
+6314,Floyd,Floyd County,IA,Iowa,50435 / 50616,City,43.12775,-92.73630,641,324,155,41250,1544990,0,America/Chicago
+6315,Fonda,Pocahontas County,IA,Iowa,50540,City,42.58137,-94.84610,712,592,238,39750,2710777,0,America/Chicago
+6316,Fontanelle,Adair County,IA,Iowa,50846,City,41.28971,-94.56164,641,630,312,38958,2475331,0,America/Chicago
+6317,Forest City,Hancock County / Winnebago County,IA,Iowa,50436,City,43.25697,-93.63641,641,4013,1709,46146,12022255,0,America/Chicago
+6318,Fort Atkinson,Winneshiek County,IA,Iowa,52144,City,43.14331,-91.93266,563,330,129,37813,847422,0,America/Chicago
+6319,Fort Dodge,Webster County,IA,Iowa,50501,City,42.49747,-94.16802,515,24441,9892,39315,41580071,663141,America/Chicago
+6320,Fort Madison,Lee County,IA,Iowa,52627 / 52639 / 52658,City,40.62976,-91.31515,319,10597,4534,42595,24584087,9680849,America/Chicago
+6321,Fostoria,Clay County,IA,Iowa,51301 / 51340,City,43.24219,-95.15555,712,235,72,62917,1057063,0,America/Chicago
+6322,Franklin,Lee County,IA,Iowa,52625 / 52656,City,40.66809,-91.51127,319,137,51,53125,385970,0,America/Chicago
+6323,Fraser,Boone County,IA,Iowa,50036 / 50223,City,42.12720,-93.96495,515,104,56,71000,3053467,172228,America/Chicago
+6324,Fredericksburg,Chickasaw County,IA,Iowa,50630,City,42.96525,-92.19962,563,923,525,36950,2231683,0,America/Chicago
+6325,Frederika,Bremer County,IA,Iowa,50631 / 50674 / 50676,City,42.88165,-92.30823,319,189,89,42969,516726,0,America/Chicago
+6326,Fredonia,Louisa County,IA,Iowa,52738,City,41.28475,-91.33877,319,239,113,48958,428762,0,America/Chicago
+6327,Fremont,Mahaska County,IA,Iowa,52561,City,41.21251,-92.43546,641,724,269,41319,2674221,0,America/Chicago
+6328,Fruitland,Muscatine County,IA,Iowa,52749 / 52761,City,41.35614,-91.12932,563,985,386,80217,4667215,0,America/Chicago
+6329,Frytown,Johnson County,IA,Iowa,52247,CDP,41.57001,-91.73239,319,85,32,65266,2098214,0,America/Chicago
+6330,Galt,Wright County,IA,Iowa,50101 / 50470,City,42.69358,-93.60549,515,31,26,63750,1387704,0,America/Chicago
+6331,Galva,Ida County,IA,Iowa,51020,City,42.50693,-95.41722,712,424,189,43250,1843818,0,America/Chicago
+6332,Garber,Clayton County,IA,Iowa,52048,City,42.74193,-91.26208,563,85,54,55625,595056,0,America/Chicago
+6333,Garden City,Hardin County,IA,Iowa,50102 / 50230,CDP,42.24554,-93.39549,515,36,34,165714,2583283,0,America/Chicago
+6334,Garden Grove,Decatur County,IA,Iowa,50103,City,40.82722,-93.60716,641,207,77,42813,1795563,0,America/Chicago
+6335,Garnavillo,Clayton County,IA,Iowa,52049,City,42.86860,-91.23596,563,723,361,46750,2648110,0,America/Chicago
+6336,Garner,Hancock County,IA,Iowa,50438,City,43.10246,-93.60188,641,3075,1173,58323,5628160,0,America/Chicago
+6337,Garrison,Benton County,IA,Iowa,52229,City,42.14416,-92.14379,319,361,147,50625,638863,0,America/Chicago
+6338,Garwin,Tama County,IA,Iowa,50632,City,42.09360,-92.67575,641,508,193,49531,2605052,0,America/Chicago
+6339,Geneva,Franklin County,IA,Iowa,50633,City,42.67553,-93.12937,641,157,64,34375,1094070,0,America/Chicago
+6340,George,Lyon County,IA,Iowa,51237,City,43.34386,-96.00224,712,1068,479,50795,6209722,12058,America/Chicago
+6341,Gibson,Keokuk County,IA,Iowa,50104,City,41.48112,-92.39352,641,59,32,37500,171482,0,America/Chicago
+6342,Gilbert,Story County,IA,Iowa,50105,City,42.10693,-93.64966,515,1126,404,80833,2545477,0,America/Chicago
+6343,Gilbertville,Black Hawk County,IA,Iowa,50634,City,42.41610,-92.21490,319,744,321,51696,1031556,0,America/Chicago
+6344,Gillett Grove,Clay County,IA,Iowa,51333 / 51341,City,43.01580,-95.03749,712,49,26,20000,574842,143,America/Chicago
+6345,Gilman,Marshall County,IA,Iowa,50106,City,41.87888,-92.78936,641,498,261,54250,1401423,0,America/Chicago
+6346,Gilmore City,Humboldt County / Pocahontas County,IA,Iowa,50541,City,42.72690,-94.43691,515,485,201,38125,3228226,0,America/Chicago
+6347,Gladbrook,Tama County,IA,Iowa,50635,City,42.18776,-92.71520,641,889,375,60078,1803240,0,America/Chicago
+6348,Glenwood,Mills County,IA,Iowa,51534,City,41.04694,-95.74251,712,5309,1828,53229,7636251,26319,America/Chicago
+6349,Glidden,Carroll County,IA,Iowa,51443,City,42.05693,-94.72887,712,1121,487,55625,2865506,0,America/Chicago
+6350,Goldfield,Wright County,IA,Iowa,50542,City,42.73580,-93.92078,515,607,297,39417,3091340,0,America/Chicago
+6351,Goodell,Hancock County,IA,Iowa,50439,City,42.92302,-93.61632,641,134,56,37500,1107635,0,America/Chicago
+6352,Goose Lake,Clinton County,IA,Iowa,52750,City,41.96753,-90.38291,563,231,85,70417,817468,0,America/Chicago
+6353,Gowrie,Webster County,IA,Iowa,50543,City,42.28053,-94.29080,515,981,436,43250,3752089,0,America/Chicago
+6354,Graettinger,Palo Alto County,IA,Iowa,51342,City,43.23774,-94.75137,712,806,331,41103,1992715,0,America/Chicago
+6355,Graf,Dubuque County,IA,Iowa,52039,City,42.49306,-90.87124,563,78,27,65417,342220,0,America/Chicago
+6356,Grafton,Worth County,IA,Iowa,50440,City,43.32996,-93.06937,641,253,148,33333,842352,0,America/Chicago
+6357,Grand Junction,Greene County,IA,Iowa,50107,City,42.03165,-94.24080,515,792,331,40156,2504853,0,America/Chicago
+6358,Grand Mound,Clinton County,IA,Iowa,52751,City,41.82419,-90.64792,563,611,201,61250,4712186,0,America/Chicago
+6359,Grand River,Decatur County,IA,Iowa,50108,City,40.81944,-93.96245,641,223,115,24844,538618,0,America/Chicago
+6360,Grandview,Louisa County,IA,Iowa,52752 / 52754,City,41.27586,-91.18848,319,530,203,45250,587024,0,America/Chicago
+6361,Granger,Dallas County / Polk County,IA,Iowa,50109,City,41.76197,-93.82477,515,1402,573,71250,3940063,0,America/Chicago
+6362,Grant,Montgomery County,IA,Iowa,50847 / 50864 / 51532,City,41.14277,-94.98471,712,88,43,29375,1911250,26548,America/Chicago
+6363,Granville,Sioux County,IA,Iowa,51022,City,42.98554,-95.87363,712,315,170,59167,724015,0,America/Chicago
+6364,Gravity,Taylor County,IA,Iowa,50848,City,40.76054,-94.74358,712,187,82,38056,772969,0,America/Chicago
+6365,Gray,Audubon County,IA,Iowa,50025 / 50110,City,41.83943,-94.98304,712,59,54,80833,2578569,0,America/Chicago
+6366,Greeley,Delaware County,IA,Iowa,52050,City,42.58582,-91.34153,563,250,103,43393,963817,0,America/Chicago
+6367,Greene,Butler County / Floyd County,IA,Iowa,50636,City,42.89676,-92.80393,641,1103,527,47344,2942018,194064,America/Chicago
+6368,Greenfield,Adair County,IA,Iowa,50849,City,41.30527,-94.46135,641,1843,901,41823,4697097,0,America/Chicago
+6369,Green Mountain,Marshall County,IA,Iowa,50158 / 50632,CDP,42.10165,-92.82048,641,122,55,52250,1776069,0,America/Chicago
+6370,Greenville,Clay County,IA,Iowa,51343,City,43.01664,-95.14610,712,72,38,41250,429417,0,America/Chicago
+6371,Grimes,Dallas County / Polk County,IA,Iowa,50111 / 50131,City,41.67882,-93.80279,515,11909,3525,77652,30368057,58222,America/Chicago
+6372,Grinnell,Poweshiek County,IA,Iowa,50112,City,41.74305,-92.72241,641,9151,3462,45365,14257757,106334,America/Chicago
+6373,Griswold,Cass County,IA,Iowa,51535,City,41.23499,-95.13749,712,977,442,43696,1608306,0,America/Chicago
+6374,Grundy Center,Grundy County,IA,Iowa,50638,City,42.36165,-92.76853,319,2686,1154,50000,6692883,0,America/Chicago
+6375,Gruver,Emmet County,IA,Iowa,51334 / 51344,City,43.39329,-94.70526,712,90,46,47000,337118,0,America/Chicago
+6376,Guernsey,Poweshiek County,IA,Iowa,52221,City,41.64861,-92.34268,319,61,31,39583,476683,0,America/Chicago
+6377,Guthrie Center,Guthrie County,IA,Iowa,50115,City,41.67721,-94.50330,641,1507,694,37833,6396560,0,America/Chicago
+6378,Guttenberg,Clayton County,IA,Iowa,52052,City,42.78582,-91.09957,563,1840,824,38553,5415175,72038,America/Chicago
+6379,Halbur,Carroll County,IA,Iowa,51401 / 51444,City,42.00693,-94.96999,712,249,90,58750,505021,0,America/Chicago
+6380,Hamburg,Fremont County,IA,Iowa,51640,City,40.60445,-95.65777,712,1087,471,34931,2843866,1224,America/Chicago
+6381,Hamilton,Marion County,IA,Iowa,50044 / 50116,City,41.16917,-92.90326,641,129,54,50700,1406012,0,America/Chicago
+6382,Hampton,Franklin County,IA,Iowa,50441,City,42.74192,-93.20242,641,4239,1760,45942,11472055,0,America/Chicago
+6383,Hancock,Pottawattamie County,IA,Iowa,51536,City,41.38999,-95.36250,712,195,75,47917,1928644,64156,America/Chicago
+6384,Hanlontown,Worth County,IA,Iowa,50444,City,43.28023,-93.37882,641,230,92,55000,2517563,0,America/Chicago
+6385,Hansell,Franklin County,IA,Iowa,50441,City,42.75775,-93.10409,641,94,40,55833,589068,0,America/Chicago
+6386,Harcourt,Webster County,IA,Iowa,50544,City,42.26275,-94.17579,515,292,106,48750,2602622,0,America/Chicago
+6387,Hardy,Humboldt County,IA,Iowa,50545,City,42.81053,-94.05134,515,45,30,58750,1143295,0,America/Chicago
+6388,Harlan,Shelby County,IA,Iowa,51537 / 51593,City,41.65304,-95.32555,712,4932,2275,42378,11375396,0,America/Chicago
+6389,Harper,Keokuk County,IA,Iowa,52231,City,41.36251,-92.05101,641,109,35,55625,230103,0,America/Chicago
+6390,Harpers Ferry,Allamakee County,IA,Iowa,52146,City,43.20054,-91.15319,563,318,174,39250,1622922,48103,America/Chicago
+6391,Harris,Osceola County,IA,Iowa,51345,City,43.44524,-95.43417,712,163,81,34107,2052373,0,America/Chicago
+6392,Hartford,Warren County,IA,Iowa,50047 / 50118,City,41.45944,-93.40493,515,767,291,56094,2540211,0,America/Chicago
+6393,Hartley,O'Brien County,IA,Iowa,51346,City,43.17997,-95.47695,712,1618,741,44301,3361268,0,America/Chicago
+6394,Hartwick,Poweshiek County,IA,Iowa,52232,City,41.78472,-92.34352,319,81,41,56250,346751,0,America/Chicago
+6395,Harvey,Marion County,IA,Iowa,50119,City,41.31583,-92.92409,641,238,109,44375,1752167,0,America/Chicago
+6396,Hastings,Mills County,IA,Iowa,51540,City,41.02278,-95.49917,712,152,62,28571,1053495,0,America/Chicago
+6397,Havelock,Pocahontas County,IA,Iowa,50546,City,42.83608,-94.70054,712,132,71,28750,1469998,0,America/Chicago
+6398,Haverhill,Marshall County,IA,Iowa,50120,City,41.94499,-92.96075,641,173,72,69583,341459,0,America/Chicago
+6399,Hawarden,Sioux County,IA,Iowa,51023,City,42.99582,-96.48531,712,2527,1046,47171,7201817,344322,America/Chicago
+6400,Hawkeye,Fayette County,IA,Iowa,52147,City,42.93859,-91.95017,563,416,206,42000,1739643,0,America/Chicago
+6401,Hayesville,Keokuk County,IA,Iowa,52562 / 52591,City,41.26446,-92.24907,641,49,20,33333,654666,0,America/Chicago
+6402,Hayfield,Hancock County,IA,Iowa,50438,CDP,43.17663,-93.69522,641,0,0,0,2131539,0,America/Chicago
+6403,Hazleton,Buchanan County,IA,Iowa,50641,City,42.62082,-91.90017,319,815,351,40565,1930061,95137,America/Chicago
+6404,Hedrick,Keokuk County,IA,Iowa,52563,City,41.17251,-92.30879,641,740,322,28333,3972688,0,America/Chicago
+6405,Henderson,Mills County,IA,Iowa,51541,City,41.14055,-95.43111,712,185,61,36563,554472,0,America/Chicago
+6406,Hepburn,Page County,IA,Iowa,51632,City,40.84916,-95.01720,712,22,16,14167,200494,0,America/Chicago
+6407,Hiawatha,Linn County,IA,Iowa,52233 / 52328 / 52411,City,42.03583,-91.68212,319,7212,3004,51127,11364964,14085,America/Chicago
+6408,High Amana,Iowa County,IA,Iowa,52203,CDP,41.80334,-91.93823,319,124,59,42232,996792,0,America/Chicago
+6409,Hills,Johnson County,IA,Iowa,52235 / 52240 / 52327,City,41.55419,-91.53489,319,808,321,50417,1930117,0,America/Chicago
+6410,Hillsboro,Henry County,IA,Iowa,52630,City,40.83670,-91.71572,319,178,99,37981,1310903,0,America/Chicago
+6411,Hinton,Plymouth County,IA,Iowa,51024,City,42.62777,-96.29169,712,955,324,64091,1787353,0,America/Chicago
+6412,Holiday Lake,Poweshiek County,IA,Iowa,52211,CDP,41.82103,-92.44321,641,559,211,73272,3996385,412285,America/Chicago
+6413,Holland,Grundy County,IA,Iowa,50642,City,42.39887,-92.80048,319,277,100,54375,644793,0,America/Chicago
+6414,Holstein,Ida County,IA,Iowa,51025,City,42.48915,-95.54500,712,1389,652,47708,4079886,23826,America/Chicago
+6415,Holy Cross,Dubuque County,IA,Iowa,52053,City,42.60055,-90.99569,563,378,163,52292,848663,0,America/Chicago
+6416,Homestead,Iowa County,IA,Iowa,52236,CDP,41.75945,-91.86712,319,129,53,46595,4439423,0,America/Chicago
+6417,Hopkinton,Delaware County,IA,Iowa,52237,City,42.34389,-91.24848,563,610,268,42250,1608480,0,America/Chicago
+6418,Hornick,Woodbury County,IA,Iowa,51026,City,42.23055,-96.09752,712,224,106,41944,654891,13417,America/Chicago
+6419,Hospers,Sioux County,IA,Iowa,51238,City,43.07193,-95.90446,712,709,300,54500,1303701,0,America/Chicago
+6420,Houghton,Lee County,IA,Iowa,52625 / 52631,City,40.78364,-91.60294,319,143,63,66875,807845,0,America/Chicago
+6421,Hubbard,Hardin County,IA,Iowa,50122,City,42.30554,-93.30021,641,834,376,48864,4764453,0,America/Chicago
+6422,Hudson,Black Hawk County,IA,Iowa,50613 / 50643 / 50701,City,42.40665,-92.45547,319,2358,944,77969,21765506,183184,America/Chicago
+6423,Hull,Sioux County,IA,Iowa,51239,City,43.18859,-96.13363,712,2266,819,52969,3350703,0,America/Chicago
+6424,Humboldt,Humboldt County,IA,Iowa,50548,City,42.72080,-94.21524,515,4558,2051,43504,11965996,401117,America/Chicago
+6425,Humeston,Wayne County,IA,Iowa,50123,City,40.85889,-93.49744,641,496,208,39286,1579180,26536,America/Chicago
+6426,Hutchins,Hancock County,IA,Iowa,50423,CDP,43.09163,-93.88106,641,10,6,35815,782248,0,America/Chicago
+6427,Huxley,Story County,IA,Iowa,50046 / 50124,City,41.89527,-93.60077,515,3604,1328,64549,8016129,0,America/Chicago
+6428,Ida Grove,Ida County,IA,Iowa,51445,City,42.34499,-95.47167,712,2121,990,40294,5594098,23507,America/Chicago
+6429,Imogene,Fremont County,IA,Iowa,51645,City,40.87944,-95.42694,712,67,18,38750,518473,0,America/Chicago
+6430,Independence,Buchanan County,IA,Iowa,50644,City,42.46860,-91.88934,319,6018,2575,50036,15734493,359126,America/Chicago
+6431,Indianola,Warren County,IA,Iowa,50125,City,41.35805,-93.55744,515,15785,5666,49708,29131927,0,America/Chicago
+6432,Inwood,Lyon County,IA,Iowa,51240,City,43.30720,-96.43198,712,831,359,44886,3459317,0,America/Chicago
+6433,Ionia,Chickasaw County,IA,Iowa,50645,City,43.03414,-92.45601,641,284,145,50625,1425801,0,America/Chicago
+6434,Iowa City,Johnson County,IA,Iowa,52240 / 52242 / 52243 / 52244 / 52245 / 52246,City,41.66113,-91.53017,319,74398,28985,42375,67167680,734599,America/Chicago
+6435,Iowa Falls,Hardin County,IA,Iowa,50126,City,42.52248,-93.25131,641,5128,2044,48118,13882071,200897,America/Chicago
+6436,Ireton,Sioux County,IA,Iowa,51027,City,42.97471,-96.31836,712,601,280,48000,2641742,0,America/Chicago
+6437,Irvington,Kossuth County,IA,Iowa,50560,CDP,43.00747,-94.19552,515,25,6,45099,2427440,0,America/Chicago
+6438,Irwin,Shelby County,IA,Iowa,51446,City,41.79165,-95.20583,712,330,171,40795,1544693,0,America/Chicago
+6439,Jackson Junction,Winneshiek County,IA,Iowa,52144 / 52171,City,43.11497,-92.03239,319 / 563,55,20,48750,15436961,0,America/Chicago
+6440,Jacksonville,Shelby County,IA,Iowa,51537,CDP,41.64527,-95.14999,712,36,23,18594,254715,0,America/Chicago
+6441,Jamaica,Guthrie County,IA,Iowa,50128,City,41.84610,-94.30969,641,218,93,40417,1181006,0,America/Chicago
+6442,Janesville,Black Hawk County / Bremer County,IA,Iowa,50647,City,42.64581,-92.46240,319,969,383,52625,3717978,140345,America/Chicago
+6443,Jefferson,Greene County,IA,Iowa,50129,City,42.01526,-94.37747,515,4169,1904,44184,15456653,99594,America/Chicago
+6444,Jesup,Black Hawk County / Buchanan County,IA,Iowa,50648,City,42.47447,-92.06590,319,2667,1094,56898,4798682,0,America/Chicago
+6445,Jewell Junction,Hamilton County,IA,Iowa,50130,City,42.31015,-93.63875,515,1176,524,51613,10034798,318307,America/Chicago
+6446,Johnston,Polk County,IA,Iowa,50111 / 50131,City,41.67304,-93.69772,515,21114,7614,97457,44348451,3120246,America/Chicago
+6447,Joice,Worth County,IA,Iowa,50446,City,43.36273,-93.45382,641,223,95,36458,2592311,0,America/Chicago
+6448,Jolley,Calhoun County,IA,Iowa,50551,City,42.47887,-94.71887,712,27,16,27500,296790,0,America/Chicago
+6449,Kalona,Washington County,IA,Iowa,52247,City,41.48307,-91.70600,319,2534,1106,41204,5576674,0,America/Chicago
+6450,Kamrar,Hamilton County,IA,Iowa,50132,City,42.39220,-93.72938,515,199,87,38125,2215180,0,America/Chicago
+6451,Kanawha,Hancock County,IA,Iowa,50447,City,42.93774,-93.79327,641,617,311,39028,5200140,0,America/Chicago
+6452,Kellerton,Ringgold County,IA,Iowa,50133,City,40.71083,-94.04995,641,313,120,36563,1710333,18137,America/Chicago
+6453,Kelley,Story County,IA,Iowa,50134,City,41.95054,-93.66522,515,307,140,71667,1771975,0,America/Chicago
+6454,Kellogg,Jasper County,IA,Iowa,50135,City,41.71805,-92.90742,641,590,299,48482,946046,0,America/Chicago
+6455,Kensett,Worth County,IA,Iowa,50448,City,43.35357,-93.21048,641,268,139,26932,3968010,0,America/Chicago
+6456,Kent,Union County,IA,Iowa,50851,CDP,40.95249,-94.45441,641,18,14,43310,1267521,0,America/Chicago
+6457,Keokuk,Lee County,IA,Iowa,52632,City,40.39727,-91.38487,319,10431,4364,33608,23655243,3756159,America/Chicago
+6458,Keomah Village,Mahaska County,IA,Iowa,52577,City,41.28834,-92.53658,641,85,35,60625,86727,0,America/Chicago
+6459,Keosauqua,Van Buren County,IA,Iowa,52565,City,40.73031,-91.96239,319,936,433,42788,3746503,320161,America/Chicago
+6460,Keota,Keokuk County / Washington County,IA,Iowa,52248,City,41.36510,-91.95334,641,966,381,43015,1998317,0,America/Chicago
+6461,Keswick,Keokuk County,IA,Iowa,50136,City,41.45251,-92.23935,319,240,105,41635,1123364,0,America/Chicago
+6462,Keystone,Benton County,IA,Iowa,52249,City,41.99833,-92.19741,319,610,277,56161,1169172,0,America/Chicago
+6463,Kimballton,Audubon County,IA,Iowa,51543,City,41.62860,-95.07305,712,295,149,37188,1987376,0,America/Chicago
+6464,Kingsley,Plymouth County,IA,Iowa,51028,City,42.58832,-95.96752,712,1427,525,61161,4163343,0,America/Chicago
+6465,Kinross,Keokuk County,IA,Iowa,52248 / 52335,City,41.46084,-91.98684,319,71,28,35000,512140,0,America/Chicago
+6466,Kirkman,Shelby County,IA,Iowa,51447,City,41.72860,-95.26527,712,62,37,45750,730244,0,America/Chicago
+6467,Kirkville,Wapello County,IA,Iowa,52566,City,41.14557,-92.50408,641,174,82,45833,1444641,0,America/Chicago
+6468,Kiron,Crawford County,IA,Iowa,51448,City,42.19554,-95.32777,712,273,113,35625,539665,0,America/Chicago
+6469,Klemme,Hancock County,IA,Iowa,50449,City,43.00691,-93.60299,641,476,195,46979,1315790,0,America/Chicago
+6470,Knierim,Calhoun County,IA,Iowa,50552 / 50563 / 50586,City,42.45553,-94.45692,515,60,31,53438,2604920,0,America/Chicago
+6471,Knoxville,Marion County,IA,Iowa,50138,City,41.32083,-93.10937,641,7241,3098,41225,11984128,0,America/Chicago
+6472,Lacona,Warren County,IA,Iowa,50139,City,41.18972,-93.38299,641,366,193,40179,942273,0,America/Chicago
+6473,Ladora,Iowa County,IA,Iowa,52251,City,41.75472,-92.18352,319,281,144,42750,786575,0,America/Chicago
+6474,Lake City,Calhoun County,IA,Iowa,51449,City,42.26748,-94.73387,712,1679,771,39115,12462056,0,America/Chicago
+6475,Lake Mills,Winnebago County,IA,Iowa,50450,City,43.41940,-93.53327,641,2066,929,42760,6984447,67118,America/Chicago
+6476,Lake Panorama,Guthrie County,IA,Iowa,50216 / 50277,CDP,41.71105,-94.39059,641,1196,504,63571,17140578,4335914,America/Chicago
+6477,Lake Park,Dickinson County,IA,Iowa,51347,City,43.45552,-95.32083,712,1138,483,58750,4025058,159520,America/Chicago
+6478,Lakeside,Buena Vista County,IA,Iowa,50588,City,42.62137,-95.17333,712,700,269,67083,594584,0,America/Chicago
+6479,Lake View,Sac County,IA,Iowa,51450,City,42.30200,-95.03576,712,1111,564,50000,5494624,745243,America/Chicago
+6480,Lakota,Kossuth County,IA,Iowa,50451,City,43.37718,-94.09385,515,285,122,30833,1884932,0,America/Chicago
+6481,Lambs Grove,Jasper County,IA,Iowa,50208,City,41.70305,-93.07937,641,171,76,65938,265202,0,America/Chicago
+6482,Lamoni,Decatur County,IA,Iowa,50140,City,40.62278,-93.93412,641,2354,855,32277,8657109,250243,America/Chicago
+6483,Lamont,Buchanan County,IA,Iowa,50650,City,42.59860,-91.64210,563,453,169,42031,1511392,0,America/Chicago
+6484,La Motte,Jackson County,IA,Iowa,52054,City,42.29585,-90.62096,563,253,102,57500,1184475,0,America/Chicago
+6485,Lanesboro,Carroll County,IA,Iowa,51443 / 51451 / 51453,City,42.18443,-94.69137,712,115,47,30313,1923588,25917,America/Chicago
+6486,Lansing,Allamakee County,IA,Iowa,52151,City,43.36220,-91.21652,563,952,436,36000,2788238,270341,America/Chicago
+6487,La Porte City,Black Hawk County,IA,Iowa,50651,City,42.31499,-92.19213,319,2269,901,50281,6613462,170402,America/Chicago
+6488,Larchwood,Lyon County,IA,Iowa,51241,City,43.45359,-96.43421,712,864,373,54205,2571781,0,America/Chicago
+6489,Larrabee,Cherokee County,IA,Iowa,51029,City,42.86081,-95.54528,712,133,88,39545,337301,0,America/Chicago
+6490,Latimer,Franklin County,IA,Iowa,50452,City,42.76331,-93.36826,641,475,202,40417,6213519,0,America/Chicago
+6491,Laurel,Marshall County,IA,Iowa,50141,City,41.88416,-92.92214,641,239,119,41477,650047,0,America/Chicago
+6492,Laurens,Pocahontas County,IA,Iowa,50554,City,42.84664,-94.85193,712,1160,604,38125,1896013,0,America/Chicago
+6493,Lawler,Chickasaw County,IA,Iowa,52154,City,43.07053,-92.15017,563,419,163,46250,2289124,30081,America/Chicago
+6494,Lawton,Woodbury County,IA,Iowa,51030,City,42.47860,-96.18391,712,961,322,65556,1848495,0,America/Chicago
+6495,Leando,Van Buren County,IA,Iowa,52551,CDP,40.83363,-92.08879,641,28,56,46995,5078663,228377,America/Chicago
+6496,Le Claire,Scott County,IA,Iowa,52722 / 52753,City,41.59864,-90.34346,319 / 563,3974,1614,77127,12093764,511946,America/Chicago
+6497,Ledyard,Kossuth County,IA,Iowa,50556,City,43.42162,-94.16218,515,126,62,34167,857585,0,America/Chicago
+6498,Le Grand,Marshall County / Tama County,IA,Iowa,50142 / 50158,City,42.00625,-92.77506,641,935,398,55357,2700113,18831,America/Chicago
+6499,Lehigh,Webster County,IA,Iowa,50557,City,42.35997,-94.05218,515,400,213,30375,5415497,155121,America/Chicago
+6500,Leighton,Mahaska County,IA,Iowa,50143,City,41.33722,-92.78714,641,160,58,50000,246200,0,America/Chicago
+6501,Leland,Winnebago County,IA,Iowa,50453,City,43.33718,-93.63522,641,286,113,35938,3440178,81554,America/Chicago
+6502,Le Mars,Plymouth County,IA,Iowa,51031,City,42.79416,-96.16558,712,9935,4211,50283,23285842,22701,America/Chicago
+6503,Lenox,Adams County / Taylor County,IA,Iowa,50851,City,40.88318,-94.55865,641,1407,693,36741,5125783,211638,America/Chicago
+6504,Leon,Decatur County,IA,Iowa,50144,City,40.73972,-93.74772,641,1880,771,36172,8216621,22454,America/Chicago
+6505,Le Roy,Decatur County,IA,Iowa,50103 / 50264,City,40.87778,-93.59272,641,14,5,33396,853677,0,America/Chicago
+6506,Lester,Lyon County,IA,Iowa,51241 / 51242 / 51246,City,43.44470,-96.33309,712,304,110,56731,4720358,0,America/Chicago
+6507,Letts,Louisa County,IA,Iowa,52754,City,41.32836,-91.23710,319,376,151,46250,1517544,0,America/Chicago
+6508,Lewis,Cass County,IA,Iowa,51544,City,41.30582,-95.08332,712,407,197,41125,1295385,0,America/Chicago
+6509,Libertyville,Jefferson County,IA,Iowa,52567,City,40.95752,-92.05129,641,343,142,55357,1262618,0,America/Chicago
+6510,Lidderdale,Carroll County,IA,Iowa,51401 / 51443 / 51452,City,42.12443,-94.78304,712,175,71,44306,6255311,0,America/Chicago
+6511,Lime Springs,Howard County,IA,Iowa,52155,City,43.44886,-92.28073,563,485,186,48056,2637057,0,America/Chicago
+6512,Lincoln,Tama County,IA,Iowa,50635 / 50652,City,42.26276,-92.69187,641,155,64,28333,1189602,0,America/Chicago
+6513,Linden,Dallas County,IA,Iowa,50146,City,41.64443,-94.26913,641,207,76,35000,2026745,0,America/Chicago
+6514,Lineville,Wayne County,IA,Iowa,50147,City,40.58140,-93.52383,641,221,100,35833,2320405,0,America/Chicago
+6515,Linn Grove,Buena Vista County,IA,Iowa,51033,City,42.89164,-95.24666,712,154,79,39375,1445854,66340,America/Chicago
+6516,Lisbon,Linn County,IA,Iowa,52253 / 52314,City,41.92112,-91.38545,319,2208,783,49135,5547618,0,America/Chicago
+6517,Liscomb,Marshall County,IA,Iowa,50148,City,42.18999,-93.00381,641,301,119,54375,2546144,0,America/Chicago
+6518,Little Cedar,Mitchell County,IA,Iowa,50454,CDP,43.38025,-92.72574,641,49,27,28438,4583683,0,America/Chicago
+6519,Little Rock,Lyon County,IA,Iowa,51243,City,43.44414,-95.88335,712,439,210,51719,2079212,0,America/Chicago
+6520,Little Sioux,Harrison County,IA,Iowa,51545,City,41.80943,-96.02112,712,163,62,32500,961699,0,America/Chicago
+6521,Livermore,Humboldt County,IA,Iowa,50558,City,42.86858,-94.18524,515,359,178,54500,1813318,0,America/Chicago
+6522,Lockridge,Jefferson County,IA,Iowa,52635,City,40.99475,-91.74822,319,292,122,37500,1939695,0,America/Chicago
+6523,Logan,Harrison County,IA,Iowa,51546,City,41.64305,-95.78890,712,1454,619,58125,2598410,0,America/Chicago
+6524,Lohrville,Calhoun County,IA,Iowa,51453,City,42.27026,-94.54859,712,351,153,46375,5551013,0,America/Chicago
+6525,Lone Rock,Kossuth County,IA,Iowa,50559,City,43.21857,-94.32691,515,141,71,45313,305965,0,America/Chicago
+6526,Lone Tree,Johnson County,IA,Iowa,52755,City,41.48808,-91.42599,319,1388,584,61667,2750099,0,America/Chicago
+6527,Long Grove,Scott County,IA,Iowa,52748 / 52756,City,41.69753,-90.58264,563,853,296,93750,2986646,0,America/Chicago
+6528,Lorimor,Union County,IA,Iowa,50149,City,41.12832,-94.05328,641,345,165,34688,981304,0,America/Chicago
+6529,Lost Nation,Clinton County,IA,Iowa,52254,City,41.96391,-90.81764,563,420,194,40714,1645453,0,America/Chicago
+6530,Loveland,Pottawattamie County,IA,Iowa,51555,CDP,41.49722,-95.89001,712,37,21,63377,163941,0,America/Chicago
+6531,Lovilia,Monroe County,IA,Iowa,50150,City,41.13584,-92.90409,641,510,218,42273,1301034,0,America/Chicago
+6532,Lowden,Cedar County,IA,Iowa,52255,City,41.85752,-90.92820,563,773,382,38056,2698396,0,America/Chicago
+6533,Low Moor,Clinton County,IA,Iowa,52730 / 52757,City,41.80170,-90.35485,563,277,72,44167,1203077,0,America/Chicago
+6534,Luana,Clayton County,IA,Iowa,52156,City,43.06026,-91.45403,563,280,133,43250,2725269,0,America/Chicago
+6535,Lucas,Lucas County,IA,Iowa,50151,City,41.02833,-93.45993,641,212,83,50938,2500615,23342,America/Chicago
+6536,Luther,Boone County,IA,Iowa,50152 / 50156,City,41.96776,-93.81884,515,122,69,65250,1521356,0,America/Chicago
+6537,Lu Verne,Humboldt County / Kossuth County,IA,Iowa,50560,City,42.90923,-94.08363,515,252,137,34250,5853689,0,America/Chicago
+6538,Luxemburg,Dubuque County,IA,Iowa,52052 / 52056 / 52065,City,42.60277,-91.07402,563,253,97,46875,1223750,0,America/Chicago
+6539,Luzerne,Benton County,IA,Iowa,52257,City,41.89805,-92.17991,319,95,32,57500,314786,0,America/Chicago
+6540,Lynnville,Jasper County,IA,Iowa,50153,City,41.57750,-92.78353,641,390,207,62981,2862035,0,America/Chicago
+6541,Lytton,Calhoun County / Sac County,IA,Iowa,50561,City,42.42330,-94.86050,712,299,140,46250,513543,0,America/Chicago
+6542,Macedonia,Pottawattamie County,IA,Iowa,51549,City,41.19277,-95.42556,712,245,120,51250,852300,0,America/Chicago
+6543,Macksburg,Madison County,IA,Iowa,50155,City,41.21471,-94.18523,641,115,59,42188,5147366,0,America/Chicago
+6544,Madrid,Boone County,IA,Iowa,50156,City,41.87665,-93.82328,515,2597,994,54444,3117529,0,America/Chicago
+6545,Magnolia,Harrison County,IA,Iowa,51550,City,41.69582,-95.87668,712,173,65,49375,1471706,0,America/Chicago
+6546,Maharishi Vedic City,Jefferson County,IA,Iowa,52556,City,41.05252,-91.99490,641,1310,143,55313,8700835,0,America/Chicago
+6547,Malcom,Poweshiek County,IA,Iowa,50157,City,41.70833,-92.55908,641,276,145,39712,1583600,0,America/Chicago
+6548,Mallard,Palo Alto County,IA,Iowa,50562,City,42.93636,-94.68220,712,266,161,35972,1050430,0,America/Chicago
+6549,Maloy,Ringgold County,IA,Iowa,50835 / 50836,City,40.67443,-94.41218,641,29,9,61250,1594317,11439,America/Chicago
+6550,Malvern,Mills County,IA,Iowa,51551,City,41.00278,-95.58528,712,1084,396,61842,3091528,0,America/Chicago
+6551,Manchester,Delaware County,IA,Iowa,52057,City,42.48415,-91.45543,319 / 563,5053,2136,45616,12565418,39279,America/Chicago
+6552,Manilla,Crawford County,IA,Iowa,51454,City,41.88971,-95.23222,712,764,396,35536,2675615,0,America/Chicago
+6553,Manly,Worth County,IA,Iowa,50456,City,43.28718,-93.20215,641,1305,579,42434,3796802,0,America/Chicago
+6554,Manning,Carroll County,IA,Iowa,51455,City,41.90915,-95.06499,712,1455,695,42548,6439497,17812,America/Chicago
+6555,Manson,Calhoun County,IA,Iowa,50563,City,42.52914,-94.53414,712,1614,838,37434,8224582,0,America/Chicago
+6556,Mapleton,Monona County,IA,Iowa,51034,City,42.16582,-95.79306,712,1199,612,40294,4152315,0,America/Chicago
+6557,Maquoketa,Clinton County / Jackson County,IA,Iowa,52060,City,42.06053,-90.66386,319 / 563,5979,2631,39269,11223961,90929,America/Chicago
+6558,Marathon,Buena Vista County,IA,Iowa,50565,City,42.86164,-94.98249,712,239,113,37250,1940810,0,America/Chicago
+6559,Marble Rock,Floyd County,IA,Iowa,50653,City,42.96525,-92.86853,641,297,141,38438,2148515,97055,America/Chicago
+6560,Marcus,Cherokee County,IA,Iowa,51035,City,42.82582,-95.80751,712,1065,580,52143,3981586,0,America/Chicago
+6561,Marengo,Iowa County,IA,Iowa,52301,City,41.79806,-92.07074,319,2491,990,44045,5384451,157498,America/Chicago
+6562,Marion,Linn County,IA,Iowa,52302 / 52402 / 52403,City,42.03417,-91.59768,319,38480,14738,64527,45560432,10851,America/Chicago
+6563,Marne,Cass County,IA,Iowa,51552,City,41.45138,-95.11138,712,114,49,43750,1488688,0,America/Chicago
+6564,Marquette,Clayton County,IA,Iowa,52157 / 52158,City,43.04443,-91.17819,563,453,216,34808,4497792,174963,America/Chicago
+6565,Marshalltown,Marshall County,IA,Iowa,50158,City,42.04943,-92.90798,641,27328,9988,50396,49937222,68292,America/Chicago
+6566,Martelle,Jones County,IA,Iowa,52305,City,42.02167,-91.35989,319,252,122,46667,868800,0,America/Chicago
+6567,Martensdale,Warren County,IA,Iowa,50160,City,41.37305,-93.73578,641,477,185,51964,973341,0,America/Chicago
+6568,Martinsburg,Keokuk County,IA,Iowa,52563 / 52568,City,41.17890,-92.25185,641,109,51,56458,971524,0,America/Chicago
+6569,Marysville,Marion County,IA,Iowa,50116,City,41.18056,-92.94909,641,66,17,40250,949271,0,America/Chicago
+6570,Mason City,Cerro Gordo County,IA,Iowa,50401 / 50402,City,43.15357,-93.20104,641,27430,12688,43525,71974381,787135,America/Chicago
+6571,Masonville,Delaware County,IA,Iowa,50654,City,42.47943,-91.59127,563,124,55,28438,859152,0,America/Chicago
+6572,Massena,Cass County,IA,Iowa,50853,City,41.25415,-94.76831,712,345,169,36250,1794761,0,America/Chicago
+6573,Matlock,Sioux County,IA,Iowa,51201 / 51244,City,43.24387,-95.93530,712,87,33,71875,976311,0,America/Chicago
+6574,Maurice,Sioux County,IA,Iowa,51036,City,42.96638,-96.18058,712,278,107,56406,1560021,14621,America/Chicago
+6575,Maxwell,Story County,IA,Iowa,50161,City,41.89193,-93.39965,515,926,358,65625,2865353,0,America/Chicago
+6576,Maynard,Fayette County,IA,Iowa,50655,City,42.77387,-91.88239,563,497,236,44000,2569223,65649,America/Chicago
+6577,Maysville,Scott County,IA,Iowa,52773,City,41.64864,-90.71681,563,182,74,33214,707847,0,America/Chicago
+6578,McCallsburg,Story County,IA,Iowa,50154,City,42.16637,-93.38576,515,330,129,44375,1203261,0,America/Chicago
+6579,McCausland,Scott County,IA,Iowa,52756 / 52758,City,41.74614,-90.44319,563,313,133,64896,1439766,59214,America/Chicago
+6580,McClelland,Pottawattamie County,IA,Iowa,51548,City,41.32944,-95.68390,712,150,51,66250,432643,0,America/Chicago
+6581,McGregor,Clayton County,IA,Iowa,52157,City,43.01832,-91.18263,563,842,357,39327,3371197,4978,America/Chicago
+6582,McIntire,Mitchell County,IA,Iowa,50455,City,43.43580,-92.59379,641,120,62,31500,2625603,0,America/Chicago
+6583,Mechanicsville,Cedar County,IA,Iowa,52306,City,41.90446,-91.25461,319,1120,460,54250,2151035,5076,America/Chicago
+6584,Mediapolis,Des Moines County,IA,Iowa,52637,City,41.00809,-91.16404,319,1553,562,50333,3119520,0,America/Chicago
+6585,Melbourne,Marshall County,IA,Iowa,50162,City,41.94138,-93.10326,641,820,349,48194,1464787,0,America/Chicago
+6586,Melcher-Dallas,Marion County,IA,Iowa,50062 / 50163,City,41.22500,-93.24132,641,1254,538,37586,2578457,0,America/Chicago
+6587,Melrose,Monroe County,IA,Iowa,52569,City,40.97612,-93.05048,641,109,60,41250,2615809,0,America/Chicago
+6588,Melvin,Osceola County,IA,Iowa,51350,City,43.28747,-95.60918,712,203,110,46250,459462,0,America/Chicago
+6589,Menlo,Guthrie County,IA,Iowa,50164,City,41.51915,-94.40441,641,342,158,41500,1213512,0,America/Chicago
+6590,Meriden,Cherokee County,IA,Iowa,51037,City,42.79471,-95.63445,712,148,84,44375,289159,0,America/Chicago
+6591,Merrill,Plymouth County,IA,Iowa,51038,City,42.71971,-96.24864,712,741,332,52500,1467414,0,America/Chicago
+6592,Meservey,Cerro Gordo County,IA,Iowa,50457,City,42.91274,-93.47826,641,249,105,50625,3903061,0,America/Chicago
+6593,Meyer,Mitchell County,IA,Iowa,50455,CDP,43.45775,-92.69268,641,0,0,0,1833207,0,America/Chicago
+6594,Middle Amana,Iowa County,IA,Iowa,52203 / 52307,CDP,41.79556,-91.89962,319,595,207,69141,2737131,0,America/Chicago
+6595,Middletown,Des Moines County,IA,Iowa,52638,City,40.82837,-91.25904,319,334,122,49643,1577513,0,America/Chicago
+6596,Miles,Jackson County,IA,Iowa,52064,City,42.04836,-90.31569,563,440,198,49000,3106273,0,America/Chicago
+6597,Milford,Dickinson County,IA,Iowa,51351,City,43.32469,-95.15000,712,3055,1299,47024,5980906,28589,America/Chicago
+6598,Miller,Hancock County,IA,Iowa,50438,CDP,43.18412,-93.60021,641,0,0,0,5347767,0,America/Chicago
+6599,Millersburg,Iowa County,IA,Iowa,52308 / 52316,City,41.57334,-92.15990,319,158,98,52857,349981,0,America/Chicago
+6600,Millerton,Wayne County,IA,Iowa,50165,City,40.84945,-93.30549,641,46,6,38750,536884,0,America/Chicago
+6601,Milo,Warren County,IA,Iowa,50166,City,41.29166,-93.44243,641,777,323,57566,1612646,0,America/Chicago
+6602,Milton,Van Buren County,IA,Iowa,52570,City,40.67336,-92.16212,641,413,175,38036,6497528,11551,America/Chicago
+6603,Minburn,Dallas County,IA,Iowa,50167,City,41.75638,-94.02745,515,367,136,44318,665428,0,America/Chicago
+6604,Minden,Pottawattamie County,IA,Iowa,51553,City,41.46694,-95.54278,712,594,235,62917,1082251,13322,America/Chicago
+6605,Mineola,Mills County,IA,Iowa,51554,CDP,41.14305,-95.69556,712,152,63,40568,1070671,0,America/Chicago
+6606,Mingo,Jasper County,IA,Iowa,50168,City,41.76749,-93.28354,641,300,107,35313,1573814,0,America/Chicago
+6607,Missouri Valley,Harrison County,IA,Iowa,51555,City,41.55638,-95.88779,712,2662,1183,44150,8367405,0,America/Chicago
+6608,Mitchell,Mitchell County,IA,Iowa,50461,City,43.32191,-92.86770,641,136,56,41250,1409666,0,America/Chicago
+6609,Mitchellville,Jasper County / Polk County,IA,Iowa,50169,City,41.66812,-93.36394,515,2405,618,54107,6046094,15019,America/Chicago
+6610,Modale,Harrison County,IA,Iowa,51556,City,41.61971,-96.01196,712,260,116,51167,2715091,0,America/Chicago
+6611,Mona,Mitchell County,IA,Iowa,50472,CDP,43.48719,-92.94130,641,34,39,62784,3860485,0,America/Chicago
+6612,Mondamin,Harrison County,IA,Iowa,51557,City,41.71054,-96.02168,712,369,162,45682,1168557,0,America/Chicago
+6613,Monmouth,Jackson County,IA,Iowa,52309,City,42.07696,-90.87986,563,151,60,40000,1456161,0,America/Chicago
+6614,Monona,Clayton County,IA,Iowa,52159,City,43.05165,-91.38930,563,1493,779,48209,3021812,0,America/Chicago
+6615,Monroe,Jasper County,IA,Iowa,50170,City,41.52221,-93.10187,641,1846,736,55714,4386928,0,America/Chicago
+6616,Montezuma,Poweshiek County,IA,Iowa,50171,City,41.58583,-92.52741,641,1424,637,50966,6427001,31040,America/Chicago
+6617,Monticello,Jones County,IA,Iowa,52310,City,42.23834,-91.18709,319,3836,1611,47083,16357059,109206,America/Chicago
+6618,Montour,Tama County,IA,Iowa,50173,City,41.98138,-92.71492,641,247,107,57321,1182517,0,America/Chicago
+6619,Montrose,Lee County,IA,Iowa,52639,City,40.53226,-91.41488,319,869,364,44444,2900418,41929,America/Chicago
+6620,Moorhead,Monona County,IA,Iowa,51558,City,41.92249,-95.85140,712,217,123,32750,837209,0,America/Chicago
+6621,Moorland,Webster County,IA,Iowa,50566,City,42.44164,-94.29497,515,163,78,38125,3833242,0,America/Chicago
+6622,Moravia,Appanoose County / Monroe County,IA,Iowa,52571,City,40.89172,-92.81998,641,639,342,41196,2897890,630,America/Chicago
+6623,Morley,Jones County,IA,Iowa,52312,City,42.00612,-91.24627,319,112,51,30313,242871,0,America/Chicago
+6624,Morning Sun,Louisa County,IA,Iowa,52640,City,41.09614,-91.25765,319,814,322,47778,2016233,0,America/Chicago
+6625,Morrison,Grundy County,IA,Iowa,50657 / 50669,City,42.34415,-92.67381,319,92,38,56250,247027,0,America/Chicago
+6626,Moulton,Appanoose County,IA,Iowa,52572,City,40.68585,-92.67741,641,581,256,32083,2613262,0,America/Chicago
+6627,Mount Auburn,Benton County,IA,Iowa,52313,City,42.25499,-92.09268,319,148,45,45417,726043,0,America/Chicago
+6628,Mount Ayr,Ringgold County,IA,Iowa,50854,City,40.71471,-94.23523,641,1679,743,45688,6878943,53165,America/Chicago
+6629,Mount Pleasant,Henry County,IA,Iowa,52641,City,40.96364,-91.55794,319,8392,3071,45539,22031144,39135,America/Chicago
+6630,Mount Sterling,Van Buren County,IA,Iowa,52573,CDP,40.61781,-91.93212,319,36,17,127875,8529347,5067,America/Chicago
+6631,Mount Union,Henry County,IA,Iowa,52644,City,41.05781,-91.39043,319,106,44,41667,290004,0,America/Chicago
+6632,Mount Vernon,Linn County,IA,Iowa,52314,City,41.92195,-91.41684,319,4444,1236,68910,9045787,16175,America/Chicago
+6633,Moville,Woodbury County,IA,Iowa,51039,City,42.48888,-96.07252,712,1621,593,56250,2312125,0,America/Chicago
+6634,Murray,Clarke County,IA,Iowa,50174,City,41.04166,-93.94939,641,729,271,40417,2056896,0,America/Chicago
+6635,Muscatine,Muscatine County,IA,Iowa,52761,City,41.42447,-91.04321,319 / 563,23914,9318,44601,47037880,2734135,America/Chicago
+6636,Mystic,Appanoose County,IA,Iowa,52574,City,40.77751,-92.94381,641,412,192,28906,7558496,0,America/Chicago
+6637,Nashua,Chickasaw County / Floyd County,IA,Iowa,50658,City,42.95039,-92.54254,641,1609,694,46121,7456465,671683,America/Chicago
+6638,Nemaha,Sac County,IA,Iowa,50567,City,42.51581,-95.08832,712,82,34,40000,190439,0,America/Chicago
+6639,Neola,Pottawattamie County,IA,Iowa,51559,City,41.44888,-95.61556,712,859,349,47969,1224481,9012,America/Chicago
+6640,Nevada,Story County,IA,Iowa,50201,City,42.02277,-93.45243,515,6805,2791,55657,14667751,48040,America/Chicago
+6641,New Albin,Allamakee County,IA,Iowa,52160,City,43.49664,-91.28958,563,513,306,26912,628819,0,America/Chicago
+6642,Newell,Buena Vista County,IA,Iowa,50568,City,42.60553,-95.00277,712,867,402,55500,3270701,0,America/Chicago
+6643,Newhall,Benton County,IA,Iowa,52315,City,41.99556,-91.96768,319,849,373,66771,818388,0,America/Chicago
+6644,New Hampton,Chickasaw County,IA,Iowa,50659,City,43.05914,-92.31768,641,3424,1548,41455,8189391,0,America/Chicago
+6645,New Hartford,Butler County,IA,Iowa,50613 / 50660,City,42.56693,-92.62214,319,502,252,47065,1291467,0,America/Chicago
+6646,New Haven,Mitchell County,IA,Iowa,50461,CDP,43.28442,-92.64213,641,37,36,26310,4989194,0,America/Chicago
+6647,New Liberty,Scott County,IA,Iowa,52765,City,41.71780,-90.87904,563,142,55,56563,233728,0,America/Chicago
+6648,New London,Henry County,IA,Iowa,52645,City,40.92698,-91.39960,319,1863,761,46830,2606812,0,America/Chicago
+6649,New Market,Taylor County,IA,Iowa,51646,City,40.73110,-94.89970,712,406,187,42321,1137520,1856,America/Chicago
+6650,New Providence,Hardin County,IA,Iowa,50206,City,42.28110,-93.17159,641,225,90,49500,2608428,0,America/Chicago
+6651,New Sharon,Mahaska County,IA,Iowa,50207,City,41.47000,-92.65130,641,1287,474,57065,2426057,0,America/Chicago
+6652,Newton,Jasper County,IA,Iowa,50208,City,41.69971,-93.04798,641,15034,6232,46512,29165478,0,America/Chicago
+6653,New Vienna,Dubuque County,IA,Iowa,52065,City,42.54805,-91.11430,563,421,193,55469,1207105,0,America/Chicago
+6654,New Virginia,Warren County,IA,Iowa,50210,City,41.18222,-93.72883,641,489,183,58438,1196688,0,America/Chicago
+6655,Nichols,Muscatine County,IA,Iowa,52766,City,41.48114,-91.30766,319,372,151,51250,600795,0,America/Chicago
+6656,Nodaway,Adams County,IA,Iowa,50857,City,40.93721,-94.89498,712,106,54,35000,1386235,0,America/Chicago
+6657,Nora Springs,Cerro Gordo County / Floyd County,IA,Iowa,50458,City,43.14408,-93.00893,641,1379,664,42500,5660055,69206,America/Chicago
+6658,Northboro,Page County,IA,Iowa,51647,City,40.60777,-95.29165,712,56,18,31250,661699,0,America/Chicago
+6659,North Buena Vista,Clayton County,IA,Iowa,52053 / 52066 / 52073,City,42.67972,-90.95652,563,116,45,30250,2601505,92469,America/Chicago
+6660,North English,Iowa County / Keokuk County,IA,Iowa,52316,City,41.51640,-92.07763,319,1022,456,46625,1433069,0,America/Chicago
+6661,North Liberty,Johnson County,IA,Iowa,52317 / 52340,City,41.74918,-91.59795,319,18520,5906,72451,22926381,0,America/Chicago
+6662,North Washington,Chickasaw County,IA,Iowa,50659 / 50661,City,43.11803,-92.41685,641,114,57,47188,514555,0,America/Chicago
+6663,Northwood,Worth County,IA,Iowa,50459,City,43.44412,-93.22104,641,2000,925,39583,9745770,0,America/Chicago
+6664,Norwalk,Polk County / Warren County,IA,Iowa,50061 / 50211 / 50321,City,41.49168,-93.70212,515,10590,3597,79252,28098083,916531,America/Chicago
+6665,Norway,Benton County,IA,Iowa,52318,City,41.90278,-91.92157,319,524,269,48516,1154591,0,America/Chicago
+6666,Numa,Appanoose County,IA,Iowa,52544,City,40.68807,-92.97798,641,90,30,37500,1146680,0,America/Chicago
+6667,Oakland,Pottawattamie County,IA,Iowa,51560,City,41.30916,-95.39667,712,1509,585,67386,3686512,403170,America/Chicago
+6668,Oakland Acres,Jasper County,IA,Iowa,50112,City,41.71722,-92.82047,641,155,51,82083,733443,57402,America/Chicago
+6669,Oakville,Louisa County,IA,Iowa,52646,City,41.09976,-91.04459,319,171,50,27500,1083945,12814,America/Chicago
+6670,Ocheyedan,Osceola County,IA,Iowa,51354,City,43.41608,-95.53473,712,460,242,42188,3011736,0,America/Chicago
+6671,Odebolt,Sac County,IA,Iowa,51458,City,42.31221,-95.25055,712,965,464,47727,2713561,0,America/Chicago
+6672,Oelwein,Fayette County,IA,Iowa,50662,City,42.67332,-91.91350,319,6056,2778,37875,12450068,122922,America/Chicago
+6673,Ogden,Boone County,IA,Iowa,50212,City,42.03915,-94.02773,515,1996,853,50313,3538326,0,America/Chicago
+6674,Okoboji,Dickinson County,IA,Iowa,51355,City,43.38635,-95.14833,712,830,401,56932,4860819,12936,America/Chicago
+6675,Olds,Henry County,IA,Iowa,52647 / 52659,City,41.13419,-91.54488,319,231,85,50313,873753,0,America/Chicago
+6676,Olin,Jones County,IA,Iowa,52320,City,41.99807,-91.14155,319,684,311,40179,2648687,21490,America/Chicago
+6677,Ollie,Keokuk County,IA,Iowa,52576,City,41.19807,-92.09240,641,210,104,40469,2562541,0,America/Chicago
+6678,Onawa,Monona County,IA,Iowa,51040,City,42.02665,-96.09724,712,2868,1272,31610,13435793,0,America/Chicago
+6679,Onslow,Jones County,IA,Iowa,52321,City,42.10696,-91.01515,319,196,97,40938,583274,0,America/Chicago
+6680,Orange City,Sioux County,IA,Iowa,51041,City,43.00721,-96.05835,712,6179,1998,62568,10933152,0,America/Chicago
+6681,Orchard,Mitchell County,IA,Iowa,50460,City,43.22747,-92.77214,641,70,18,50000,229007,0,America/Chicago
+6682,Orient,Adair County,IA,Iowa,50858,City,41.20304,-94.41468,641,374,169,44063,1175979,0,America/Chicago
+6683,Orleans,Dickinson County,IA,Iowa,51360,City,43.44718,-95.09249,712,613,231,67614,2904434,21413,America/Chicago
+6684,Osage,Mitchell County,IA,Iowa,50461,City,43.28414,-92.81103,641,3624,1597,48059,5873195,0,America/Chicago
+6685,Osceola,Clarke County,IA,Iowa,50213,City,41.03389,-93.76550,641,5037,2013,40204,16740435,529183,America/Chicago
+6686,Oskaloosa,Mahaska County,IA,Iowa,52577,City,41.29640,-92.64436,641,11523,4977,40016,20775834,39894,America/Chicago
+6687,Ossian,Winneshiek County,IA,Iowa,52161,City,43.14636,-91.76460,563,809,385,51583,2757354,0,America/Chicago
+6688,Osterdock,Clayton County,IA,Iowa,52035 / 52052,City,42.73360,-91.15791,563,57,33,68125,1190316,0,America/Chicago
+6689,Otho,Webster County,IA,Iowa,50569,City,42.42469,-94.15024,515,515,237,42232,1186076,0,America/Chicago
+6690,Oto,Woodbury County,IA,Iowa,51044,City,42.28388,-95.89307,712,107,43,38438,685907,0,America/Chicago
+6691,Otranto,Mitchell County,IA,Iowa,50472,CDP,43.45830,-92.98575,641,7,7,36458,1129880,0,America/Chicago
+6692,Ottosen,Humboldt County,IA,Iowa,50570,City,42.89497,-94.37997,515,36,26,40000,1469608,0,America/Chicago
+6693,Ottumwa,Wapello County,IA,Iowa,52501,City,41.02001,-92.41130,641,24487,10068,38570,41076954,1741889,America/Chicago
+6694,Owasa,Hardin County,IA,Iowa,50126,City,42.43359,-93.20715,641,43,19,26875,1462205,0,America/Chicago
+6695,Oxford,Johnson County,IA,Iowa,52322,City,41.72334,-91.79045,319,811,370,60441,2357310,0,America/Chicago
+6696,Oxford Junction,Jones County,IA,Iowa,52323,City,41.98363,-90.95626,563,482,227,35417,1799729,0,America/Chicago
+6697,Oyens,Plymouth County,IA,Iowa,51031 / 51045,City,42.82027,-96.05780,712,102,33,62813,262693,0,America/Chicago
+6698,Pacific Junction,Mills County,IA,Iowa,51561,City,41.01861,-95.79917,712,460,155,39688,1961815,0,America/Chicago
+6699,Packwood,Jefferson County,IA,Iowa,52580,City,41.13279,-92.08268,319,222,102,58500,1967754,0,America/Chicago
+6700,Palmer,Pocahontas County,IA,Iowa,50571,City,42.63053,-94.60053,712,157,71,43750,1095799,0,America/Chicago
+6701,Palo,Linn County,IA,Iowa,52324,City,42.06611,-91.79546,319,1077,380,69444,3179431,2933,America/Chicago
+6702,Panama,Shelby County,IA,Iowa,51562,City,41.72638,-95.47222,712,216,83,54792,740630,0,America/Chicago
+6703,Panora,Guthrie County,IA,Iowa,50216,City,41.69165,-94.36302,641,1066,434,46371,4662596,0,America/Chicago
+6704,Panorama Park,Scott County,IA,Iowa,52722,City,41.55559,-90.45319,563,151,50,47500,138641,0,America/Chicago
+6705,Parkersburg,Butler County,IA,Iowa,50665,City,42.57748,-92.78686,319,1952,814,43452,3665451,0,America/Chicago
+6706,Park View,Scott County,IA,Iowa,52748,CDP,41.69420,-90.54569,563,2476,815,75551,2738828,0,America/Chicago
+6707,Parnell,Iowa County,IA,Iowa,52325,City,41.58306,-92.00407,319,236,107,57750,447582,0,America/Chicago
+6708,Paton,Greene County,IA,Iowa,50217,City,42.16442,-94.25524,515,230,105,54375,1460896,2306,America/Chicago
+6709,Patterson,Madison County,IA,Iowa,50218 / 50229 / 50273,City,41.34832,-93.88050,515,159,66,50000,1218997,0,America/Chicago
+6710,Paullina,O'Brien County,IA,Iowa,51046,City,42.97915,-95.68807,712,1017,435,54375,2189745,0,America/Chicago
+6711,Pella,Mahaska County / Marion County,IA,Iowa,50219,City,41.40514,-92.91775,641,10255,3776,55551,23294059,0,America/Chicago
+6712,Peosta,Dubuque County,IA,Iowa,52068,City,42.45056,-90.85041,563,1659,515,81397,5814817,0,America/Chicago
+6713,Percival,Fremont County,IA,Iowa,51648,CDP,40.74889,-95.81361,712,21,14,28500,1139554,0,America/Chicago
+6714,Perry,Dallas County,IA,Iowa,50220,City,41.83860,-94.10718,515,7810,2769,42225,13507130,13354,America/Chicago
+6715,Persia,Harrison County,IA,Iowa,51563,City,41.57999,-95.56806,712,296,120,55714,1218194,0,America/Chicago
+6716,Peterson,Clay County,IA,Iowa,51047,City,42.91803,-95.34389,712,310,162,38750,1344655,56497,America/Chicago
+6717,Pierson,Woodbury County,IA,Iowa,51048,City,42.54416,-95.86751,712,351,179,36250,1597582,0,America/Chicago
+6718,Pilot Mound,Boone County,IA,Iowa,50223,City,42.16442,-94.01662,515,174,95,32188,2544586,0,America/Chicago
+6719,Pioneer,Humboldt County,IA,Iowa,50541,City,42.65386,-94.39247,515,22,2,44059,164585,0,America/Chicago
+6720,Pisgah,Harrison County,IA,Iowa,51564,City,41.83138,-95.92557,712,237,121,36875,2608748,0,America/Chicago
+6721,Plainfield,Bremer County,IA,Iowa,50666,City,42.84748,-92.53713,319,419,184,52917,844917,0,America/Chicago
+6722,Plano,Appanoose County,IA,Iowa,52581,City,40.75556,-93.04659,641,68,28,43750,1461594,0,America/Chicago
+6723,Pleasant Hill,Polk County,IA,Iowa,50317 / 50327,City,41.58388,-93.51994,515,9750,3443,72431,23587149,814551,America/Chicago
+6724,Pleasanton,Decatur County,IA,Iowa,50065,City,40.58056,-93.74383,641,46,7,37083,899130,0,America/Chicago
+6725,Pleasant Plain,Jefferson County,IA,Iowa,52540,City,41.14724,-91.85906,319,102,23,36875,2637328,0,America/Chicago
+6726,Pleasantville,Marion County,IA,Iowa,50225,City,41.38583,-93.26937,515,1669,752,48100,6558223,18922,America/Chicago
+6727,Plover,Pocahontas County,IA,Iowa,50573 / 50581,City,42.87830,-94.62053,712,74,21,36250,1406980,0,America/Chicago
+6728,Plymouth,Cerro Gordo County,IA,Iowa,50464,City,43.24580,-93.12298,641,371,161,48438,1131683,0,America/Chicago
+6729,Pocahontas,Pocahontas County,IA,Iowa,50574,City,42.73553,-94.66915,712,1710,860,41447,5222760,0,America/Chicago
+6730,Polk City,Polk County,IA,Iowa,50156 / 50226,City,41.77138,-93.71300,515,4428,1409,78903,12989541,378926,America/Chicago
+6731,Pomeroy,Calhoun County,IA,Iowa,50575,City,42.55109,-94.68387,712,623,329,37986,5288443,0,America/Chicago
+6732,Popejoy,Franklin County,IA,Iowa,50006 / 50227,City,42.59387,-93.42604,515,76,13,38750,1916554,0,America/Chicago
+6733,Portland,Cerro Gordo County,IA,Iowa,50401,CDP,43.12858,-93.12354,641,17,6,48152,546441,0,America/Chicago
+6734,Portsmouth,Shelby County,IA,Iowa,51565,City,41.65027,-95.51861,712,188,82,46250,714105,1208,America/Chicago
+6735,Postville,Allamakee County / Clayton County,IA,Iowa,52162,City,43.08395,-91.56821,563,2116,830,33944,5465968,0,America/Chicago
+6736,Prairieburg,Linn County,IA,Iowa,52219,City,42.23833,-91.42238,319,181,69,44063,1194124,0,America/Chicago
+6737,Prairie City,Jasper County,IA,Iowa,50228,City,41.59943,-93.23521,515,1712,711,58173,3209564,0,America/Chicago
+6738,Prescott,Adams County,IA,Iowa,50859,City,41.02304,-94.61358,641,242,124,52500,1035851,0,America/Chicago
+6739,Preston,Jackson County,IA,Iowa,52069,City,42.05030,-90.41402,563,978,469,46635,2493850,0,America/Chicago
+6740,Primghar,O'Brien County,IA,Iowa,51245,City,43.08692,-95.62723,712,876,374,51042,3582455,0,America/Chicago
+6741,Princeton,Scott County,IA,Iowa,52768,City,41.67475,-90.34041,563,940,422,62500,6673472,134,America/Chicago
+6742,Promise City,Wayne County,IA,Iowa,52583,City,40.74751,-93.14715,641,113,76,53750,489474,9751,America/Chicago
+6743,Protivin,Chickasaw County / Howard County,IA,Iowa,52163 / 52171,City,43.21643,-92.08914,563,278,148,40000,1253550,0,America/Chicago
+6744,Pulaski,Davis County,IA,Iowa,52584,City,40.69697,-92.27324,641,282,113,51250,1328137,2349,America/Chicago
+6745,Quasqueton,Buchanan County,IA,Iowa,50682 / 52326 / 52329,City,42.39443,-91.76100,319,544,243,42697,2933688,85438,America/Chicago
+6746,Quimby,Cherokee County,IA,Iowa,51049,City,42.63026,-95.64195,712,302,150,40625,1052153,0,America/Chicago
+6747,Radcliffe,Hardin County,IA,Iowa,50230,City,42.31526,-93.43438,515,536,240,53333,2581283,0,America/Chicago
+6748,Rake,Winnebago County,IA,Iowa,50465,City,43.48384,-93.91884,641,219,90,27750,2094456,0,America/Chicago
+6749,Ralston,Carroll County / Greene County,IA,Iowa,51443 / 51459 / 51462,City,42.04177,-94.62930,712,75,35,38750,5162218,0,America/Chicago
+6750,Randalia,Fayette County,IA,Iowa,52164,City,42.86304,-91.88572,563,65,30,40625,562395,0,America/Chicago
+6751,Randall,Hamilton County,IA,Iowa,50231,City,42.23832,-93.60077,515,167,78,43750,1065167,0,America/Chicago
+6752,Randolph,Fremont County,IA,Iowa,51649,City,40.87305,-95.56639,712,154,75,47969,822468,0,America/Chicago
+6753,Rathbun,Appanoose County,IA,Iowa,52544,City,40.80112,-92.88881,641,87,45,36250,561672,0,America/Chicago
+6754,Raymond,Black Hawk County,IA,Iowa,50648 / 50667,City,42.46888,-92.21963,319,809,305,66250,4226354,0,America/Chicago
+6755,Readlyn,Bremer County,IA,Iowa,50668,City,42.70221,-92.22546,319,833,343,59750,851122,0,America/Chicago
+6756,Reasnor,Jasper County,IA,Iowa,50232,City,41.57833,-93.02325,641,153,69,38750,1434903,0,America/Chicago
+6757,Redding,Ringgold County,IA,Iowa,50860,City,40.60471,-94.38774,641,81,27,36250,2576395,23764,America/Chicago
+6758,Redfield,Dallas County,IA,Iowa,50233,City,41.58943,-94.19607,515,826,367,47171,3510855,0,America/Chicago
+6759,Red Oak,Montgomery County,IA,Iowa,51566 / 51591,City,41.00972,-95.22555,712,5476,2503,31943,10219132,145797,America/Chicago
+6760,Reinbeck,Grundy County,IA,Iowa,50669,City,42.32360,-92.59936,319,1635,797,50563,5633309,0,America/Chicago
+6761,Rembrandt,Buena Vista County,IA,Iowa,50576,City,42.82553,-95.16638,712,204,71,38125,608527,0,America/Chicago
+6762,Remsen,Plymouth County,IA,Iowa,51050,City,42.81471,-95.97335,712,1650,696,51339,3371052,0,America/Chicago
+6763,Renwick,Humboldt County,IA,Iowa,50577,City,42.82803,-93.98106,515,267,124,41250,2599913,0,America/Chicago
+6764,Rhodes,Marshall County,IA,Iowa,50234,City,41.92554,-93.18631,641,306,120,45000,2626326,0,America/Chicago
+6765,Riceville,Howard County / Mitchell County,IA,Iowa,50466,City,43.36248,-92.55331,641,806,387,39896,2846857,26844,America/Chicago
+6766,Richland,Keokuk County,IA,Iowa,52585,City,41.18557,-91.99295,319,559,250,51875,1988785,0,America/Chicago
+6767,Rickardsville,Dubuque County,IA,Iowa,52039,City,42.58333,-90.88402,563,182,66,72778,2368705,0,America/Chicago
+6768,Ricketts,Crawford County,IA,Iowa,51439 / 51460,City,42.12693,-95.57500,712,139,55,47375,661788,0,America/Chicago
+6769,Ridgeway,Winneshiek County,IA,Iowa,52165,City,43.29775,-91.98766,563,300,142,47708,1953658,0,America/Chicago
+6770,Rinard,Calhoun County,IA,Iowa,51453,City,42.33970,-94.48858,515,52,29,48125,2590570,0,America/Chicago
+6771,Ringsted,Emmet County,IA,Iowa,50578,City,43.29468,-94.51164,712,383,201,36563,2793961,0,America/Chicago
+6772,Rippey,Greene County,IA,Iowa,50235,City,41.93387,-94.20135,515,285,95,46607,2180011,0,America/Chicago
+6773,Riverdale,Scott County,IA,Iowa,52722,City,41.54448,-90.45819,563,430,180,68750,4752722,931553,America/Chicago
+6774,Riverside,Washington County,IA,Iowa,52327,City,41.47974,-91.58128,319,1039,466,51250,4572527,0,America/Chicago
+6775,River Sioux,Harrison County,IA,Iowa,51545,CDP,41.80582,-96.04640,712,138,39,18487,985684,0,America/Chicago
+6776,Riverton,Fremont County,IA,Iowa,51650,City,40.68695,-95.56860,712,285,133,52583,1537769,0,America/Chicago
+6777,Robins,Linn County,IA,Iowa,52302 / 52328 / 52341 / 52411,City,42.07111,-91.66684,319,3535,1187,110188,16227453,20935,America/Chicago
+6778,Rochester,Cedar County,IA,Iowa,52772,CDP,41.67391,-91.15849,563,40,20,47827,2464954,62149,America/Chicago
+6779,Rock Falls,Cerro Gordo County,IA,Iowa,50401 / 50467,City,43.20747,-93.08465,641,151,71,44107,547425,0,America/Chicago
+6780,Rockford,Floyd County,IA,Iowa,50468,City,43.05219,-92.94853,641,834,358,42917,1635446,0,America/Chicago
+6781,Rock Rapids,Lyon County,IA,Iowa,51246,City,43.42719,-96.17586,712,2550,1065,54583,10980313,20406,America/Chicago
+6782,Rock Valley,Sioux County,IA,Iowa,51247,City,43.20526,-96.29503,712,3730,1227,61360,8700689,132703,America/Chicago
+6783,Rockwell,Cerro Gordo County,IA,Iowa,50469,City,42.98524,-93.19187,641,1012,474,53421,7724701,0,America/Chicago
+6784,Rockwell City,Calhoun County,IA,Iowa,50579,City,42.39526,-94.63387,712,2137,817,42450,10942257,0,America/Chicago
+6785,Rodman,Palo Alto County,IA,Iowa,50597,City,43.02858,-94.53109,515,44,24,26667,441302,0,America/Chicago
+6786,Rodney,Monona County,IA,Iowa,51051,City,42.20555,-95.95251,712,58,34,16944,420736,0,America/Chicago
+6787,Roland,Story County,IA,Iowa,50236,City,42.16637,-93.50188,515,1297,493,71705,2990944,0,America/Chicago
+6788,Rolfe,Pocahontas County,IA,Iowa,50581,City,42.81275,-94.52692,712,549,235,38472,2719090,2880,America/Chicago
+6789,Rome,Henry County,IA,Iowa,52641 / 52642,City,40.98141,-91.68239,319,116,51,43750,335369,1561,America/Chicago
+6790,Rose Hill,Mahaska County,IA,Iowa,52586,City,41.32195,-92.46213,641,166,62,30000,353762,0,America/Chicago
+6791,Roseville,Floyd County,IA,Iowa,50468 / 50653,CDP,43.00914,-92.80992,641,0,0,0,9561005,0,America/Chicago
+6792,Rossie,Clay County,IA,Iowa,51357,City,43.01331,-95.18861,712,70,28,51875,374235,0,America/Chicago
+6793,Rowan,Wright County,IA,Iowa,50470,City,42.74081,-93.55271,641,157,76,31731,1266617,0,America/Chicago
+6794,Rowley,Buchanan County,IA,Iowa,52329,City,42.36999,-91.84406,319,268,131,52396,925194,0,America/Chicago
+6795,Royal,Clay County,IA,Iowa,51357,City,43.06553,-95.28389,712,417,196,42500,764163,0,America/Chicago
+6796,Rudd,Floyd County,IA,Iowa,50471,City,43.12608,-92.90575,641,357,184,41667,2253970,0,America/Chicago
+6797,Runnells,Polk County,IA,Iowa,50237,City,41.51110,-93.35743,515,523,193,71250,1103387,0,America/Chicago
+6798,Russell,Lucas County,IA,Iowa,50238,City,40.98195,-93.19854,641,535,226,32188,2685787,692,America/Chicago
+6799,Ruthven,Palo Alto County,IA,Iowa,51358,City,43.12913,-94.89915,712,700,303,39375,1084187,0,America/Chicago
+6800,Rutland,Humboldt County,IA,Iowa,50582,City,42.75914,-94.29774,515,125,51,35625,2333844,0,America/Chicago
+6801,Ryan,Delaware County,IA,Iowa,52330,City,42.35138,-91.48155,563,356,158,55000,1111252,0,America/Chicago
+6802,Sabula,Jackson County,IA,Iowa,52070,City,42.07113,-90.17402,563,551,243,48688,1046219,2222239,America/Chicago
+6803,Sac City,Sac County,IA,Iowa,50583,City,42.42220,-94.98971,712,2105,1023,45528,12589226,173993,America/Chicago
+6804,Sageville,Dubuque County,IA,Iowa,52001,City,42.55278,-90.70902,563,104,42,51250,2230413,0,America/Chicago
+6805,Salem,Henry County,IA,Iowa,52649,City,40.85281,-91.62016,319,379,214,33182,1581926,9631,America/Chicago
+6806,Salix,Woodbury County,IA,Iowa,51052,City,42.30833,-96.28780,712,384,147,55625,4421383,33829,America/Chicago
+6807,Sanborn,O'Brien County,IA,Iowa,51248,City,43.18164,-95.65557,712,1396,583,48419,4913243,0,America/Chicago
+6808,Sandyville,Warren County,IA,Iowa,50001,City,41.37083,-93.38632,515,52,28,30625,1314244,0,America/Chicago
+6809,Saylorville,Polk County,IA,Iowa,50021 / 50023 / 50313,CDP,41.67860,-93.62966,515,2944,1333,71318,18216698,0,America/Chicago
+6810,Scarville,Winnebago County,IA,Iowa,50473,City,43.47051,-93.61772,641,71,32,37500,213985,0,America/Chicago
+6811,Schaller,Sac County,IA,Iowa,51053,City,42.49970,-95.29305,712,736,336,41875,3260453,0,America/Chicago
+6812,Schleswig,Crawford County,IA,Iowa,51461,City,42.16527,-95.43694,712,866,368,50278,3361682,31306,America/Chicago
+6813,Scranton,Greene County,IA,Iowa,51462,City,42.02248,-94.54525,712,532,242,43929,4861045,0,America/Chicago
+6814,Searsboro,Poweshiek County,IA,Iowa,50242,City,41.58055,-92.70352,641,144,61,30417,1162255,0,America/Chicago
+6815,Sergeant Bluff,Woodbury County,IA,Iowa,51054,City,42.40388,-96.35864,712,4551,1412,82419,5486100,802,America/Chicago
+6816,Sexton,Kossuth County,IA,Iowa,50511,CDP,43.08274,-94.08912,515,46,17,45099,5701923,0,America/Chicago
+6817,Seymour,Wayne County,IA,Iowa,52590,City,40.68251,-93.12104,641,704,279,27639,6074815,10601,America/Chicago
+6818,Shambaugh,Page County,IA,Iowa,51632 / 51651,City,40.65888,-95.03192,712,184,82,41875,943238,0,America/Chicago
+6819,Shannon City,Ringgold County / Union County,IA,Iowa,50861,City,40.89875,-94.26365,641,70,33,32292,1066714,5196,America/Chicago
+6820,Sharpsburg,Taylor County,IA,Iowa,50862,City,40.80249,-94.64247,641,88,33,31875,938593,18565,America/Chicago
+6821,Sheffield,Franklin County,IA,Iowa,50475,City,42.89330,-93.21520,641,1125,433,48036,14382610,74080,America/Chicago
+6822,Shelby,Pottawattamie County / Shelby County,IA,Iowa,51570,City,41.50667,-95.45056,712,626,254,44167,4846450,0,America/Chicago
+6823,Sheldahl,Boone County / Polk County / Story County,IA,Iowa,50226 / 50243 / 50244,City,41.86427,-93.69664,515,321,112,56250,2162509,0,America/Chicago
+6824,Sheldon,O'Brien County / Sioux County,IA,Iowa,51201,City,43.17960,-95.84411,712,5115,2262,51500,12069158,0,America/Chicago
+6825,Shell Rock,Butler County,IA,Iowa,50670,City,42.71026,-92.58297,319,1313,535,50324,4043759,248030,America/Chicago
+6826,Shellsburg,Benton County,IA,Iowa,52332,City,42.09444,-91.86935,319,952,429,48162,1984679,0,America/Chicago
+6827,Shenandoah,Fremont County / Page County,IA,Iowa,51601 / 51602 / 51603,City,40.75830,-95.37206,712,4972,2115,36541,9703911,0,America/Chicago
+6828,Sherrill,Dubuque County,IA,Iowa,52073,City,42.60389,-90.78457,563,179,73,68750,336465,0,America/Chicago
+6829,Shueyville,Johnson County,IA,Iowa,52338 / 52404,City,41.85056,-91.64656,319,646,206,111875,4834961,0,America/Chicago
+6830,Sibley,Osceola County,IA,Iowa,51249,City,43.39914,-95.75196,712,2622,1075,40602,4357730,0,America/Chicago
+6831,Sidney,Fremont County,IA,Iowa,51652,City,40.74833,-95.64750,712,1048,410,48636,3574674,0,America/Chicago
+6832,Sigourney,Keokuk County,IA,Iowa,52591,City,41.33334,-92.20463,641,1987,895,39750,5654114,0,America/Chicago
+6833,Silver City,Mills County,IA,Iowa,51571,City,41.11333,-95.63723,712,247,72,69375,563372,0,America/Chicago
+6834,Sioux Center,Sioux County,IA,Iowa,51250,City,43.07971,-96.17558,712,7501,2263,66906,16097801,0,America/Chicago
+6835,Sioux City,Plymouth County / Woodbury County,IA,Iowa,51054 / 51101 / 51102 / 51103 / 51104 / 51105 / 51106 / 51108 / 51109 / 51111 / 68731,City,42.49567,-96.39053,712,82872,31261,43888,151377897,3018320,America/Chicago
+6836,Sioux Rapids,Buena Vista County,IA,Iowa,50585,City,42.89331,-95.15111,712,776,297,39375,2143971,0,America/Chicago
+6837,Slater,Story County,IA,Iowa,50243 / 50244,City,41.87776,-93.67855,515,1497,544,72222,3473077,0,America/Chicago
+6838,Sloan,Woodbury County,IA,Iowa,51055,City,42.23277,-96.22808,712,983,421,57656,1611552,0,America/Chicago
+6839,Smithland,Woodbury County,IA,Iowa,51056,City,42.22916,-95.93084,712,223,80,38750,956520,0,America/Chicago
+6840,Soldier,Monona County,IA,Iowa,51572,City,41.98527,-95.77945,712,167,70,38750,759541,0,America/Chicago
+6841,Solon,Johnson County,IA,Iowa,52333,City,41.80723,-91.49406,319,2587,776,75833,3323949,0,America/Chicago
+6842,Somers,Calhoun County,IA,Iowa,50586,City,42.37831,-94.42997,515,108,63,42813,896389,0,America/Chicago
+6843,South Amana,Iowa County,IA,Iowa,52203 / 52334,CDP,41.77612,-91.96740,319,160,82,61176,3586675,0,America/Chicago
+6844,South English,Keokuk County,IA,Iowa,52335,City,41.45223,-92.09046,319,207,99,48750,776438,0,America/Chicago
+6845,Spencer,Clay County,IA,Iowa,51301,City,43.14136,-95.14444,712,11138,4853,45688,28284393,416681,America/Chicago
+6846,Spillville,Winneshiek County,IA,Iowa,52132 / 52168,City,43.20497,-91.95100,563,350,188,38438,1137760,20332,America/Chicago
+6847,Spirit Lake,Dickinson County,IA,Iowa,51360,City,43.42218,-95.10222,712,5086,2381,56485,11784222,50684,America/Chicago
+6848,Spragueville,Jackson County,IA,Iowa,52069 / 52074,City,42.07252,-90.43513,563,81,41,25750,1727287,0,America/Chicago
+6849,Springbrook,Jackson County,IA,Iowa,52031 / 52075,City,42.16419,-90.47652,563,140,69,60625,1549068,0,America/Chicago
+6850,Spring Hill,Warren County,IA,Iowa,50125,City,41.41138,-93.64494,515,64,22,38750,312287,0,America/Chicago
+6851,Springville,Linn County,IA,Iowa,52336,City,42.05945,-91.44267,319,1135,447,58825,1849921,5871,America/Chicago
+6852,Stacyville,Mitchell County,IA,Iowa,50476,City,43.43608,-92.78241,641,475,252,37500,1328474,59025,America/Chicago
+6853,Stanhope,Hamilton County,IA,Iowa,50246,City,42.28887,-93.79606,515,408,186,44167,2507860,0,America/Chicago
+6854,Stanley,Buchanan County / Fayette County,IA,Iowa,50671,City,42.64196,-91.81189,319,125,43,41875,623254,1113,America/Chicago
+6855,St. Ansgar,Mitchell County,IA,Iowa,50472,City,43.37830,-92.91881,641,1150,467,49635,2797934,0,America/Chicago
+6856,St. Anthony,Marshall County,IA,Iowa,50051 / 50239,City,42.12221,-93.19493,641,102,34,32000,1451590,0,America/Chicago
+6857,Stanton,Montgomery County,IA,Iowa,51573,City,40.98166,-95.10415,712,637,273,61458,2370924,0,America/Chicago
+6858,Stanwood,Cedar County,IA,Iowa,52337,City,41.89307,-91.15071,319,662,254,49167,1851629,0,America/Chicago
+6859,State Center,Marshall County,IA,Iowa,50247,City,42.01665,-93.16354,641,1452,539,52917,2552724,0,America/Chicago
+6860,St. Benedict,Kossuth County,IA,Iowa,50483 / 50511,CDP,43.03802,-94.06440,515,29,8,90000,1986738,0,America/Chicago
+6861,St. Charles,Madison County,IA,Iowa,50240,City,41.28833,-93.80939,641,618,251,66771,1391701,0,America/Chicago
+6862,St. Donatus,Jackson County,IA,Iowa,52031 / 52071,City,42.36084,-90.53930,563,131,62,51071,961888,0,America/Chicago
+6863,Steamboat Rock,Hardin County,IA,Iowa,50672,City,42.40943,-93.06576,641,309,139,39250,1411264,0,America/Chicago
+6864,St. Joseph,Kossuth County,IA,Iowa,50519,CDP,42.91330,-94.22719,515,43,12,45625,2231673,0,America/Chicago
+6865,St. Lucas,Fayette County,IA,Iowa,52166 / 52171,City,43.06636,-91.93350,563,137,76,57273,689164,0,America/Chicago
+6866,St. Marys,Warren County,IA,Iowa,50240,City,41.30805,-93.72966,641,128,59,73750,361422,0,America/Chicago
+6867,Stockport,Van Buren County,IA,Iowa,52651,City,40.85753,-91.83517,319,290,107,32019,2656369,0,America/Chicago
+6868,Stockton,Muscatine County,IA,Iowa,52769,City,41.59142,-90.85876,563,197,68,52500,281357,0,America/Chicago
+6869,St. Olaf,Clayton County,IA,Iowa,52072,City,42.92860,-91.38625,563,104,53,39028,632230,0,America/Chicago
+6870,Stone City,Jones County,IA,Iowa,52205,CDP,42.11389,-91.34933,319,231,94,81786,4523237,144340,America/Chicago
+6871,Storm Lake,Buena Vista County,IA,Iowa,50588,City,42.64109,-95.20972,712,10773,3582,43539,13657402,0,America/Chicago
+6872,Story City,Story County,IA,Iowa,50248,City,42.18721,-93.59577,515,3410,1478,52330,7097956,5179,America/Chicago
+6873,Stout,Grundy County,IA,Iowa,50665 / 50673,City,42.52637,-92.71186,319,220,69,57750,765894,0,America/Chicago
+6874,St. Paul,Lee County,IA,Iowa,52656 / 52657,City,40.76948,-91.51710,319,131,43,54750,983113,0,America/Chicago
+6875,Stratford,Hamilton County / Webster County,IA,Iowa,50249,City,42.26912,-93.92724,515,718,263,45250,4951978,0,America/Chicago
+6876,Strawberry Point,Clayton County,IA,Iowa,52076,City,42.68360,-91.53403,563,1227,544,43700,5471678,0,America/Chicago
+6877,Struble,Plymouth County,IA,Iowa,51031,City,42.89527,-96.19530,712,78,39,59688,402496,0,America/Chicago
+6878,Stuart,Adair County / Guthrie County,IA,Iowa,50250,City,41.50027,-94.31868,515,1589,660,38250,7129121,0,America/Chicago
+6879,Sully,Jasper County,IA,Iowa,50251,City,41.57833,-92.84492,641,819,328,59018,1515957,0,America/Chicago
+6880,Sumner,Bremer County / Fayette County,IA,Iowa,50674,City,42.84937,-92.09715,563,1998,893,51298,6524265,34944,America/Chicago
+6881,Sun Valley Lake,Ringgold County,IA,Iowa,50074,CDP,40.84911,-94.06813,641,181,120,93281,6264503,1694185,America/Chicago
+6882,Superior,Dickinson County,IA,Iowa,51363,City,43.43024,-94.94638,712,128,62,48750,1050224,0,America/Chicago
+6883,Sutherland,O'Brien County,IA,Iowa,51058,City,42.97414,-95.49751,712,616,281,44896,2256464,0,America/Chicago
+6884,Swaledale,Cerro Gordo County,IA,Iowa,50477,City,42.97858,-93.31687,641,160,76,38077,633910,0,America/Chicago
+6885,Swan,Marion County,IA,Iowa,50252,City,41.46527,-93.31132,515,72,34,23750,1666158,0,America/Chicago
+6886,Swea City,Kossuth County,IA,Iowa,50590,City,43.38440,-94.31497,515,516,240,31522,1906738,0,America/Chicago
+6887,Swisher,Johnson County,IA,Iowa,52338,City,41.84556,-91.69295,319,924,332,74615,2088679,0,America/Chicago
+6888,Tabor,Fremont County / Mills County,IA,Iowa,51653,City,40.89494,-95.67371,712,986,415,57083,3335069,0,America/Chicago
+6889,Tama,Tama County,IA,Iowa,52339,City,41.96666,-92.57686,641,2831,1084,51741,8440177,383923,America/Chicago
+6890,Templeton,Carroll County,IA,Iowa,51463,City,41.91832,-94.94277,712,349,149,49375,1106765,0,America/Chicago
+6891,Tennant,Shelby County,IA,Iowa,51537 / 51570,City,41.59360,-95.44111,712,66,28,36667,1841699,0,America/Chicago
+6892,Terril,Dickinson County,IA,Iowa,51364,City,43.30579,-94.97166,712,362,194,35625,1412923,0,America/Chicago
+6893,Thayer,Union County,IA,Iowa,50254,City,41.02805,-94.05078,641,56,24,43750,239726,0,America/Chicago
+6894,Thompson,Winnebago County,IA,Iowa,50478,City,43.37134,-93.77356,641,488,229,41953,2272042,0,America/Chicago
+6895,Thor,Humboldt County,IA,Iowa,50591,City,42.68803,-94.04940,515,179,74,48000,2584007,0,America/Chicago
+6896,Thornburg,Keokuk County,IA,Iowa,50255,City,41.45473,-92.33574,641,61,40,48750,509586,0,America/Chicago
+6897,Thornton,Cerro Gordo County,IA,Iowa,50479,City,42.94469,-93.38465,641,406,220,39423,3228769,0,America/Chicago
+6898,Thurman,Fremont County,IA,Iowa,51654,City,40.82000,-95.74778,712,215,73,49063,1440574,0,America/Chicago
+6899,Tiffin,Johnson County,IA,Iowa,52240 / 52322 / 52340,City,41.70585,-91.66295,319,3006,1022,57125,10644023,20868,America/Chicago
+6900,Tingley,Ringgold County,IA,Iowa,50863,City,40.85277,-94.19523,641,183,77,40625,1750542,5413,America/Chicago
+6901,Tipton,Cedar County,IA,Iowa,52772,City,41.76974,-91.12794,563,3217,1355,50734,5415222,0,America/Chicago
+6902,Titonka,Kossuth County,IA,Iowa,50480,City,43.23691,-94.04134,515,448,234,35769,726107,0,America/Chicago
+6903,Toeterville,Mitchell County,IA,Iowa,50472 / 50481,CDP,43.44219,-92.89047,641,36,33,25139,2312831,0,America/Chicago
+6904,Toledo,Tama County,IA,Iowa,52342,City,41.99555,-92.57686,641,2187,810,46406,5955274,0,America/Chicago
+6905,Toronto,Clinton County,IA,Iowa,52777,City,41.90502,-90.86403,563,119,60,45000,482622,0,America/Chicago
+6906,Traer,Tama County,IA,Iowa,50675,City,42.19360,-92.46547,319,1657,722,53676,3064287,0,America/Chicago
+6907,Treynor,Pottawattamie County,IA,Iowa,51575,City,41.23250,-95.61306,712,950,372,70000,1501129,0,America/Chicago
+6908,Tripoli,Bremer County,IA,Iowa,50676,City,42.80804,-92.25823,319,1340,525,47313,3650129,0,America/Chicago
+6909,Truesdale,Buena Vista County,IA,Iowa,50588 / 50592,City,42.72915,-95.18277,712,81,56,40000,377840,0,America/Chicago
+6910,Truro,Madison County,IA,Iowa,50257,City,41.20972,-93.84661,641,487,186,50789,2523886,0,America/Chicago
+6911,Turin,Monona County,IA,Iowa,51040,City,42.01943,-95.96640,712,65,43,41250,230264,0,America/Chicago
+6912,Twin Lakes,Calhoun County,IA,Iowa,50563 / 50579,CDP,42.48470,-94.63589,712,288,136,121875,3554578,3891269,America/Chicago
+6913,Udell,Appanoose County,IA,Iowa,52593,City,40.78085,-92.74214,641,46,19,28125,825068,0,America/Chicago
+6914,Underwood,Pottawattamie County,IA,Iowa,51576,City,41.38694,-95.67667,712,939,298,74600,2842033,65068,America/Chicago
+6915,Union,Hardin County,IA,Iowa,50258,City,42.24554,-93.06465,641,384,193,41705,1423361,0,America/Chicago
+6916,Unionville,Appanoose County,IA,Iowa,52594,City,40.81835,-92.69547,641,100,39,40625,1929361,0,America/Chicago
+6917,University Heights,Johnson County,IA,Iowa,52246,City,41.65502,-91.55684,319,1089,553,52386,702265,0,America/Chicago
+6918,University Park,Mahaska County,IA,Iowa,52577 / 52595,City,41.28695,-92.61853,641,474,199,46719,2002007,0,America/Chicago
+6919,Urbana,Benton County,IA,Iowa,52213 / 52345,City,42.22416,-91.87434,319,1469,524,74286,5715255,565,America/Chicago
+6920,Urbandale,Dallas County / Polk County,IA,Iowa,50111 / 50131 / 50263 / 50322 / 50323 / 50325,City,41.63679,-93.77983,515,43018,16720,78059,58164701,59113,America/Chicago
+6921,Ute,Monona County,IA,Iowa,51060,City,42.05027,-95.70639,712,349,198,35500,1020456,0,America/Chicago
+6922,Vail,Crawford County,IA,Iowa,51465,City,42.06193,-95.19999,712,416,197,43359,1478914,0,America/Chicago
+6923,Valeria,Jasper County,IA,Iowa,50054,City,41.72999,-93.32521,515,57,17,53750,129337,0,America/Chicago
+6924,Van Horne,Benton County,IA,Iowa,52346,City,42.00861,-92.09102,319,662,284,50000,1780836,0,America/Chicago
+6925,Van Meter,Dallas County,IA,Iowa,50038 / 50261,City,41.53193,-93.95412,515,1119,490,83889,5165152,55049,America/Chicago
+6926,Van Wert,Decatur County,IA,Iowa,50262,City,40.86972,-93.79300,641,213,78,28000,855418,12230,America/Chicago
+6927,Varina,Pocahontas County,IA,Iowa,50540 / 50593,City,42.65803,-94.89776,712,68,28,30833,701175,0,America/Chicago
+6928,Ventura,Cerro Gordo County,IA,Iowa,50428 / 50482,City,43.12635,-93.47771,641,720,355,67422,4595586,1712714,America/Chicago
+6929,Victor,Iowa County / Poweshiek County,IA,Iowa,52347,City,41.73074,-92.29474,319,881,477,43542,1255187,0,America/Chicago
+6930,Villisca,Montgomery County,IA,Iowa,50864,City,40.92971,-94.97609,712,1182,555,32042,4929899,0,America/Chicago
+6931,Vincent,Webster County,IA,Iowa,50594,City,42.59191,-94.02023,515,168,64,51250,659352,0,America/Chicago
+6932,Vining,Tama County,IA,Iowa,52348,City,41.98999,-92.37991,641,49,30,61667,1485921,0,America/Chicago
+6933,Vinton,Benton County,IA,Iowa,52349,City,42.16861,-92.02351,319,5143,2217,48930,12267986,227413,America/Chicago
+6934,Volga,Clayton County,IA,Iowa,52077,City,42.80471,-91.54098,563,201,90,34333,2027420,0,America/Chicago
+6935,Wadena,Fayette County,IA,Iowa,52169,City,42.84276,-91.65682,563,250,119,40139,1913455,0,America/Chicago
+6936,Wahpeton,Dickinson County,IA,Iowa,51351 / 51360,City,43.36608,-95.17194,712,353,178,64643,3134473,66522,America/Chicago
+6937,Walcott,Muscatine County / Scott County,IA,Iowa,52773,City,41.58732,-90.78052,563,1636,690,49583,8067470,62620,America/Chicago
+6938,Walford,Benton County / Linn County,IA,Iowa,52228 / 52351,City,41.87966,-91.83052,319,1459,511,92284,2507812,0,America/Chicago
+6939,Walker,Linn County,IA,Iowa,52352,City,42.28666,-91.78073,319,786,300,63750,1960673,25984,America/Chicago
+6940,Wallingford,Emmet County,IA,Iowa,51365,City,43.31968,-94.79276,712,186,52,53750,2519344,0,America/Chicago
+6941,Wall Lake,Sac County,IA,Iowa,51466,City,42.27110,-95.09305,712,781,271,48646,3190174,0,America/Chicago
+6942,Walnut,Pottawattamie County,IA,Iowa,51577,City,41.47749,-95.22194,712,779,324,42308,5576495,0,America/Chicago
+6943,Wapello,Louisa County,IA,Iowa,52653,City,41.18142,-91.18543,319,2042,799,44112,3352626,124379,America/Chicago
+6944,Washburn,Black Hawk County,IA,Iowa,50702,CDP,42.41166,-92.26741,319,957,421,49669,3201939,27902,America/Chicago
+6945,Washington,Washington County,IA,Iowa,52353,City,41.29918,-91.69294,319,7424,3221,45013,13581359,6154,America/Chicago
+6946,Washta,Cherokee County,IA,Iowa,51061,City,42.57554,-95.71751,712,237,93,34583,2602408,0,America/Chicago
+6947,Waterloo,Black Hawk County,IA,Iowa,50613 / 50701 / 50702 / 50703 / 50704 / 50706 / 50707,City,42.49276,-92.34296,319,67934,28430,41933,159034208,4720453,America/Chicago
+6948,Waterville,Allamakee County,IA,Iowa,52170,City,43.20776,-91.29763,563,141,60,42500,1112299,0,America/Chicago
+6949,Watkins,Benton County,IA,Iowa,52354,CDP,41.89111,-91.98629,319,123,39,31797,1072248,0,America/Chicago
+6950,Waucoma,Fayette County,IA,Iowa,52171,City,43.05609,-92.03323,563,255,125,37639,1219559,0,America/Chicago
+6951,Waukee,Dallas County,IA,Iowa,50003 / 50263 / 50325,City,41.61166,-93.88523,515,19284,5983,77200,34139629,37645,America/Chicago
+6952,Waukon,Allamakee County,IA,Iowa,52172,City,43.26942,-91.47570,563,3733,1753,39417,7704928,0,America/Chicago
+6953,Waverly,Bremer County,IA,Iowa,50677,City,42.72581,-92.47546,319,10093,3496,61506,29176174,1291706,America/Chicago
+6954,Wayland,Henry County,IA,Iowa,52654,City,41.14724,-91.66072,319,952,432,51563,2883318,0,America/Chicago
+6955,Webb,Clay County,IA,Iowa,51366,City,42.94858,-95.01193,712,136,69,41750,1303512,0,America/Chicago
+6956,Webster,Keokuk County,IA,Iowa,52355,City,41.43834,-92.16907,319,72,47,41250,837004,0,America/Chicago
+6957,Webster City,Hamilton County,IA,Iowa,50595,City,42.46942,-93.81605,515,7756,3395,42011,22958111,38463,America/Chicago
+6958,Weldon,Decatur County,IA,Iowa,50264,City,40.89750,-93.73494,641,118,76,31250,469807,0,America/Chicago
+6959,Wellman,Washington County,IA,Iowa,52356,City,41.46418,-91.83823,319,1424,558,56983,2749292,0,America/Chicago
+6960,Wellsburg,Grundy County,IA,Iowa,50680,City,42.45915,-92.93853,641,691,371,47019,2828021,0,America/Chicago
+6961,Welton,Clinton County,IA,Iowa,52037 / 52774,City,41.90808,-90.59541,563,159,47,68750,710888,0,America/Chicago
+6962,Wesley,Kossuth County,IA,Iowa,50483,City,43.08830,-93.99023,515,378,155,46750,1614545,0,America/Chicago
+6963,West Amana,Iowa County,IA,Iowa,52203,CDP,41.80806,-91.96379,319,222,92,44143,705067,0,America/Chicago
+6964,West Bend,Kossuth County / Palo Alto County,IA,Iowa,50597,City,42.95994,-94.44568,515,755,413,44766,2292793,0,America/Chicago
+6965,West Branch,Cedar County / Johnson County,IA,Iowa,52358,City,41.66276,-91.34064,319,2359,1091,60650,8261574,0,America/Chicago
+6966,West Burlington,Des Moines County,IA,Iowa,52601 / 52655,City,40.82504,-91.15654,319,2945,1398,38314,12895533,0,America/Chicago
+6967,West Chester,Washington County,IA,Iowa,52359,City,41.33890,-91.81767,319,148,56,31429,655956,0,America/Chicago
+6968,West Des Moines,Dallas County / Madison County / Polk County / Warren County,IA,Iowa,50038 / 50061 / 50261 / 50263 / 50265 / 50266 / 50321 / 50325 / 50398,City,41.54994,-93.78135,515,64560,25884,71200,120659778,2534589,America/Chicago
+6969,Westfield,Plymouth County,IA,Iowa,51062,City,42.75555,-96.60587,712,131,62,40417,331198,0,America/Chicago
+6970,Westgate,Fayette County,IA,Iowa,50681,City,42.76998,-91.99628,563,202,83,52361,920051,0,America/Chicago
+6971,West Liberty,Muscatine County,IA,Iowa,52776,City,41.57002,-91.26377,319,3721,1137,54408,4478524,525,America/Chicago
+6972,West Okoboji,Dickinson County,IA,Iowa,51331 / 51351,City,43.35330,-95.16250,712,295,160,50833,3313645,317159,America/Chicago
+6973,Weston,Pottawattamie County,IA,Iowa,51576,CDP,41.34083,-95.74112,712,237,41,99423,1060550,0,America/Chicago
+6974,Westphalia,Shelby County,IA,Iowa,51578,City,41.71971,-95.39472,712,125,55,41964,247308,0,America/Chicago
+6975,West Point,Lee County,IA,Iowa,52656,City,40.71670,-91.45015,319,954,489,52768,1575241,0,America/Chicago
+6976,Westside,Crawford County,IA,Iowa,51467,City,42.05915,-95.09805,712,297,154,52250,3811183,0,America/Chicago
+6977,West Union,Fayette County,IA,Iowa,52175,City,42.96276,-91.80822,563,2395,1150,40980,7190468,0,America/Chicago
+6978,Westwood,Henry County,IA,Iowa,52641,City,40.96558,-91.62377,319,111,53,82917,394518,7051,America/Chicago
+6979,What Cheer,Keokuk County,IA,Iowa,50268,City,41.40140,-92.35463,641,619,293,31518,3168721,45166,America/Chicago
+6980,Wheatland,Clinton County,IA,Iowa,52777,City,41.83169,-90.83820,563,732,251,48229,1566766,0,America/Chicago
+6981,Whiting,Monona County,IA,Iowa,51063,City,42.12749,-96.14946,712,744,349,38558,2598159,0,America/Chicago
+6982,Whittemore,Kossuth County,IA,Iowa,50598,City,43.06191,-94.42692,515,486,234,42500,1088793,0,America/Chicago
+6983,Whitten,Hardin County,IA,Iowa,50258 / 50269 / 50627,City,42.26082,-93.00548,641,149,54,39375,1397728,6498,America/Chicago
+6984,Willey,Carroll County,IA,Iowa,51401,City,41.97915,-94.82221,712,100,37,69375,643172,0,America/Chicago
+6985,Williams,Hamilton County,IA,Iowa,50271,City,42.48831,-93.54493,515,333,184,52000,2254857,0,America/Chicago
+6986,Williamsburg,Iowa County,IA,Iowa,52361,City,41.66112,-92.00907,319,3179,1277,54367,9682649,21499,America/Chicago
+6987,Williamson,Lucas County,IA,Iowa,50272,City,41.08778,-93.25493,641,153,44,40000,832499,0,America/Chicago
+6988,Wilton,Cedar County / Muscatine County,IA,Iowa,52778,City,41.58911,-91.02548,563,2808,1224,51726,5269398,7155,America/Chicago
+6989,Windsor Heights,Polk County,IA,Iowa,50324,City,41.59777,-93.70828,515,4983,2086,57627,3669199,0,America/Chicago
+6990,Winfield,Henry County,IA,Iowa,52659,City,41.12308,-91.44127,319,1125,379,41875,2718290,0,America/Chicago
+6991,Winterset,Madison County,IA,Iowa,50273,City,41.33082,-94.01384,515,5271,2135,41289,11851427,360471,America/Chicago
+6992,Winthrop,Buchanan County,IA,Iowa,50644 / 50682,City,42.47332,-91.73433,319,848,367,54779,2183250,0,America/Chicago
+6993,Wiota,Cass County,IA,Iowa,50274,City,41.40027,-94.88693,712,110,50,39167,821803,0,America/Chicago
+6994,Woden,Hancock County,IA,Iowa,50484,City,43.23302,-93.90912,641,218,115,40417,1095168,0,America/Chicago
+6995,Woodbine,Harrison County,IA,Iowa,51579,City,41.73832,-95.70278,712,1412,705,44688,3311509,130445,America/Chicago
+6996,Woodburn,Clarke County,IA,Iowa,50275,City,41.01194,-93.59910,641,199,118,34605,1647838,0,America/Chicago
+6997,Woodward,Boone County / Dallas County,IA,Iowa,50276,City,41.85280,-93.92077,515,1461,484,58125,9476869,0,America/Chicago
+6998,Woolstock,Wright County,IA,Iowa,50599,City,42.56664,-93.84383,515,163,90,45714,2745547,0,America/Chicago
+6999,Worthington,Dubuque County,IA,Iowa,52078,City,42.39639,-91.11986,563,408,176,61136,1137661,0,America/Chicago
+7000,Wyoming,Jones County,IA,Iowa,52362,City,42.05918,-91.00737,563,513,220,41750,1321604,0,America/Chicago
+7001,Yale,Guthrie County,IA,Iowa,50277,City,41.77665,-94.35802,641,243,138,44000,707519,0,America/Chicago
+7002,Yetter,Calhoun County,IA,Iowa,51433,City,42.31609,-94.84610,712,33,13,16250,325752,0,America/Chicago
+7003,Yorktown,Page County,IA,Iowa,51632 / 51656,City,40.73333,-95.15693,712,82,31,38750,704488,0,America/Chicago
+7004,Zearing,Story County,IA,Iowa,50278,City,42.16110,-93.29715,641,534,237,57031,1938971,0,America/Chicago
+7005,Zwingle,Dubuque County / Jackson County,IA,Iowa,52079,City,42.29717,-90.68745,563,89,53,42292,425010,0,America/Chicago

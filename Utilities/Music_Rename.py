@@ -8,6 +8,7 @@
 
 import os
 import re
+from contextlib import contextmanager
 from mutagen.easyid3 import EasyID3
 
 no_upper = ('a', 'an', 'and', 'at', 'but', 'by', 'for','from',
@@ -19,15 +20,12 @@ base = '/Users/tmcou/Music/iTunes/iTunes Media/Music - Copy'
 pathify = lambda *args: '\\'.join(args)
 
 
-def main():
-	os.chdir(base)
-	for artist in os.listdir():
-		os.chdir(pathify(base, artist))
-		print(artist)
-		for album in os.listdir():
-			if os.path.isfile(album):  # Create Unknown Album folder
-				album = make_unknown(artist, album)
-			modify_album(artist, album)
+# Context manager that automatically saves audio file once done editing
+@contextmanager
+def open_audio(song):
+	audio = EasyID3(''.join(song))
+	yield audio
+	audio.save()
 
 
 # Moves a song from the artist folder to an Unknown Album folder
@@ -49,17 +47,16 @@ def modify_album(artist, album):
 
 # Modifies a song's title and album tags
 def modify_song(song):
-	audio = EasyID3(''.join(song))
-	try:					# In an album, tag exists
-		modify_tag(song, audio, 'album')
-	except Exception:		# Not in an album, tag does't exist
-		pass
-	if 'title' not in audio:  # Use file name as title
-		# Removes any leading album identifiers, i.e. 01 and 13 -
-		audio['title'] = re.sub(r'^([0-2]?[\d][^\w\d,])[ \-\.]*',
-								'', song[0].lstrip('0'))
-	modify_tag(song, audio, 'title')
-	audio.save()
+	with open_audio(song) as audio:
+		try:					# In an album, tag exists
+			modify_tag(song, audio, 'album')
+		except Exception:		# Not in an album, tag does't exist
+			pass
+		if 'title' not in audio:  # Use file name as title
+			# Removes any leading album identifiers, i.e. 01 and 13 -
+			audio['title'] = re.sub(r'^([0-2]?[\d][^\w\d,])[ \-\.]*',
+									'', song[0].lstrip('0'))
+		modify_tag(song, audio, 'title')
 
 
 # Changes a specific tag of a song, either title or album
@@ -102,6 +99,17 @@ def modify_tag(orig, audio, tag):
 	# 			  		  'Unknown Album',sub)+orig[1])
 	# 	os.remove(pathify(base,audio['artist'][0],
 	# 					  'Unknown Album',''.join(orig)))
+
+
+def main():
+	os.chdir(base)
+	for artist in os.listdir():
+		os.chdir(pathify(base, artist))
+		print(artist)
+		for album in os.listdir():
+			if os.path.isfile(album):  # Create Unknown Album folder
+				album = make_unknown(artist, album)
+			modify_album(artist, album)
 
 
 if __name__ == '__main__':

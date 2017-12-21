@@ -1,10 +1,10 @@
-"""
+'''
 	Utility written to help organize my music files.
 	Lowercases all title/album words in no_upper,
 	moves songs into folders if not in one already.
 	USE MUSIC - COPY FIRST
 	Tim Coutinho
-"""
+'''
 
 import os
 import re
@@ -87,7 +87,7 @@ def modify_tag(orig, audio, tag):
 	# Finally, capitalize the first word regardless
 	audio[tag] = audio[tag][0][0].upper() + audio[tag][0][1:]
 
-	# sub = re.sub(r"[/:\?]", "_", audio[tag][0])
+	# sub = re.sub(r'[/:\?]', '_', audio[tag][0])
 	# if tag == 'title' and 'album' in audio:  # Rename file to new song title
 	# 	os.rename(pathify(base,audio['artist'][0],
 	# 					  audio['album'][0].replace('/', '_'),''.join(orig)),

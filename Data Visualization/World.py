@@ -1,8 +1,8 @@
-"""
+'''
 	Uses matplotlib and pandas to display various data about the world.
 	CSV file currently missing.
 	Tim Coutinho
-"""
+'''
 
 import numpy as np
 import matplotlib.pyplot as plt

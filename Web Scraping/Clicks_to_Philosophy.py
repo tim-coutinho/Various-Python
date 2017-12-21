@@ -1,9 +1,9 @@
-"""
-	Determines how many clicks it takes to get to the Wikipedia
-	page for Philosphy, given a starting article.
+'''
+	Determines how many clicks it takes to get to the
+	Wikipedia page for Philosphy, given a starting article.
 	WIP
 	Tim Coutinho
-"""
+'''
 
 from bs4 import BeautifulSoup
 from urllib.request import urlopen

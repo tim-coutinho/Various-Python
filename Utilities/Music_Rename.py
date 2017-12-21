@@ -42,21 +42,21 @@ def modify_album(artist, album):
 	for song in os.listdir():
 		song = os.path.splitext(song)
 		if song[1] in good_ext:  # Valid audio extension
-			modify_song(song)
+			with open_audio(song) as audio:
+				modify_song(song, audio)
 
 
 # Modifies a song's title and album tags
-def modify_song(song):
-	with open_audio(song) as audio:
-		try:					# In an album, tag exists
-			modify_tag(song, audio, 'album')
-		except Exception:		# Not in an album, tag does't exist
-			pass
-		if 'title' not in audio:  # Use file name as title
-			# Removes any leading album identifiers, i.e. 01 and 13 -
-			audio['title'] = re.sub(r'^([0-2]?[\d][^\w\d,])[ \-\.]*',
-									'', song[0].lstrip('0'))
-		modify_tag(song, audio, 'title')
+def modify_song(song, audio):
+	try:					# In an album, tag exists
+		modify_tag(song, audio, 'album')
+	except Exception:		# Not in an album, tag does't exist
+		pass
+	if 'title' not in audio:  # Use file name as title
+		# Removes any leading album identifiers, i.e. 01 and 13 -
+		audio['title'] = re.sub(r'^([0-2]?[\d][^\w\d,])[ \-\.]*',
+								'', song[0].lstrip('0'))
+	modify_tag(song, audio, 'title')
 
 
 # Changes a specific tag of a song, either title or album

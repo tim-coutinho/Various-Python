@@ -1,7 +1,8 @@
-"""
-	Uses matplotlib and pandas to display various data about Iowa cities.
+'''
+	Uses matplotlib and pandas to display
+	various data about Iowa cities.
 	Tim Coutinho
-"""
+'''
 
 import csv
 import pandas as pd

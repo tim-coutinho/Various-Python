@@ -23,9 +23,11 @@ pathify = lambda *args: '\\'.join(args)
 # Context manager that automatically saves audio file once done editing
 @contextmanager
 def open_audio(song):
-	audio = EasyID3(''.join(song))
-	yield audio
-	audio.save()
+	try:
+		audio = EasyID3(''.join(song))
+		yield audio
+	finally:
+		audio.save()
 
 
 # Moves a song from the artist folder to an Unknown Album folder

@@ -23,8 +23,6 @@ def printData():
 	print(f'As of {time}, the weather in {city}, {state} is {temp}.')
 	print(f'{city} is currently experiencing {wind} mph '
 		  f'winds with gusts up to {gust} miles per hour.')
-	# if input('Show nearby cities' data? ').lower() in yes:
-	# 	showNearby(city, state)
 
 
 def byCity(city=None, state=None):
@@ -56,13 +54,6 @@ def byCoords():
 	with urlopen(f'http://api.wunderground.com/api/{key}/geolookup/q/{lat},{lon}.json') as url:
 		data = json.loads(url.read().decode())
 	return byCity(data['location']['city'], data['location']['state'])
-
-
-# def showNearby(city, state):	# Probably not feasible
-# 	with urlopen(f'http://api.wunderground.com/api/{key}/geolookup/q/{state}/{city}.json') as url:
-# 		data = json.loads(url.read().decode())
-# 	for station in data['location']['nearby_weather_stations']['airport']['station']:
-# 		byCity(station['city'], station['state'])
 
 
 def main():

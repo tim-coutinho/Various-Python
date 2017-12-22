@@ -9,6 +9,7 @@ import pygame as pg
 import pandas as pd
 import matplotlib.pyplot as plt
 from mpl_toolkits.basemap import Basemap
+from contextlib import contextmanager
 
 df = pd.read_csv('iowa_cities.csv',index_col='name')
 
@@ -23,6 +24,16 @@ colors = {'white': (255,255,255),'black': (0,0,0),'red': (255,0,0),
 game_display = pg.display.set_mode((display_w,display_h))
 pg.display.set_caption('Iowa')
 clock = pg.time.Clock()
+
+
+@contextmanager
+def begin():
+	try:
+		pg.init()
+		yield
+	finally:
+		pg.quit()
+		quit()
 
 
 def button(x,y,w,h,color1,color2=None,msg=None,
@@ -109,10 +120,13 @@ def main_loop():
 
 
 def main():
-	pg.init()
-	main_loop()
-	pg.quit()
-	quit()
+	# I just really like context managers
+	with begin():
+		main_loop()
+	# pg.init()
+	# main_loop()
+	# pg.quit()
+	# quit()
 
 
 if __name__ == '__main__':

@@ -17,7 +17,7 @@ good_ext = ('.aiff', '.ape', '.asf', '.flac', '.mp3', '.mp4', '.mpc',
 			'.ofr', '.oga', '.ogg', '.ogv', '.opus', '.spx', '.tta', '.wv')
 roman_nums = ('Ii', 'Iii', 'Iv', 'Vi', 'Vii', 'Viii', 'Ix')
 base = '/Users/tmcou/Music/iTunes/iTunes Media/Music - Copy'
-pathify = lambda *args: '\\'.join(args)
+pathify = lambda *paths: '\\'.join(paths)
 
 
 # Context manager that automatically saves audio file once done editing

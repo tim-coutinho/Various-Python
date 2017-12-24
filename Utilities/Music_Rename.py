@@ -103,6 +103,18 @@ def modify_tag(orig, audio, tag):
 	# 					  'Unknown Album',''.join(orig)))
 
 
+# Separate utility to modify any audio files in one directory
+def individual(directory):
+	os.chdir(directory)
+	for song in os.listdir():
+		song = os.path.splitext(song)
+		if song[1] in good_ext:  # Valid audio extension
+			print(song[0])
+			with open_audio(song) as audio:
+				if 'title' in audio:
+					del audio['title']
+				modify_song(song, audio)
+
 def main():
 	os.chdir(base)
 	for artist in os.listdir():
@@ -116,3 +128,4 @@ def main():
 
 if __name__ == '__main__':
 	main()
+	# individual('/Users/tmcou/Downloads')

@@ -26,7 +26,7 @@ def printData():
 
 
 def byCity(city=None, state=None):
-	if city == state == None:	# Function called naturally by user
+	if city == state == None:  # Function called naturally by user
 		state = input('Enter state: ')
 		state = us_state_abbrev.get(state.lower().capitalize(), state)
 		city = input('Enter city: ').replace(' ', '_')

@@ -17,9 +17,9 @@ default_font = 'Calibri'
 display_w = 800
 display_h = 600
 
-colors = {'white': (255,255,255),'black': (0,0,0),'red': (255,0,0),
-		  'green': (0,255,0),'blue': (0,0,200),'yellow': (255,255,0),
-		  'cyan': (0,255,255),'magenta': (255,0,255)}
+colors = {'white': (255,255,255),'black':   (0,0,0),  'red':    (255,0,0),
+		  'green': (0,255,0),    'blue':    (0,0,200),'yellow': (255,255,0),
+		  'cyan':  (0,255,255),  'magenta': (255,0,255)}
 
 game_display = pg.display.set_mode((display_w,display_h))
 pg.display.set_caption('Iowa')
@@ -40,16 +40,15 @@ def button(x,y,w,h,color1,color2=None,msg=None,
 		   msg_color=colors['black'],func=None):
 	color = color1
 	mouse = pg.mouse.get_pos()
-	click = pg.mouse.get_pressed()
+	lclick = pg.mouse.get_pressed()[0]
 	font = pg.font.SysFont(default_font, 20)
 	text, text_rect = make_text(msg, font, msg_color)
 	text_rect.center = ((x + w/2, y + h/2))
 
 	if mouse[0] in range(x, x+w) and mouse[1] in range(y, y+h):
 		color = color2 or color1  # Sets to color1 if color2 is None
-		if click[0] == 1 and func:
-			for f in func:
-				f()
+		if lclick == 1 and func:
+			[f() for f in func]
 
 	pg.draw.rect(game_display, color, (x,y,w,h))
 	game_display.blit(text, text_rect)

@@ -40,6 +40,8 @@ def make_unknown(artist, song):
 
 # Modifies all valid audio files in an album
 def modify_album(artist, album):
+	if album != 'Unknown Album':
+		print(f'  {album}')
 	os.chdir(pathify(base,artist,album))
 	for song in os.listdir():
 		song = os.path.splitext(song)
@@ -78,11 +80,12 @@ def modify_tag(orig, audio, tag):
 	while '_' in audio[tag][0]:
 		c = input(f'What character should replace the _ in {audio[tag][0]}? ')
 		audio[tag] = audio[tag][0].replace('_', c, 1)
-	# Parentheses and colons
-	match = re.match(r'.*((?:\(|:) *[a-z]).*', audio[tag][0])
+	# Parentheses, colons, ellipses
+	match = re.match(r'.*((?:\(|:|\.+) *[a-z]).*', audio[tag][0])
 	if match:
-		audio[tag] = audio[tag][0].replace(match.group(1),
-										   match.group(1).upper())
+		for i, _ in enumerate(match.groups()):
+			audio[tag] = audio[tag][0].replace(match.group(i+1),
+										   match.group(i+1).upper())
 	# Finally, capitalize the first word regardless
 	audio[tag] = audio[tag][0][0].upper() + audio[tag][0][1:]
 

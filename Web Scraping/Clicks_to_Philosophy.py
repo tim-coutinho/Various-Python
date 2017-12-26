@@ -1,12 +1,13 @@
-'''
+"""
 	Determines how many clicks it takes to get to the
 	Wikipedia page for Philosphy, given a starting article.
 	WIP
 	Tim Coutinho
-'''
+"""
+
+from urllib.request import urlopen
 
 from bs4 import BeautifulSoup
-from urllib.request import urlopen
 
 def main():
 	while True:

@@ -1,10 +1,11 @@
-'''
+"""
 	Uses matplotlib and pandas to display
 	various data about Iowa cities.
 	Tim Coutinho
-'''
+"""
 
 import csv
+
 import pandas as pd
 import matplotlib.pyplot as plt
 from mpl_toolkits.basemap import Basemap

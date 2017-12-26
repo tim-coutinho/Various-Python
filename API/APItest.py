@@ -1,13 +1,14 @@
-'''
+"""
 	An API test using Wunderground's API to fetch
 	weather data on the city/zip/coordinates of choice.
 	Tim Coutinho
-'''
+"""
 
 import time
 import json
 from datetime import datetime
 from urllib.request import urlopen
+
 from constants import key, us_state_abbrev
 
 yes = ('yes', 'ye', 'y')

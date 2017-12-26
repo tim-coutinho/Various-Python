@@ -4,8 +4,9 @@
 """
 
 import csv
-from bs4 import BeautifulSoup
 from urllib.request import urlopen
+
+from bs4 import BeautifulSoup
 
 MAX_POSTS = 10
 

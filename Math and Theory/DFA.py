@@ -1,11 +1,12 @@
-'''
+"""
 	A program that uses a DFA (Deterministic Finite State Automaton)
 	to determine if the given input is a valid double.
 	Tim Coutinho
-'''
+"""
 
 import re
 import sys
+
 import numpy as np
 
 transTable = np.array([[2,3,9,4],[2,9,6,5],[2,9,9,4],[5,9,9,9],

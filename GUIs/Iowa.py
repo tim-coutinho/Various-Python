@@ -1,15 +1,16 @@
-'''
+"""
 	Expands on the data visualization aspect
 	of Iowa.py, adds a GUI, buttons, etc.
 	Tim Coutinho
-'''
+"""
 
 import csv
+from contextlib import contextmanager
+
 import pygame as pg
 import pandas as pd
 import matplotlib.pyplot as plt
 from mpl_toolkits.basemap import Basemap
-from contextlib import contextmanager
 
 df = pd.read_csv('iowa_cities.csv',index_col='name')
 
@@ -71,8 +72,9 @@ def draw_hex():
 
 def draw_basemap():
 	m = Basemap(projection='mill',llcrnrlat=40,llcrnrlon=-97,
-								  urcrnrlat=44,urcrnrlon=-90)
+				urcrnrlat=44,urcrnrlon=-90,resolution='l')
 	m.drawstates(color='k')
+	m.drawrivers()
 	cities, pops, lats, lons = [], [], [], []
 
 	with open('iowa_cities.csv') as f:
@@ -84,10 +86,10 @@ def draw_basemap():
 			lons.append(float(row[8]))
 			pops.append(float(row[10]))
 
-	for n, cities in enumerate(cities):
-		if pops[n] > 50000:
-			xpt, ypt = m(lons[n], lats[n])
-			m.plot(xpt, ypt, 'co', markersize=5)
+	for pop, lat, lon in zip(pops, lats, lons):
+		if pop > 50000:
+			x, y = m(lon, lat)
+			m.plot(x, y, 'co', markersize=5)
 
 
 def main_loop():
@@ -98,17 +100,17 @@ def main_loop():
 				quit()
 		game_display.fill(colors['white'])
 
-		button(int(display_w*.25 - 50),int(display_h*.4),100,50,colors['green'],
-			   colors['blue'],msg='Scatter',
+		button(int(display_w*.25 - 50),int(display_h*.4),100,50,
+			   colors['green'],colors['blue'],msg='Scatter',
 			   func=(draw_scatter,plt.show))
 		button(int(display_w*.5 - 50),int(display_h*.4),100,50,colors['blue'],
 			   colors['green'],msg='Hex',msg_color=colors['white'],
 			   func=(draw_hex,plt.show))
-		button(int(display_w*.75 - 50),int(display_h*.4),100,50,colors['magenta'],
-			   colors['cyan'],msg='Basemap',
+		button(int(display_w*.75 - 50),int(display_h*.4),100,50,
+			   colors['magenta'],colors['cyan'],msg='Basemap',
 			   func=(draw_basemap,plt.show))
-		button(int(display_w*.5 - 50),int(display_h*.6),100,50,colors['cyan'],
-			   colors['yellow'],msg='All',
+		button(int(display_w*.5 - 50),int(display_h*.6),100,50,
+			   colors['cyan'],colors['yellow'],msg='All',
 			   func=(draw_scatter,draw_hex,draw_basemap,plt.show))
 		button(int(display_w*.5 - 50),int(display_h*.9),100,50,colors['black'],
 			   colors['red'],msg='Quit',msg_color=colors['white'],

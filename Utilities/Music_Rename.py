@@ -1,28 +1,30 @@
-'''
+"""
 	Utility written to help organize my music files.
-	Lowercases all title/album words in no_upper,
+	Lowercases all title/album words in NO_UPPER,
 	moves songs into folders if not in one already.
 	USE MUSIC - COPY FIRST
 	Tim Coutinho
-'''
+"""
 
 import os
 import re
 from contextlib import contextmanager
+
 from mutagen.easyid3 import EasyID3
 
-no_upper = ('a', 'an', 'and', 'at', 'but', 'by', 'for','from',
+NO_UPPER = ('a', 'an', 'and', 'at', 'but', 'by', 'for','from',
 			'in', 'nor', 'of', 'on', 'or', 'the', 'to')
-good_ext = ('.aiff', '.ape', '.asf', '.flac', '.mp3', '.mp4', '.mpc',
+GOOD_EXT = ('.aiff', '.ape', '.asf', '.flac', '.mp3', '.mp4', '.mpc',
 			'.ofr', '.oga', '.ogg', '.ogv', '.opus', '.spx', '.tta', '.wv')
-roman_nums = ('Ii', 'Iii', 'Iv', 'Vi', 'Vii', 'Viii', 'Ix')
-base = '/Users/tmcou/Music/iTunes/iTunes Media/Music - Copy'
+ROMAN_NUMS = ('Ii', 'Iii', 'Iv', 'Vi', 'Vii', 'Viii', 'Ix')
+BASE = '/Users/tmcou/Music/iTunes/iTunes Media/Music - Copy'
+
 pathify = lambda *paths: '\\'.join(paths)
 
 
-# Context manager that automatically saves audio file once done editing
 @contextmanager
 def open_audio(song):
+	"""Automatically save audio file once done editing."""
 	try:
 		audio = EasyID3(''.join(song))
 		yield audio
@@ -30,28 +32,28 @@ def open_audio(song):
 		audio.save()
 
 
-# Moves a song from the artist folder to an Unknown Album folder
 def make_unknown(artist, song):
+	"""Move a song from the artist folder to an Unknown Album folder."""
 	os.mkdir('Unknown Album')
-	os.rename(pathify(base,artist,song),
-			  pathify(base,artist,'Unknown Album',song))
+	os.rename(pathify(BASE,artist,song),
+			  pathify(BASE,artist,'Unknown Album',song))
 	return 'Unknown Album'
 
 
-# Modifies all valid audio files in an album
 def modify_album(artist, album):
+	"""Modifies all valid audio files in an album"""
 	if album != 'Unknown Album':
 		print(f'  {album}')
-	os.chdir(pathify(base,artist,album))
+	os.chdir(pathify(BASE,artist,album))
 	for song in os.listdir():
 		song = os.path.splitext(song)
-		if song[1] in good_ext:  # Valid audio extension
+		if song[1] in GOOD_EXT:  # Valid audio extension
 			with open_audio(song) as audio:
 				modify_song(song, audio)
 
 
-# Modifies a song's title and album tags
 def modify_song(song, audio):
+	"""Modify a song's title and album tags."""
 	try:					# In an album, tag exists
 		modify_tag(song, audio, 'album')
 	except Exception:		# Not in an album, tag does't exist
@@ -63,18 +65,18 @@ def modify_song(song, audio):
 	modify_tag(song, audio, 'title')
 
 
-# Changes a specific tag of a song, either title or album
 def modify_tag(orig, audio, tag):
+	"""Change a specific tag of a song."""
 	# Makes directory navigation easier, adding spaces around any /
 	audio[tag] = re.sub(r'(\w+)(/)(\w+)', r'\1 / \3', audio[tag][0]).lower()
 	audio[tag] = ' '.join([word if re.sub(r'[:/\-]', '', word)
-						   in no_upper else word.capitalize()
+						   in NO_UPPER else word.capitalize()
 						   for word in audio[tag][0].split()])
 	# Edge Cases:
 	# Roman numerals
-	if any(word.strip(':') in roman_nums for word in audio[tag][0].split()):
+	if any(word.strip(':') in ROMAN_NUMS for word in audio[tag][0].split()):
 		for word in audio[tag][0].split():
-			if word.strip(':') in roman_nums:
+			if word.strip(':') in ROMAN_NUMS:
 				audio[tag] = audio[tag][0].replace(word, word.upper())
 	# Underscores (title likely pulled from file name)
 	while '_' in audio[tag][0]:
@@ -89,27 +91,27 @@ def modify_tag(orig, audio, tag):
 
 	# sub = re.sub(r'[/:\?]', '_', audio[tag][0])
 	# if tag == 'title' and 'album' in audio:  # Rename file to new song title
-	# 	os.rename(pathify(base,audio['artist'][0],
+	# 	os.rename(pathify(BASE,audio['artist'][0],
 	# 					  audio['album'][0].replace('/', '_'),''.join(orig)),
-	# 			  pathify(base,audio['artist'][0],
+	# 			  pathify(BASE,audio['artist'][0],
 	# 			  		  audio['album'][0].replace('/', '_'),sub)+orig[1])
-	# 	os.remove(pathify(base,audio['artist'][0],
+	# 	os.remove(pathify(BASE,audio['artist'][0],
 	# 					  audio['album'][0].replace('/', '_'),''.join(orig)))
 	# elif tag == 'title':
-	# 	os.rename(pathify(base,audio['artist'][0],
+	# 	os.rename(pathify(BASE,audio['artist'][0],
 	# 					  'Unknown Album',''.join(orig)),
-	# 			  pathify(base,audio['artist'][0],
+	# 			  pathify(BASE,audio['artist'][0],
 	# 			  		  'Unknown Album',sub)+orig[1])
-	# 	os.remove(pathify(base,audio['artist'][0],
+	# 	os.remove(pathify(BASE,audio['artist'][0],
 	# 					  'Unknown Album',''.join(orig)))
 
 
-# Separate utility to modify any audio files in one directory
 def individual(directory):
+	"""Separate utility to modify any audio files in one directory."""
 	os.chdir(directory)
 	for song in os.listdir():
 		song = os.path.splitext(song)
-		if song[1] in good_ext:  # Valid audio extension
+		if song[1] in GOOD_EXT:  # Valid audio extension
 			print(song[0])
 			with open_audio(song) as audio:
 				if 'title' in audio:
@@ -117,9 +119,9 @@ def individual(directory):
 				modify_song(song, audio)
 
 def main():
-	os.chdir(base)
+	os.chdir(BASE)
 	for artist in os.listdir():
-		os.chdir(pathify(base, artist))
+		os.chdir(pathify(BASE, artist))
 		print(artist)
 		for album in os.listdir():
 			if os.path.isfile(album):  # Create Unknown Album folder

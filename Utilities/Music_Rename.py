@@ -83,7 +83,7 @@ def modify_tag(orig, audio, tag):
 		c = input(f'What character should replace the _ in {audio[tag][0]}? ')
 		audio[tag] = audio[tag][0].replace('_', c, 1)
 	# Parentheses, colons, ellipses
-	matches = re.findall(r'(?:\(|:|\.+) *[a-z]', audio[tag][0])
+	matches = re.findall(r'[\(:\.]+ *[a-z]', audio[tag][0])
 	for match in matches:
 		audio[tag] = audio[tag][0].replace(match, match.upper())
 	# Finally, capitalize the first word regardless

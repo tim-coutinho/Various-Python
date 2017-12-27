@@ -73,7 +73,7 @@ def modify_song(base, song, audio):
 	global modified
 	try:
 		modify_tag(base, song, audio, 'album')
-	except Exception:  # Not in an album, tag does't exist
+	except KeyError:  # Not in an album, tag does't exist
 		pass
 	if 'title' not in audio:  # Use file name as title
 		# Removes any leading album identifiers, i.e. '01' and '13 -'

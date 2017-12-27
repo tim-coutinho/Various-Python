@@ -11,6 +11,7 @@ import re
 from contextlib import contextmanager
 
 from mutagen.easyid3 import EasyID3
+from mutagen.id3._util import ID3NoHeaderError
 
 NO_UPPER = ('a', 'an', 'and', 'at', 'but', 'by', 'for','from',
 			'in', 'nor', 'of', 'on', 'or', 'the', 'to')
@@ -33,42 +34,38 @@ def open_audio(song):
 		audio = EasyID3(''.join(song))
 		yield audio
 	except ID3NoHeaderError:
-		pass
-	except Exception as e:
-		print(str(e))
+		yield
 	else:
 		audio.save()
 
 
 def make_unknown(base, artist, song):
 	"""Move a song from the artist folder to an Unknown Album folder."""
+	os.chdir(pathify(base,artist))
 	os.mkdir('Unknown Album')
 	os.rename(pathify(base,artist,song),
 			  pathify(base,artist,'Unknown Album',song))
+	os.chdir(pathify(base,artist,album))
 	return 'Unknown Album'
 
 
 def modify_album(base, artist, album, individual=False):
-	"""Modifies all valid audio files in an album"""
+	"""Modifies all valid audio files in an album."""
 	if album != 'Unknown Album':
 		print(f'  {album}')
 	try:
 		os.chdir(pathify(base,artist,album))
 	except NotADirectoryError:
 		album = make_unknown(base,artist,album)
-		os.chdir(pathify(base,artist,album))
 	for song in os.listdir():
 		song = os.path.splitext(song)
-		try:
-			with open_audio(song) as audio:
-				if audio:
-					if individual:
-						print(song[0])
-						if 'title' in audio:
-							del audio['title']
-					modify_song(base, song, audio)
-		except Exception:  # Invalid audio extension
-			pass
+		with open_audio(song) as audio:
+			if audio:
+				if individual:
+					print(song[0])
+					if 'title' in audio:
+						del audio['title']
+				modify_song(base, song, audio)
 
 
 def modify_song(base, song, audio):

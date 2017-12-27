@@ -21,6 +21,10 @@ BASE = '/Users/tmcou/Music/iTunes/iTunes Media/Music - Copy'
 
 pathify = lambda *paths: '\\'.join(paths)
 
+re_nums = re.compile(r'^[0-1]?[\d]\W[.\- ]*')
+re_parens = re.compile(r'[\(:\.]+ *[a-z]')
+re_spec = re.compile(r'[:/\-]')
+
 
 @contextmanager
 def open_audio(song):
@@ -66,12 +70,8 @@ def modify_song(song, audio):
 	except Exception:  # Not in an album, tag does't exist
 		pass
 	if 'title' not in audio:  # Use file name as title
-		sub = r'[^\w\d,])[ \-\.]*'
-		if 'album' in audio:
-			sub = r'^([0-2]?[\d]' + sub
 		# Removes any leading album identifiers, i.e. '01' and '13 -'
-		audio['title'] = re.sub(r'^([0-2]?[\d][^\w\d,])[ \-\.]*',
-								'', song[0].lstrip('0'))
+		audio['title'] = re_nums.sub('', song[0].lstrip('0'))
 	modify_tag(song, audio, 'title')
 
 
@@ -79,7 +79,7 @@ def modify_tag(orig, audio, tag):
 	"""Change a specific tag of a song."""
 	# Makes directory navigation easier, adding spaces around any /
 	audio[tag] = audio[tag][0].replace('/', ' / ')
-	audio[tag] = ' '.join([word if re.sub(r'[:/\-]', '', word)
+	audio[tag] = ' '.join([word if re_spec.sub('', word)
 						   in NO_UPPER else word.capitalize()
 						   for word in audio[tag][0].split()])
 	# Edge Cases:
@@ -93,7 +93,7 @@ def modify_tag(orig, audio, tag):
 		c = input(f'What character should replace the _ in {audio[tag][0]}? ')
 		audio[tag] = audio[tag][0].replace('_', c, 1)
 	# Parentheses, colons, ellipses
-	matches = re.findall(r'[\(:\.]+ *[a-z]', audio[tag][0])
+	matches = re_parens.findall(audio[tag][0])
 	for match in matches:
 		audio[tag] = audio[tag][0].replace(match, match.upper())
 	# Finally, capitalize the first word regardless
@@ -121,12 +121,15 @@ def individual(directory):
 	os.chdir(directory)
 	for song in os.listdir():
 		song = os.path.splitext(song)
-		if song[1] in GOOD_EXT:  # Valid audio extension
-			print(song[0])
+		try:
 			with open_audio(song) as audio:
-				if 'title' in audio:
-					del audio['title']
-				modify_song(song, audio)
+				if audio:
+					print(song[0])
+					if 'title' in audio:
+						del audio['title']
+					modify_song(song, audio)
+		except Exception:
+			pass
 
 def main():
 	os.chdir(BASE)

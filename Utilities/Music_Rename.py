@@ -17,10 +17,9 @@ NO_UPPER = ('a', 'an', 'and', 'at', 'but', 'by', 'for','from',
 GOOD_EXT = ('.aiff', '.ape', '.asf', '.flac', '.mp3', '.mp4', '.mpc',
 			'.ofr', '.oga', '.ogg', '.ogv', '.opus', '.spx', '.tta', '.wv')
 ROMAN_NUMS = ('Ii', 'Iii', 'Iv', 'Vi', 'Vii', 'Viii', 'Ix')
-BASE = '/Users/tmcou/Music/iTunes/iTunes Media/Music - Copy'
 modified = 0
 
-pathify = lambda *paths: '\\'.join(paths)
+pathify = lambda *paths: '/'.join(paths)
 
 re_nums = re.compile(r'^[0-1]?[\d]\W[.\- ]*')
 re_parens = re.compile(r'[\(:\.]+ *[a-z]')
@@ -33,52 +32,60 @@ def open_audio(song):
 	try:
 		audio = EasyID3(''.join(song))
 		yield audio
-	finally:
+	except ID3NoHeaderError:
+		pass
+	except Exception as e:
+		print(str(e))
+	else:
 		audio.save()
 
 
-def make_unknown(artist, song):
+def make_unknown(base, artist, song):
 	"""Move a song from the artist folder to an Unknown Album folder."""
 	os.mkdir('Unknown Album')
-	os.rename(pathify(BASE,artist,song),
-			  pathify(BASE,artist,'Unknown Album',song))
+	os.rename(pathify(base,artist,song),
+			  pathify(base,artist,'Unknown Album',song))
 	return 'Unknown Album'
 
 
-def modify_album(artist, album):
+def modify_album(base, artist, album, individual=False):
 	"""Modifies all valid audio files in an album"""
 	if album != 'Unknown Album':
 		print(f'  {album}')
-	os.chdir(pathify(BASE,artist,album))
+	try:
+		os.chdir(pathify(base,artist,album))
+	except NotADirectoryError:
+		album = make_unknown(base,artist,album)
+		os.chdir(pathify(base,artist,album))
 	for song in os.listdir():
 		song = os.path.splitext(song)
 		try:
 			with open_audio(song) as audio:
 				if audio:
-					modify_song(song, audio)
+					if individual:
+						print(song[0])
+						if 'title' in audio:
+							del audio['title']
+					modify_song(base, song, audio)
 		except Exception:  # Invalid audio extension
 			pass
-		# if song[1] not in GOOD_EXT:  # Valid audio extension
-		# 	continue
-		# with open_audio(song) as audio:
-		# 	modify_song(song, audio)
 
 
-def modify_song(song, audio):
+def modify_song(base, song, audio):
 	"""Modify a song's title and album tags."""
 	global modified
 	try:
-		modify_tag(song, audio, 'album')
+		modify_tag(base, song, audio, 'album')
 	except Exception:  # Not in an album, tag does't exist
 		pass
 	if 'title' not in audio:  # Use file name as title
 		# Removes any leading album identifiers, i.e. '01' and '13 -'
 		audio['title'] = re_nums.sub('', song[0].lstrip('0'))
-	modify_tag(song, audio, 'title')
+	modify_tag(base, song, audio, 'title')
 	modified += 1
 
 
-def modify_tag(orig, audio, tag):
+def modify_tag(base, orig, audio, tag):
 	"""Change a specific tag of a song."""
 	# Makes directory navigation easier, adding spaces around any /
 	audio[tag] = audio[tag][0].replace('/', ' / ')
@@ -104,48 +111,32 @@ def modify_tag(orig, audio, tag):
 
 	# sub = re.sub(r'[/:\?]', '_', audio[tag][0])
 	# if tag == 'title' and 'album' in audio:  # Rename file to new song title
-	# 	os.rename(pathify(BASE,audio['artist'][0],
+	# 	os.rename(pathify(base,audio['artist'][0],
 	# 					  audio['album'][0].replace('/', '_'),''.join(orig)),
-	# 			  pathify(BASE,audio['artist'][0],
+	# 			  pathify(base,audio['artist'][0],
 	# 			  		  audio['album'][0].replace('/', '_'),sub)+orig[1])
-	# 	os.remove(pathify(BASE,audio['artist'][0],
+	# 	os.remove(pathify(base,audio['artist'][0],
 	# 					  audio['album'][0].replace('/', '_'),''.join(orig)))
 	# elif tag == 'title':
-	# 	os.rename(pathify(BASE,audio['artist'][0],
+	# 	os.rename(pathify(base,audio['artist'][0],
 	# 					  'Unknown Album',''.join(orig)),
-	# 			  pathify(BASE,audio['artist'][0],
+	# 			  pathify(base,audio['artist'][0],
 	# 			  		  'Unknown Album',sub)+orig[1])
-	# 	os.remove(pathify(BASE,audio['artist'][0],
+	# 	os.remove(pathify(base,audio['artist'][0],
 	# 					  'Unknown Album',''.join(orig)))
 
 
-def individual(directory):
-	"""Separate utility to modify any audio files in one directory."""
-	os.chdir(directory)
-	for song in os.listdir():
-		song = os.path.splitext(song)
-		try:
-			with open_audio(song) as audio:
-				if audio:
-					print(song[0])
-					if 'title' in audio:
-						del audio['title']
-					modify_song(song, audio)
-		except Exception:
-			pass
-
 def main():
-	os.chdir(BASE)
+	base = '/Users/tmcou/Music/iTunes/iTunes Media/Music - Copy'
+	os.chdir(base)
 	for artist in os.listdir():
-		os.chdir(pathify(BASE, artist))
 		print(artist)
+		os.chdir(pathify(base, artist))
 		for album in os.listdir():
-			if os.path.isfile(album):  # Create Unknown Album folder
-				album = make_unknown(artist, album)
-			modify_album(artist, album)
-	print(f'\nModified {modified} songs.')
+			modify_album(base, artist, album)
 
 
 if __name__ == '__main__':
 	main()
-	# individual('/Users/tmcou/Downloads')
+	# modify_album('/Users', 'tmcou', 'Downloads')
+	print(f'\nModified {modified} songs.')

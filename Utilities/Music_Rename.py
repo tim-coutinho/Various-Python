@@ -47,19 +47,29 @@ def modify_album(artist, album):
 	os.chdir(pathify(BASE,artist,album))
 	for song in os.listdir():
 		song = os.path.splitext(song)
-		if song[1] in GOOD_EXT:  # Valid audio extension
+		try:
 			with open_audio(song) as audio:
-				modify_song(song, audio)
+				if audio:
+					modify_song(song, audio)
+		except Exception:  # Invalid audio extension
+			pass
+		# if song[1] not in GOOD_EXT:  # Valid audio extension
+		# 	continue
+		# with open_audio(song) as audio:
+		# 	modify_song(song, audio)
 
 
 def modify_song(song, audio):
 	"""Modify a song's title and album tags."""
-	try:					# In an album, tag exists
+	try:
 		modify_tag(song, audio, 'album')
-	except Exception:		# Not in an album, tag does't exist
+	except Exception:  # Not in an album, tag does't exist
 		pass
 	if 'title' not in audio:  # Use file name as title
-		# Removes any leading album identifiers, i.e. 01 and 13 -
+		sub = r'[^\w\d,])[ \-\.]*'
+		if 'album' in audio:
+			sub = r'^([0-2]?[\d]' + sub
+		# Removes any leading album identifiers, i.e. '01' and '13 -'
 		audio['title'] = re.sub(r'^([0-2]?[\d][^\w\d,])[ \-\.]*',
 								'', song[0].lstrip('0'))
 	modify_tag(song, audio, 'title')
@@ -68,7 +78,7 @@ def modify_song(song, audio):
 def modify_tag(orig, audio, tag):
 	"""Change a specific tag of a song."""
 	# Makes directory navigation easier, adding spaces around any /
-	audio[tag] = re.sub(r'(\w+)(/)(\w+)', r'\1 / \3', audio[tag][0]).lower()
+	audio[tag] = audio[tag][0].replace('/', ' / ')
 	audio[tag] = ' '.join([word if re.sub(r'[:/\-]', '', word)
 						   in NO_UPPER else word.capitalize()
 						   for word in audio[tag][0].split()])

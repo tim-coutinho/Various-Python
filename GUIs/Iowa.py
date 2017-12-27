@@ -14,15 +14,15 @@ from mpl_toolkits.basemap import Basemap
 
 df = pd.read_csv('iowa_cities.csv',index_col='name')
 
-default_font = 'Calibri'
-display_w = 800
-display_h = 600
+DEFAULT_FONT = 'Calibri'
+DISPLAY_W = 800
+DISPLAY_H = 600
 
-colors = {'white': (255,255,255),'black':   (0,0,0),  'red':    (255,0,0),
+COLORS = {'white': (255,255,255),'black':   (0,0,0),  'red':    (255,0,0),
 		  'green': (0,255,0),    'blue':    (0,0,200),'yellow': (255,255,0),
 		  'cyan':  (0,255,255),  'magenta': (255,0,255)}
 
-game_display = pg.display.set_mode((display_w,display_h))
+game_display = pg.display.set_mode((DISPLAY_W,DISPLAY_H))
 pg.display.set_caption('Iowa')
 clock = pg.time.Clock()
 
@@ -38,11 +38,11 @@ def begin():
 
 
 def button(x,y,w,h,color1,color2=None,msg=None,
-		   msg_color=colors['black'],func=None):
+		   msg_color=COLORS['black'],func=None):
 	color = color1
 	mouse = pg.mouse.get_pos()
 	lclick = pg.mouse.get_pressed()[0]
-	font = pg.font.SysFont(default_font, 20)
+	font = pg.font.SysFont(DEFAULT_FONT, 20)
 	text, text_rect = make_text(msg, font, msg_color)
 	text_rect.center = ((x + w/2, y + h/2))
 
@@ -98,22 +98,22 @@ def main_loop():
 			if event.type == pg.QUIT:
 				pg.quit()
 				quit()
-		game_display.fill(colors['white'])
+		game_display.fill(COLORS['white'])
 
-		button(int(display_w*.25 - 50),int(display_h*.4),100,50,
-			   colors['green'],colors['blue'],msg='Scatter',
+		button(int(DISPLAY_W*.25 - 50),int(DISPLAY_H*.4),100,50,
+			   COLORS['green'],COLORS['blue'],msg='Scatter',
 			   func=(draw_scatter,plt.show))
-		button(int(display_w*.5 - 50),int(display_h*.4),100,50,colors['blue'],
-			   colors['green'],msg='Hex',msg_color=colors['white'],
+		button(int(DISPLAY_W*.5 - 50),int(DISPLAY_H*.4),100,50,COLORS['blue'],
+			   COLORS['green'],msg='Hex',msg_color=COLORS['white'],
 			   func=(draw_hex,plt.show))
-		button(int(display_w*.75 - 50),int(display_h*.4),100,50,
-			   colors['magenta'],colors['cyan'],msg='Basemap',
+		button(int(DISPLAY_W*.75 - 50),int(DISPLAY_H*.4),100,50,
+			   COLORS['magenta'],COLORS['cyan'],msg='Basemap',
 			   func=(draw_basemap,plt.show))
-		button(int(display_w*.5 - 50),int(display_h*.6),100,50,
-			   colors['cyan'],colors['yellow'],msg='All',
+		button(int(DISPLAY_W*.5 - 50),int(DISPLAY_H*.6),100,50,
+			   COLORS['cyan'],COLORS['yellow'],msg='All',
 			   func=(draw_scatter,draw_hex,draw_basemap,plt.show))
-		button(int(display_w*.5 - 50),int(display_h*.9),100,50,colors['black'],
-			   colors['red'],msg='Quit',msg_color=colors['white'],
+		button(int(DISPLAY_W*.5 - 50),int(DISPLAY_H*.9),100,50,COLORS['black'],
+			   COLORS['red'],msg='Quit',msg_color=COLORS['white'],
 			   func=(pg.quit,quit))
 
 		pg.display.update()

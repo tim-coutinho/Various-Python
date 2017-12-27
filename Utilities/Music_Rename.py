@@ -18,6 +18,7 @@ GOOD_EXT = ('.aiff', '.ape', '.asf', '.flac', '.mp3', '.mp4', '.mpc',
 			'.ofr', '.oga', '.ogg', '.ogv', '.opus', '.spx', '.tta', '.wv')
 ROMAN_NUMS = ('Ii', 'Iii', 'Iv', 'Vi', 'Vii', 'Viii', 'Ix')
 BASE = '/Users/tmcou/Music/iTunes/iTunes Media/Music - Copy'
+modified = 0
 
 pathify = lambda *paths: '\\'.join(paths)
 
@@ -65,6 +66,7 @@ def modify_album(artist, album):
 
 def modify_song(song, audio):
 	"""Modify a song's title and album tags."""
+	global modified
 	try:
 		modify_tag(song, audio, 'album')
 	except Exception:  # Not in an album, tag does't exist
@@ -73,6 +75,7 @@ def modify_song(song, audio):
 		# Removes any leading album identifiers, i.e. '01' and '13 -'
 		audio['title'] = re_nums.sub('', song[0].lstrip('0'))
 	modify_tag(song, audio, 'title')
+	modified += 1
 
 
 def modify_tag(orig, audio, tag):
@@ -140,6 +143,7 @@ def main():
 			if os.path.isfile(album):  # Create Unknown Album folder
 				album = make_unknown(artist, album)
 			modify_album(artist, album)
+	print(f'\nModified {modified} songs.')
 
 
 if __name__ == '__main__':

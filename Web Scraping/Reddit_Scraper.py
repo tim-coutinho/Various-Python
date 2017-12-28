@@ -10,6 +10,16 @@ from bs4 import BeautifulSoup
 
 MAX_POSTS = 10
 
+
+def getSubreddit():
+	subreddit = input('Subreddit: ')
+	with urlopen(f'https://www.reddit.com/r/{subreddit}/') as url:
+		site = BeautifulSoup(url, 'lxml')
+	posts = site.find_all('div', onclick='click_thing(this)')
+	subreddit = posts[0]['data-subreddit']
+	return (subreddit, site, posts)
+		
+
 def main():
 	while True:
 		try:
@@ -42,13 +52,6 @@ def main():
 
 	csv_file.close()
 
-def getSubreddit():
-	subreddit = input('Subreddit: ')
-	with urlopen(f'https://www.reddit.com/r/{subreddit}/') as url:
-		site = BeautifulSoup(url, 'lxml')
-	posts = site.find_all('div', onclick='click_thing(this)')
-	subreddit = posts[0]['data-subreddit']
-	return (subreddit, site, posts)
-		
+
 if __name__ == '__main__':
 	main()

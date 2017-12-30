@@ -68,39 +68,41 @@ def modify_song(base, song, audio):
 	"""Modify a song's title and album tags."""
 	global modified
 	try:
-		modify_tag(base, song, audio, 'album')
+		audio['album'] = modify_tag(base, song, audio, audio['album'])
 	except KeyError:  # Not in an album, tag does't exist
 		pass
 	if 'title' not in audio:  # Use file name as title
 		# Removes any leading album identifiers, i.e. '01' and '13 -'
 		audio['title'] = re_nums.sub('', song[0].lstrip('0'))
-	modify_tag(base, song, audio, 'title')
+	audio['title'] = modify_tag(base, song, audio, audio['title'])
 	modified += 1
 
 
 def modify_tag(base, orig, audio, tag):
-	"""Change a specific tag of a song."""
+	"""Change a specific tag of a song. Tag must always be converted
+	   to a list due to EasyID3 storing each tag's value as a list."""
 	# Makes directory navigation easier, adding spaces around any /
-	audio[tag] = audio[tag][0].replace('/', ' / ')
-	audio[tag] = ' '.join([word if re_spec.sub('', word)
+	tag = [tag[0].replace('/', ' / ')]
+	tag = [' '.join([word if re_spec.sub('', word)
 						   in NO_UPPER else word.capitalize()
-						   for word in audio[tag][0].split()])
+						   for word in tag[0].split()])]
 	# Edge Cases:
 	# Roman numerals
-	if any(word.strip(':') in ROMAN_NUMS for word in audio[tag][0].split()):
-		for word in audio[tag][0].split():
+	if any(word.strip(':') in ROMAN_NUMS for word in tag[0].split()):
+		for word in tag[0].split():
 			if word.strip(':') in ROMAN_NUMS:
-				audio[tag] = audio[tag][0].replace(word, word.upper())
+				tag = [tag[0].replace(word, word.upper())]
 	# Underscores (title likely pulled from file name)
-	while '_' in audio[tag][0]:
-		c = input(f'What character should replace the _ in {audio[tag][0]}? ')
-		audio[tag] = audio[tag][0].replace('_', c, 1)
+	while '_' in tag[0]:
+		c = input(f'What character should replace the _ in {tag[0]}? ')
+		tag = [tag[0].replace('_', c, 1)]
 	# Parentheses, colons, ellipses
-	matches = re_parens.findall(audio[tag][0])
+	matches = re_parens.findall(tag[0])
 	for match in matches:
-		audio[tag] = audio[tag][0].replace(match, match.upper())
+		tag = [tag[0].replace(match, match.upper())]
 	# Finally, capitalize the first word regardless
-	audio[tag] = audio[tag][0][0].upper() + audio[tag][0][1:]
+	tag = [tag[0][0].upper() + tag[0][1:]]
+	return tag
 
 	# sub = re.sub(r'[/:\?]', '_', audio[tag][0])
 	# if tag == 'title' and 'album' in audio:  # Rename file to new song title

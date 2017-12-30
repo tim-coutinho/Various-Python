@@ -78,7 +78,7 @@ def modify_song(base, song, audio):
 	modified += 1
 
 
-def modify_tag(base, orig, audio, tag):
+def modify_tag(base, orig, tag):
 	"""Change a specific tag of a song. Tag must always be converted
 	   to a list due to EasyID3 storing each tag's value as a list."""
 	# Makes directory navigation easier, adding spaces around any /
@@ -103,22 +103,6 @@ def modify_tag(base, orig, audio, tag):
 	# Finally, capitalize the first word regardless
 	tag = [tag[0][0].upper() + tag[0][1:]]
 	return tag
-
-	# sub = re.sub(r'[/:\?]', '_', audio[tag][0])
-	# if tag == 'title' and 'album' in audio:  # Rename file to new song title
-	# 	os.rename(os.path.join(base,audio['artist'][0],
-	# 					  audio['album'][0].replace('/', '_'),''.join(orig)),
-	# 			  os.path.join(base,audio['artist'][0],
-	# 			  		  audio['album'][0].replace('/', '_'),sub)+orig[1])
-	# 	os.remove(os.path.join(base,audio['artist'][0],
-	# 					  audio['album'][0].replace('/', '_'),''.join(orig)))
-	# elif tag == 'title':
-	# 	os.rename(os.path.join(base,audio['artist'][0],
-	# 					  'Unknown Album',''.join(orig)),
-	# 			  os.path.join(base,audio['artist'][0],
-	# 			  		  'Unknown Album',sub)+orig[1])
-	# 	os.remove(os.path.join(base,audio['artist'][0],
-	# 					  'Unknown Album',''.join(orig)))
 
 
 def main():

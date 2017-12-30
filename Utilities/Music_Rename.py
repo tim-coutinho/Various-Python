@@ -20,8 +20,6 @@ GOOD_EXT = ('.aiff', '.ape', '.asf', '.flac', '.mp3', '.mp4', '.mpc',
 ROMAN_NUMS = ('Ii', 'Iii', 'Iv', 'Vi', 'Vii', 'Viii', 'Ix')
 modified = 0
 
-pathify = lambda *paths: '/'.join(paths)
-
 re_nums = re.compile(r'^[0-1]?[\d]\W[.\- ]*')
 re_parens = re.compile(r'[\(:\.]+ *[a-z]')
 re_spec = re.compile(r'[:/\-]')
@@ -41,11 +39,11 @@ def open_audio(song):
 
 def make_unknown(base, artist, song):
 	"""Move a song from the artist folder to an Unknown Album folder."""
-	os.chdir(pathify(base, artist))
+	os.chdir(os.path.join(base, artist))
 	os.mkdir('Unknown Album')
-	os.rename(pathify(base, artist, song),
-			  pathify(base, artist, 'Unknown Album', song))
-	os.chdir(pathify(base, artist, song))
+	os.rename(os.path.join(base, artist, song),
+			  os.path.join(base, artist, 'Unknown Album', song))
+	os.chdir(os.path.join(base, artist, song))
 	return 'Unknown Album'
 
 
@@ -54,7 +52,7 @@ def modify_album(base, artist, album, individual=False):
 	if album != 'Unknown Album':
 		print(f'  {album}')
 	try:
-		os.chdir(pathify(base, artist, album))
+		os.chdir(os.path.join(base, artist, album))
 	except NotADirectoryError:
 		album = make_unknown(base, artist, album)
 	for song in os.listdir():
@@ -108,18 +106,18 @@ def modify_tag(base, orig, audio, tag):
 
 	# sub = re.sub(r'[/:\?]', '_', audio[tag][0])
 	# if tag == 'title' and 'album' in audio:  # Rename file to new song title
-	# 	os.rename(pathify(base,audio['artist'][0],
+	# 	os.rename(os.path.join(base,audio['artist'][0],
 	# 					  audio['album'][0].replace('/', '_'),''.join(orig)),
-	# 			  pathify(base,audio['artist'][0],
+	# 			  os.path.join(base,audio['artist'][0],
 	# 			  		  audio['album'][0].replace('/', '_'),sub)+orig[1])
-	# 	os.remove(pathify(base,audio['artist'][0],
+	# 	os.remove(os.path.join(base,audio['artist'][0],
 	# 					  audio['album'][0].replace('/', '_'),''.join(orig)))
 	# elif tag == 'title':
-	# 	os.rename(pathify(base,audio['artist'][0],
+	# 	os.rename(os.path.join(base,audio['artist'][0],
 	# 					  'Unknown Album',''.join(orig)),
-	# 			  pathify(base,audio['artist'][0],
+	# 			  os.path.join(base,audio['artist'][0],
 	# 			  		  'Unknown Album',sub)+orig[1])
-	# 	os.remove(pathify(base,audio['artist'][0],
+	# 	os.remove(os.path.join(base,audio['artist'][0],
 	# 					  'Unknown Album',''.join(orig)))
 
 
@@ -128,7 +126,7 @@ def main():
 	os.chdir(base)
 	for artist in os.listdir():
 		print(artist)
-		os.chdir(pathify(base, artist))
+		os.chdir(os.path.join(base, artist))
 		for album in os.listdir():
 			modify_album(base, artist, album)
 

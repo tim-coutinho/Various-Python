@@ -13,7 +13,7 @@ from contextlib import contextmanager
 from mutagen.easyid3 import EasyID3
 from mutagen.id3._util import ID3NoHeaderError
 
-NO_UPPER = ('a', 'an', 'and', 'at', 'but', 'by', 'for','from',
+NO_UPPER = ('a', 'an', 'and', 'at', 'but', 'by', 'for', 'from',
 			'in', 'nor', 'of', 'on', 'or', 'the', 'to')
 GOOD_EXT = ('.aiff', '.ape', '.asf', '.flac', '.mp3', '.mp4', '.mpc',
 			'.ofr', '.oga', '.ogg', '.ogv', '.opus', '.spx', '.tta', '.wv')
@@ -41,11 +41,11 @@ def open_audio(song):
 
 def make_unknown(base, artist, song):
 	"""Move a song from the artist folder to an Unknown Album folder."""
-	os.chdir(pathify(base,artist))
+	os.chdir(pathify(base, artist))
 	os.mkdir('Unknown Album')
-	os.rename(pathify(base,artist,song),
-			  pathify(base,artist,'Unknown Album',song))
-	os.chdir(pathify(base,artist,album))
+	os.rename(pathify(base, artist, song),
+			  pathify(base, artist, 'Unknown Album', song))
+	os.chdir(pathify(base, artist, song))
 	return 'Unknown Album'
 
 
@@ -54,9 +54,9 @@ def modify_album(base, artist, album, individual=False):
 	if album != 'Unknown Album':
 		print(f'  {album}')
 	try:
-		os.chdir(pathify(base,artist,album))
+		os.chdir(pathify(base, artist, album))
 	except NotADirectoryError:
-		album = make_unknown(base,artist,album)
+		album = make_unknown(base, artist, album)
 	for song in os.listdir():
 		song = os.path.splitext(song)
 		with open_audio(song) as audio:

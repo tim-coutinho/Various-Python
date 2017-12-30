@@ -29,7 +29,7 @@ re_spec = re.compile(r'[:/\-]')
 def open_audio(song):
 	"""Automatically save audio file once done editing."""
 	try:
-		audio = EasyID3(''.join(song))
+		audio = EasyID3(song)
 		yield audio
 	except ID3NoHeaderError:
 		yield
@@ -41,9 +41,8 @@ def make_unknown(base, artist, song):
 	"""Move a song from the artist folder to an Unknown Album folder."""
 	os.chdir(os.path.join(base, artist))
 	os.mkdir('Unknown Album')
-	os.rename(os.path.join(base, artist, song),
-			  os.path.join(base, artist, 'Unknown Album', song))
-	os.chdir(os.path.join(base, artist, song))
+	os.rename(song, os.path.join('Unknown Album', song))
+	os.chdir(os.path.join(base, artist, 'Unknown Album'))
 	return 'Unknown Album'
 
 
@@ -56,11 +55,10 @@ def modify_album(base, artist, album, individual=False):
 	except NotADirectoryError:
 		album = make_unknown(base, artist, album)
 	for song in os.listdir():
-		song = os.path.splitext(song)
 		with open_audio(song) as audio:
 			if audio:
 				if individual:
-					print(song[0])
+					print(os.path.splitext(song)[0])
 					if 'title' in audio:
 						del audio['title']
 				modify_song(base, song, audio)

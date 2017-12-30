@@ -12,6 +12,10 @@ from mutagen.easyid3 import EasyID3
 import Music_Rename
 
 base = '/Users/tmcou/Music/iTunes/iTunes Media/Music - Copy'
+files = {'1.txt': ['i am easy', 'I Am Easy'],
+		 '2.txt': ['How about: a colon?', 'How About: A Colon?'],
+		 '3.txt': ['now some() (of) These)', 'Now Some() (Of) These)'],
+		 '4.txt': ['edge (wait): iv ...cases', 'Edge (Wait): IV ...Cases']}
 
 class TestRename(unittest.TestCase):
 
@@ -23,27 +27,28 @@ class TestRename(unittest.TestCase):
 		with open('Lonely Song.txt', 'w'):
 			pass
 		os.chdir('Test Album')
-		with open('Test song 1.txt', 'w'):
-			pass
-		with open('Test song 2.txt', 'w'):
-			pass
-		with open('Test song 3.txt', 'w'):
-			pass
-		with open('Test song 4.txt', 'w'):
-			pass
+		for key in files.keys():
+			with open(key, 'w'):
+				pass
 
-	@classmethod
-	def tearDownClass(cls):
-		os.chdir(base)
-		rmtree('Test Artist')
 
-	def test_modify_song(self):
-		pass
+	def test_modify_tag(self):
+		os.chdir(os.path.join(base, 'Test Artist', 'Test Album'))
+		for file in os.listdir():
+			new = Music_Rename.modify_tag(base, file,
+										  [files[file][0]])
+			self.assertEqual(files[file][1], new[0])
 
 	def test_make_unknown(self):
 		Music_Rename.make_unknown(base, 'Test Artist', 'Lonely Song.txt')
 		os.chdir(os.path.join(base, 'Test Artist', 'Unknown Album'))
 		self.assertTrue(os.path.isfile('Lonely Song.txt'))
+
+
+	@classmethod
+	def tearDownClass(cls):
+		os.chdir(base)
+		rmtree('Test Artist')
 
 
 if __name__ == '__main__':

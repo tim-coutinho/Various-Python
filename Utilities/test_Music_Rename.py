@@ -15,7 +15,8 @@ base = '/Users/tmcou/Music/iTunes/iTunes Media/Music - Copy'
 files = {'1.txt': ['i am easy', 'I Am Easy'],
 		 '2.txt': ['How about: a colon?', 'How About: A Colon?'],
 		 '3.txt': ['now some() (of) These)', 'Now Some() (Of) These)'],
-		 '4.txt': ['edge (wait): iv ...cases', 'Edge (Wait): IV ...Cases']}
+		 '4.txt': ['..ooh, a forward/slash!', '..Ooh, a Forward / Slash!'],
+		 '5.txt': ['edge (wait): iv ......cases', 'Edge (Wait): IV ......Cases']}
 
 class TestRename(unittest.TestCase):
 

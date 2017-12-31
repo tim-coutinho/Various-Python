@@ -46,7 +46,9 @@ def make_unknown(base, artist, song):
 
 
 def modify_album(base, artist, album, individual=False):
-	"""Modifies all valid audio files in an album."""
+	"""Modifies all valid audio files in an album. Individual being true
+	   indicates Music_Rename is being run on a single album or folder,
+	   and not a whole music library."""
 	modified = 0
 	if album != 'Unknown Album':
 		print(f'  {album}')

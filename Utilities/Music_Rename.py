@@ -2,6 +2,8 @@
 	Utility written to help organize my music files.
 	Lowercases all title/album words in NO_UPPER,
 	moves songs into folders if not in one already.
+	Accepts: .aiff, .ape, .asf, .flac, .mp3, .mp4, .mpc,
+	.ofr, .oga, .ogg, .ogv, .opus, .spx, .tta, .wv
 	USE MUSIC - COPY FIRST, run tests beforehand.
 	Tim Coutinho
 """
@@ -15,7 +17,8 @@ from mutagen.id3._util import ID3NoHeaderError
 
 NO_UPPER = ('a', 'an', 'and', 'at', 'but', 'by', 'de', 'for',
 			'from', 'in', 'nor', 'of', 'on', 'or', 'the', 'to')
-EXCEPTIONS = {'adhd': 'ADHD', 'id': 'ID', 'i want! i want!': 'i want! i want!',
+EXCEPTIONS = {'adhd': 'ADHD', 'id': 'ID', 'sea is a lady': 'SEA IS A LADY',
+			  'i want! i want!': 'i want! i want!',
 			  'futuresex  /  lovesounds': 'FutureSex / LoveSounds'}
 ROMAN_NUMS = ('Ii', 'Iii', 'Iv', 'Vi', 'Vii', 'Viii', 'Ix')
 
@@ -61,12 +64,13 @@ def modify_album(base, artist, album, individual=False):
 			continue
 		with open_audio(song) as audio:
 			if audio:
+				old = dict(audio)
 				if individual:
 					print(os.path.splitext(song)[0])
 					if 'title' in audio:
 						del audio['title']
 				modify_song(song, audio)
-				modified += 1
+				modified += 1 if old != audio else 0
 	return modified
 
 
@@ -129,5 +133,5 @@ def main():
 
 if __name__ == '__main__':
 	modified = main()
-	# modified = modify_album('/Users', 'tmcou', 'Downloads')
+	# modified = modify_album('/Users', 'tmcou', 'Downloads', individual=True)
 	print(f'\nModified {modified} songs.')

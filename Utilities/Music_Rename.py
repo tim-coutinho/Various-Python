@@ -15,10 +15,8 @@ from mutagen.id3._util import ID3NoHeaderError
 
 NO_UPPER = ('a', 'an', 'and', 'at', 'but', 'by', 'for', 'from',
 			'in', 'nor', 'of', 'on', 'or', 'the', 'to')
-EXCEPTIONS = {'adhd': 'ADHD',
+EXCEPTIONS = {'adhd': 'ADHD', 'id': 'ID',
 			  'futuresex  /  lovesounds': 'FutureSex / LoveSounds'}
-GOOD_EXT = ('.aiff', '.ape', '.asf', '.flac', '.mp3', '.mp4', '.mpc',
-			'.ofr', '.oga', '.ogg', '.ogv', '.opus', '.spx', '.tta', '.wv')
 ROMAN_NUMS = ('Ii', 'Iii', 'Iv', 'Vi', 'Vii', 'Viii', 'Ix')
 
 re_nums = re.compile(r'^[0-1]?[\d]\W[.\- ]*')
@@ -121,7 +119,7 @@ def main():
 	modified = 0
 	os.chdir(base)
 	for artist in os.listdir():
-		print(artist)
+		print(artist)	
 		os.chdir(os.path.join(base, artist))
 		for album in os.listdir():
 			modified += modify_album(base, artist, album)

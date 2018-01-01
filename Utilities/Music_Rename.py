@@ -98,6 +98,7 @@ def modify_tag(tag):
 
 
 def edge_cases(tag):
+	"""Handle edge cases such as roman numerals and parantheses."""
 	# Roman numerals
 	if any(word.strip(':') in ROMAN_NUMS for word in tag.split()):
 		for word in tag.split():
@@ -119,7 +120,7 @@ def main():
 	modified = 0
 	os.chdir(base)
 	for artist in os.listdir():
-		print(artist)	
+		print(artist)
 		os.chdir(os.path.join(base, artist))
 		for album in os.listdir():
 			modified += modify_album(base, artist, album)

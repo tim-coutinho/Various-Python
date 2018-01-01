@@ -13,9 +13,9 @@ from contextlib import contextmanager
 from mutagen.easyid3 import EasyID3
 from mutagen.id3._util import ID3NoHeaderError
 
-NO_UPPER = ('a', 'an', 'and', 'at', 'but', 'by', 'for', 'from',
-			'in', 'nor', 'of', 'on', 'or', 'the', 'to')
-EXCEPTIONS = {'adhd': 'ADHD', 'id': 'ID',
+NO_UPPER = ('a', 'an', 'and', 'at', 'but', 'by', 'de', 'for',
+			'from', 'in', 'nor', 'of', 'on', 'or', 'the', 'to')
+EXCEPTIONS = {'adhd': 'ADHD', 'id': 'ID', 'i want! i want!': 'i want! i want!',
 			  'futuresex  /  lovesounds': 'FutureSex / LoveSounds'}
 ROMAN_NUMS = ('Ii', 'Iii', 'Iv', 'Vi', 'Vii', 'Viii', 'Ix')
 

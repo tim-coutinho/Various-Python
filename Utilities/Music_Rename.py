@@ -65,12 +65,12 @@ def modify_album(base, artist, album, individual=False):
 					print(os.path.splitext(song)[0])
 					if 'title' in audio:
 						del audio['title']
-				modify_song(base, song, audio)
+				modify_song(song, audio)
 				modified += 1
 	return modified
 
 
-def modify_song(base, song, audio):
+def modify_song(song, audio):
 	"""Modify a song's title and album tags."""
 	try:
 		audio['album'] = [modify_tag(audio['album'][0])]

@@ -15,6 +15,8 @@ from mutagen.id3._util import ID3NoHeaderError
 
 NO_UPPER = ('a', 'an', 'and', 'at', 'but', 'by', 'for', 'from',
 			'in', 'nor', 'of', 'on', 'or', 'the', 'to')
+EXCEPTIONS = {'adhd': 'ADHD',
+			  'futuresex  /  lovesounds': 'FutureSex / LoveSounds'}
 GOOD_EXT = ('.aiff', '.ape', '.asf', '.flac', '.mp3', '.mp4', '.mpc',
 			'.ofr', '.oga', '.ogg', '.ogv', '.opus', '.spx', '.tta', '.wv')
 ROMAN_NUMS = ('Ii', 'Iii', 'Iv', 'Vi', 'Vii', 'Viii', 'Ix')
@@ -73,39 +75,44 @@ def modify_album(base, artist, album, individual=False):
 def modify_song(base, song, audio):
 	"""Modify a song's title and album tags."""
 	try:
-		audio['album'] = modify_tag(base, song, audio['album'])
+		audio['album'] = [modify_tag(audio['album'][0])]
 	except KeyError:  # Not in an album, tag doesn't exist
 		pass
 	if 'title' not in audio:  # Use file name as title
 		# Removes any leading album identifiers, i.e. '01' and '13 -'
-		audio['title'] = re_nums.sub('', song[0].lstrip('0'))
-	audio['title'] = modify_tag(base, song, audio['title'])
+		audio['title'] = re_nums.sub('', os.path.splitext(song)[0])
+	audio['title'] = [modify_tag(audio['title'][0])]
 
 
-def modify_tag(base, orig, tag):
-	"""Change a specific tag of a song. Tag must always be converted
-	   to a list due to EasyID3 storing each tag's value as a list."""
+def modify_tag(tag):
+	"""Change a specific tag of a song."""
 	# Makes directory navigation easier, adding spaces around any /
-	tag = [tag[0].replace('/', ' / ')]
-	tag = [' '.join([word if re_spec.sub('', word)
+	tag = tag.replace('/', ' / ')
+	if tag.lower() in EXCEPTIONS:
+		return EXCEPTIONS[tag.lower()]
+	tag = ' '.join([word if re_spec.sub('', word)
 						   in NO_UPPER else word.capitalize()
-						   for word in tag[0].split()])]
-	# Edge Cases:
-	# Roman numerals
-	if any(word.strip(':') in ROMAN_NUMS for word in tag[0].split()):
-		for word in tag[0].split():
-			if word.strip(':') in ROMAN_NUMS:
-				tag = [tag[0].replace(word, word.upper())]
-	# Parentheses, colons, ellipses
-	matches = re_parens.findall(tag[0])
-	for match in matches:
-		tag = [tag[0].replace(match, match.upper())]
-	# Underscores (title likely pulled from file name)
-	while '_' in tag[0]:
-		c = input(f'What character should replace the _ in {tag[0]}? ')
-		tag = [tag[0].replace('_', c, 1)]
+						   for word in tag.split()])
+	tag = edge_cases(tag)
 	# Finally, capitalize the first word regardless
-	tag = [tag[0][0].upper() + tag[0][1:]]
+	tag = tag[0].upper() + tag[1:]
+	return tag
+
+
+def edge_cases(tag):
+	# Roman numerals
+	if any(word.strip(':') in ROMAN_NUMS for word in tag.split()):
+		for word in tag.split():
+			if word.strip(':') in ROMAN_NUMS:
+				tag = tag.replace(word, word.upper())
+	# Parentheses, colons, ellipses
+	matches = re_parens.findall(tag)
+	for match in matches:
+		tag = tag.replace(match, match.upper())
+	# Underscores (title likely pulled from file name)
+	while '_' in tag:
+		c = input(f'What character should replace the _ in {tag}? ')
+		tag = tag.replace('_', c, 1)
 	return tag
 
 

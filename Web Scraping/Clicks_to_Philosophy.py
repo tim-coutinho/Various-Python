@@ -24,11 +24,11 @@ def calculate(article):
 	with urlopen(f'https://en.wikipedia.org{article}') as url:
 		site = BeautifulSoup(url, 'lxml')
 	print(site.h1.text)  # Name of the article as displayed on the page
-	for paragraph in site.find('div',
-							   class_='mw-parser-output').find_all('p'):
+	for paragraph in site.find(
+	  'div', class_='mw-parser-output').find_all('p'):
 		for link in paragraph.find_all('a', recursive=False):
 			if ('cite_note' not in link['href']
-							and link['href'] is not article):
+				  and link['href'] is not article):
 				# Don't want citations or same article links
 				return calculate(link['href']) + 1
 

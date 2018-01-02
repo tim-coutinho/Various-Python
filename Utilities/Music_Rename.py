@@ -10,6 +10,7 @@
 
 import os
 import re
+from pathlib import Path
 from contextlib import contextmanager
 
 from mutagen.easyid3 import EasyID3
@@ -39,11 +40,10 @@ def open_audio(song):
 		audio.save()
 
 
-def make_unknown(artist_path, song):
+def make_unknown(song_path):
 	"""Move a song from the artist folder to an Unknown Album folder."""
-	os.mkdir(os.path.join(artist_path, 'Unknown Album'))
-	os.rename(os.path.join(artist_path, song),
-	  os.path.join(artist_path, 'Unknown Album', os.path.basename(song)))
+	(song_path.parent/'Unknown Album').mkdir()
+	song_path.rename(song_path.parent/'Unknown Album'/song_path.name)
 	return 'Unknown Album'
 
 
@@ -52,17 +52,17 @@ def modify_album(album_path, individual=False):
 	   indicates Music_Rename is being run on a single album or folder,
 	   and not a whole music library."""
 	modified = 0
-	for song in os.listdir(album_path):
-		if os.path.isdir(song):
+	for song in os.scandir(album_path):
+		if os.path.isdir(song.name):
 			continue
-		with open_audio(song) as audio:
+		with open_audio(os.path.join(album_path, song.name)) as audio:
 			if audio:
 				old = dict(audio)
 				if individual:
-					print(os.path.splitext(song)[0])
+					print(os.path.splitext(song.name)[0])
 					if 'title' in audio:
 						del audio['title']
-				modify_song(song, audio)
+				modify_song(song.name, audio)
 				modified += 1 if old != audio else 0
 	return modified
 
@@ -112,25 +112,19 @@ def edge_cases(tag):
 
 
 def main():
-	base = '/Users/tmcou/Music/iTunes/iTunes Media/Music - Copy'
+	base = Path('/Users/tmcou/Music/iTunes/iTunes Media/Music - Copy')
 	modified = 0
-	for artist in os.listdir(base):
-		artist_path = os.path.join(base, artist)
-		print(artist)
-		for album in os.listdir(artist_path):
-			album_path = os.path.join(artist_path, album)
-			try:
-				os.chdir(os.path.join(album_path))
-			except NotADirectoryError:
-				album = make_unknown(artist_path, album)
-			if album != 'Unknown Album':
-				print(' ', album)
+	for artist in base.iterdir():
+		artist_path = base/artist
+		print(artist.name)
+		for album in artist_path.iterdir():
+			album_path = artist_path/album
+			if album.is_file():
+				album = make_unknown(artist_path/album)
+			if album.name != 'Unknown Album':
+				print(' ', album.name)
 			modified += modify_album(album_path)
 	return modified
-
-
-
-	# for root, dirs, files in os.walk(base)
 
 
 if __name__ == '__main__':

@@ -37,12 +37,14 @@ class TestRename(unittest.TestCase):
 
 	def test_modify_tag(self):
 		os.chdir(os.path.join(base, 'Test Artist', 'Test Album'))
-		for file in os.listdir():
+		for file in os.listdir(os.path.join(
+		  base, 'Test Artist', 'Test Album')):
 			new = Music_Rename.modify_tag(files[file][0])
 			self.assertEqual(files[file][1], new)
 
 	def test_make_unknown(self):
-		Music_Rename.make_unknown(base, 'Test Artist', 'Lonely Song.txt')
+		Music_Rename.make_unknown(os.path.join(base, 'Test Artist'),
+		  'Lonely Song.txt')
 		os.chdir(os.path.join(base, 'Test Artist', 'Unknown Album'))
 		self.assertTrue(os.path.isfile('Lonely Song.txt'))
 

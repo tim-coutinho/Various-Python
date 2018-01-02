@@ -39,27 +39,20 @@ def open_audio(song):
 		audio.save()
 
 
-def make_unknown(base, artist, song):
+def make_unknown(artist_path, song):
 	"""Move a song from the artist folder to an Unknown Album folder."""
-	os.chdir(os.path.join(base, artist))
-	os.mkdir('Unknown Album')
-	os.rename(song, os.path.join('Unknown Album', song))
-	os.chdir(os.path.join(base, artist, 'Unknown Album'))
+	os.mkdir(os.path.join(artist_path, 'Unknown Album'))
+	os.rename(os.path.join(artist_path, song),
+	  os.path.join(artist_path, 'Unknown Album', os.path.basename(song)))
 	return 'Unknown Album'
 
 
-def modify_album(base, artist, album, individual=False):
+def modify_album(album_path, individual=False):
 	"""Modifies all valid audio files in an album. Individual being true
 	   indicates Music_Rename is being run on a single album or folder,
 	   and not a whole music library."""
 	modified = 0
-	if album != 'Unknown Album':
-		print(f'  {album}')
-	try:
-		os.chdir(os.path.join(base, artist, album))
-	except NotADirectoryError:
-		album = make_unknown(base, artist, album)
-	for song in os.listdir():
+	for song in os.listdir(album_path):
 		if os.path.isdir(song):
 			continue
 		with open_audio(song) as audio:
@@ -92,9 +85,8 @@ def modify_tag(tag):
 	tag = tag.replace('/', ' / ')
 	if tag.lower() in EXCEPTIONS:
 		return EXCEPTIONS[tag.lower()]
-	tag = ' '.join([word if re_spec.sub('', word)
-						   in NO_UPPER else word.capitalize()
-						   for word in tag.split()])
+	tag = ' '.join([word if re_spec.sub('', word) in NO_UPPER
+					else word.capitalize() for word in tag.split()])
 	tag = edge_cases(tag)
 	# Finally, capitalize the first word regardless
 	tag = tag[0].upper() + tag[1:]
@@ -122,13 +114,23 @@ def edge_cases(tag):
 def main():
 	base = '/Users/tmcou/Music/iTunes/iTunes Media/Music - Copy'
 	modified = 0
-	os.chdir(base)
-	for artist in os.listdir():
+	for artist in os.listdir(base):
+		artist_path = os.path.join(base, artist)
 		print(artist)
-		os.chdir(os.path.join(base, artist))
-		for album in os.listdir():
-			modified += modify_album(base, artist, album)
+		for album in os.listdir(artist_path):
+			album_path = os.path.join(artist_path, album)
+			try:
+				os.chdir(os.path.join(album_path))
+			except NotADirectoryError:
+				album = make_unknown(artist_path, album)
+			if album != 'Unknown Album':
+				print(' ', album)
+			modified += modify_album(album_path)
 	return modified
+
+
+
+	# for root, dirs, files in os.walk(base)
 
 
 if __name__ == '__main__':

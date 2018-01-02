@@ -3,7 +3,7 @@
 	Lowercases all title/album words in NO_UPPER,
 	moves songs into folders if not in one already.
 	Accepts: .aiff, .ape, .asf, .flac, .mp3, .mp4, .mpc,
-	.ofr, .oga, .ogg, .ogv, .opus, .spx, .tta, .wv
+	.ofr, .oga, .ogg, .ogv, .opus, .spx, .tta, and .wv
 	USE MUSIC - COPY FIRST, run tests beforehand.
 	Tim Coutinho
 """

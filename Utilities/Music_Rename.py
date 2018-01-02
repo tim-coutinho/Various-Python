@@ -1,5 +1,5 @@
 """
-	Utility written to help organize my music files.
+	Utility written to help organize music files.
 	Lowercases all title/album words in NO_UPPER,
 	moves songs into folders if not in one already.
 	Accepts: .aiff, .ape, .asf, .flac, .mp3, .mp4, .mpc,
@@ -8,7 +8,6 @@
 	Tim Coutinho
 """
 
-import os
 import re
 from pathlib import Path
 from contextlib import contextmanager
@@ -42,8 +41,9 @@ def open_audio(song):
 
 def make_unknown(song_path):
 	"""Move a song from the artist folder to an Unknown Album folder."""
-	(song_path.parent/'Unknown Album').mkdir()
-	song_path.rename(song_path.parent/'Unknown Album'/song_path.name)
+	unknown = song_path.parent/'Unknown Album'
+	unknown.mkdir()
+	song_path.rename(unknown/song_path.name)
 	return 'Unknown Album'
 
 
@@ -52,17 +52,17 @@ def modify_album(album_path, individual=False):
 	   indicates Music_Rename is being run on a single album or folder,
 	   and not a whole music library."""
 	modified = 0
-	for song in os.scandir(album_path):
-		if os.path.isdir(song.name):
+	for song in album_path.iterdir():
+		if song.is_dir():
 			continue
-		with open_audio(os.path.join(album_path, song.name)) as audio:
+		with open_audio(str(song)) as audio:
 			if audio:
 				old = dict(audio)
 				if individual:
-					print(os.path.splitext(song.name)[0])
+					print(song.stem)
 					if 'title' in audio:
 						del audio['title']
-				modify_song(song.name, audio)
+				modify_song(song.stem, audio)
 				modified += 1 if old != audio else 0
 	return modified
 
@@ -75,7 +75,7 @@ def modify_song(song, audio):
 		pass
 	if 'title' not in audio:  # Use file name as title
 		# Removes any leading album identifiers, i.e. '01' and '13 -'
-		audio['title'] = re_nums.sub('', os.path.splitext(song)[0])
+		audio['title'] = re_nums.sub('', song)
 	audio['title'] = [modify_tag(audio['title'][0])]
 
 
@@ -111,8 +111,7 @@ def edge_cases(tag):
 	return tag
 
 
-def main():
-	base = Path('/Users/tmcou/Music/iTunes/iTunes Media/Music - Copy')
+def main(base):
 	modified = 0
 	for artist in base.iterdir():
 		artist_path = base/artist
@@ -128,6 +127,7 @@ def main():
 
 
 if __name__ == '__main__':
-	modified = main()
-	# modified = modify_album('/Users', 'tmcou', 'Downloads', individual=True)
+	base = Path('/Users/tmcou/Music/iTunes/iTunes Media/Music - Copy')
+	modified = main(base)
+	# modified = modify_album(base, individual=True)
 	print(f'\nModified {modified} songs.')

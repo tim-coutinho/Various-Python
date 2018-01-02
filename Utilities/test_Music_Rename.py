@@ -4,14 +4,14 @@
 """
 
 import unittest
-import os
+from pathlib import Path
 from shutil import rmtree
 
 from mutagen.easyid3 import EasyID3
 
 import Music_Rename
 
-base = '/Users/tmcou/Music/iTunes/iTunes Media/Music - Copy'
+base = Path('/Users/tmcou/Music/iTunes/iTunes Media/Music - Copy/Test Artist')
 files = {'1.txt': ['i am easy', 'I Am Easy'],
 		 '2.txt': ['How about: a colon?', 'How About: A Colon?'],
 		 '3.txt': ['now some() (of) These)', 'Now Some() (Of) These)'],
@@ -24,35 +24,30 @@ class TestRename(unittest.TestCase):
 
 	@classmethod
 	def setUpClass(cls):
-		os.chdir(base)
-		os.makedirs('Test Artist/Test Album')
-		os.chdir('Test Artist')
-		with open('Lonely Song.txt', 'w'):
+		album = base/'Test Album'
+		album.mkdir(parents=True)
+		with (album.parent/'Lonely Song.txt').open('w'):
 			pass
-		os.chdir('Test Album')
 		for key in files:
-			with open(key, 'w'):
+			with (album/key).open('w'):
 				pass
 
 
 	def test_modify_tag(self):
-		os.chdir(os.path.join(base, 'Test Artist', 'Test Album'))
-		for file in os.listdir(os.path.join(
-		  base, 'Test Artist', 'Test Album')):
-			new = Music_Rename.modify_tag(files[file][0])
-			self.assertEqual(files[file][1], new)
+		for file in (base/'Test Album').iterdir():
+			new = Music_Rename.modify_tag(files[file.name][0])
+			self.assertEqual(files[file.name][1], new)
 
 	def test_make_unknown(self):
-		Music_Rename.make_unknown(os.path.join(base, 'Test Artist'),
-		  'Lonely Song.txt')
-		os.chdir(os.path.join(base, 'Test Artist', 'Unknown Album'))
-		self.assertTrue(os.path.isfile('Lonely Song.txt'))
+		song_path = base/'Lonely Song.txt'
+		Music_Rename.make_unknown(song_path)
+		self.assertTrue(
+			((song_path.parent/'Unknown Album'/song_path.name).is_file()))
 
 
 	@classmethod
 	def tearDownClass(cls):
-		os.chdir(base)
-		rmtree('Test Artist')
+		rmtree(base)
 
 
 if __name__ == '__main__':

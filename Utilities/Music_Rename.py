@@ -47,36 +47,25 @@ def make_unknown(song_path):
 	return 'Unknown Album'
 
 
-def modify_album(album_path, individual=False):
-	"""Modifies all valid audio files in an album. Individual being true
-	   indicates Music_Rename is being run on a single album or folder,
-	   and not a whole music library."""
-	modified = 0
-	for song in album_path.iterdir():
-		if song.is_dir():
-			continue
-		with open_audio(str(song)) as audio:
-			if audio:
-				old = dict(audio)
-				if individual:
-					print(song.stem)
-					if 'title' in audio:
-						del audio['title']
-				modify_song(song.stem, audio)
-				modified += 1 if old != audio else 0
-	return modified
-
-
-def modify_song(song, audio):
+def modify_song(song, individual):
 	"""Modify a song's title and album tags."""
-	try:
-		audio['album'] = [modify_tag(audio['album'][0])]
-	except KeyError:  # Not in an album, tag doesn't exist
-		pass
-	if 'title' not in audio:  # Use file name as title
-		# Removes any leading album identifiers, i.e. '01' and '13 -'
-		audio['title'] = re_nums.sub('', song)
-	audio['title'] = [modify_tag(audio['title'][0])]
+	with open_audio(str(song)) as audio:
+		old = None
+		if audio:
+			old = dict(audio)
+			if individual:
+				print(song.stem)
+				if 'title' in audio:
+					del audio['title']
+			try:
+				audio['album'] = [modify_tag(audio['album'][0])]
+			except KeyError:  # Not in an album, tag doesn't exist
+				pass
+			if 'title' not in audio:  # Use file name as title
+				# Removes any leading album identifiers, i.e. '01' and '13 -'
+				audio['title'] = re_nums.sub('', song)
+			audio['title'] = [modify_tag(audio['title'][0])]
+		return old != audio
 
 
 def modify_tag(tag):
@@ -111,7 +100,7 @@ def edge_cases(tag):
 	return tag
 
 
-def main(base):
+def main(base, individual=False):
 	modified = 0
 	for artist in base.iterdir():
 		artist_path = base/artist
@@ -122,12 +111,15 @@ def main(base):
 				album = make_unknown(artist_path/album)
 			if album.name != 'Unknown Album':
 				print(' ', album.name)
-			modified += modify_album(album_path)
+			for song in album_path.iterdir():
+				if song.is_dir():
+					continue
+				changed = modify_song(song, individual)
+				modified += 1 if changed else 0
 	return modified
 
 
 if __name__ == '__main__':
 	base = Path('/Users/tmcou/Music/iTunes/iTunes Media/Music - Copy')
 	modified = main(base)
-	# modified = modify_album(base, individual=True)
 	print(f'\nModified {modified} songs.')

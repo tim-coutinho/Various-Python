@@ -7,8 +7,6 @@ import unittest
 from pathlib import Path
 from shutil import rmtree
 
-from mutagen.easyid3 import EasyID3
-
 import Music_Rename
 
 base = Path('/Users/tmcou/Music/iTunes/iTunes Media/Music - Copy/Test Artist')
@@ -19,6 +17,7 @@ files = {'1.txt': ['i am easy', 'I Am Easy'],
 		 '5.txt': ['edge (de): iv ......cases', 'Edge (De): IV ......Cases'],
 		 '6.txt': ['futuresex / lovesounds', 'FutureSex / LoveSounds'],
 		 '7.txt': ['id', 'ID']}
+
 
 class TestRename(unittest.TestCase):
 
@@ -32,7 +31,6 @@ class TestRename(unittest.TestCase):
 			with (album/key).open('w'):
 				pass
 
-
 	def test_modify_tag(self):
 		for file in (base/'Test Album').iterdir():
 			new = Music_Rename.modify_tag(files[file.name][0])
@@ -43,7 +41,6 @@ class TestRename(unittest.TestCase):
 		Music_Rename.make_unknown(song_path)
 		self.assertTrue(
 			((song_path.parent/'Unknown Album'/song_path.name).is_file()))
-
 
 	@classmethod
 	def tearDownClass(cls):

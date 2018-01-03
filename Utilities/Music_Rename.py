@@ -71,8 +71,8 @@ def modify_song(song, individual):
 def modify_tag(tag):
 	"""Change a specific tag of a song."""
 	# Makes directory navigation easier, adding spaces around any /
-	tag = tag.replace('/', ' / ')
-	if tag.lower() in EXCEPTIONS:
+	tag = tag.replace('/', ' / ').lower()
+	if tag in EXCEPTIONS:
 		return EXCEPTIONS[tag.lower()]
 	tag = ' '.join([word if re_spec.sub('', word) in NO_UPPER
 					else word.capitalize() for word in tag.split()])

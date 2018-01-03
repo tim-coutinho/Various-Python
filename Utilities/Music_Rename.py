@@ -50,21 +50,26 @@ def make_unknown(song_path):
 def modify_song(song, individual):
 	"""Modify a song's title and album tags."""
 	with open_audio(str(song)) as audio:
-		old = None
-		if audio:
+		try:
 			old = dict(audio)
-			if individual:
-				print(song.stem)
-				if 'title' in audio:
-					del audio['title']
-			try:
-				audio['album'] = [modify_tag(audio['album'][0])]
-			except KeyError:  # Not in an album, tag doesn't exist
-				pass
-			if 'title' not in audio:  # Use file name as title
-				# Removes any leading album identifiers, i.e. '01' and '13 -'
-				audio['title'] = re_nums.sub('', song)
-			audio['title'] = [modify_tag(audio['title'][0])]
+		except TypeError:  # Invalid file type
+			return False
+		if individual:
+			print(song.stem)
+			if 'title' in audio:
+				del audio['title']
+		try:
+			album = audio['album'][0]
+		except KeyError:  # Not in an album, tag doesn't exist
+			pass
+		else:
+			audio['album'] = [modify_tag(album)]
+		try:
+			title = audio['title'][0]
+		except KeyError:  # Use file name as title
+			# Removes any leading album identifiers, i.e. '01' and '13 -'
+			title = re_nums.sub('', song.stem)
+		audio['title'] = [modify_tag(title)]
 		return old != audio
 
 

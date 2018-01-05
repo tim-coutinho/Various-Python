@@ -18,7 +18,7 @@ from mutagen.id3._util import ID3NoHeaderError
 NO_UPPER = ('a', 'an', 'and', 'at', 'but', 'by', 'de', 'for',
 			'from', 'in', 'nor', 'of', 'on', 'or', 'the', 'to')
 EXCEPTIONS = {'adhd': 'ADHD', 'id': 'ID', 'sea is a lady': 'SEA IS A LADY',
-			  'i want! i want!': 'i want! i want!',
+			  'i want! i want!': 'i want! i want!', 'cspan': 'CSPAN',
 			  'futuresex  /  lovesounds': 'FutureSex / LoveSounds'}
 ROMAN_NUMS = ('Ii', 'Iii', 'Iv', 'Vi', 'Vii', 'Viii', 'Ix')
 

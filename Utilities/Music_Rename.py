@@ -113,7 +113,7 @@ def main(base, individual=False):
 		for album in artist_path.iterdir():
 			album_path = artist_path/album
 			if album.is_file():
-				album = make_unknown(artist_path/album)
+				album = make_unknown(album_path)
 			if album.name != 'Unknown Album':
 				print(' ', album.name)
 			for song in album_path.iterdir():

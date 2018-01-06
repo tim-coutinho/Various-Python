@@ -78,7 +78,7 @@ def modify_tag(tag):
 	# Makes directory navigation easier, adding spaces around any /
 	tag = tag.replace('/', ' / ').lower()
 	if tag in EXCEPTIONS:
-		return EXCEPTIONS[tag.lower()]
+		return EXCEPTIONS[tag]
 	tag = ' '.join([word if re_spec.sub('', word) in NO_UPPER
 					else word.capitalize() for word in tag.split()])
 	tag = edge_cases(tag)

@@ -47,17 +47,13 @@ def make_unknown(song_path):
 	return 'Unknown Album'
 
 
-def modify_song(song, individual):
+def modify_song(song):
 	"""Modify a song's title and album tags."""
 	with open_audio(str(song)) as audio:
 		try:
 			old = dict(audio)
 		except TypeError:  # Invalid file type
 			return False
-		if individual:
-			print(song.stem)
-			if 'title' in audio:
-				del audio['title']
 		try:
 			album = audio['album'][0]
 		except KeyError:  # Not in an album, tag doesn't exist
@@ -105,7 +101,25 @@ def edge_cases(tag):
 	return tag
 
 
-def main(base, individual=False):
+def mod_individual(artist_path):
+	"""Modify a single artist's songs."""
+	modified = 0
+	for album in artist_path.iterdir():
+		album_path = artist_path/album
+		if album.is_file():
+			album = make_unknown(album_path)
+		if album.name != 'Unknown Album':
+			print(album.name)
+		for song in album_path.iterdir():
+			if song.is_dir():
+				continue
+			print(' ', song.stem)
+			changed = modify_song(song)
+			modified += 1 if changed else 0
+	return modified
+
+
+def main(base):
 	modified = 0
 	for artist in base.iterdir():
 		artist_path = base/artist
@@ -119,7 +133,7 @@ def main(base, individual=False):
 			for song in album_path.iterdir():
 				if song.is_dir():
 					continue
-				changed = modify_song(song, individual)
+				changed = modify_song(song)
 				modified += 1 if changed else 0
 	return modified
 
@@ -127,4 +141,6 @@ def main(base, individual=False):
 if __name__ == '__main__':
 	base = Path('/Users/tmcou/Music/iTunes/iTunes Media/Music - Copy')
 	modified = main(base)
+	# base = Path('/Users/tmcou/Music/iTunes/iTunes Media/Music - Copy/The Reign of Kindo')
+	# modified = mod_individual(base)
 	print(f'\nModified {modified} songs.')

@@ -24,7 +24,7 @@ EXCEPTIONS = {'adhd': 'ADHD', 'id': 'ID', 'sea is a lady': 'SEA IS A LADY',
 ROMAN_NUMS = ('Ii', 'Iii', 'Iv', 'Vi', 'Vii', 'Viii', 'Ix')
 
 re_nums = re.compile(r'^[0-1]?[\d]\W[.\- ]*')
-re_parens = re.compile(r'[(:.]+ *[a-z]')
+re_parens = re.compile(r'[([:.]+ *[a-z]')
 re_spec = re.compile(r'[:/\-]')
 
 

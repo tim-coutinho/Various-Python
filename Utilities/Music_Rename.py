@@ -2,7 +2,7 @@
     Utility written to help organize music files.
     Lowercases all title/album words in NO_UPPER,
     moves songs into folders if not in one already.
-    Accepts: .aiff, .ape, .asf, .flac, .mp3, .mp4, .mpc,
+    Supports: .aiff, .ape, .asf, .flac, .mp3, .mp4, .mpc,
     .ofr, .oga, .ogg, .ogv, .opus, .spx, .tta, and .wv
     USE MUSIC - COPY FIRST, run tests beforehand.
     Tim Coutinho
@@ -87,7 +87,7 @@ def modify_tag(tag):
 def edge_cases(tag):
     """Handle edge cases such as roman numerals and parentheses."""
     # Roman numerals
-    if any(word.strip(':') in ROMAN_NUMS for word in tag.split()):
+    if any(word.strip(':').strip(')') in ROMAN_NUMS for word in tag.split()):
         for word in tag.split():
             if word.strip(':') in ROMAN_NUMS:
                 tag = tag.replace(word, word.upper())

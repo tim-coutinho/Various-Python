@@ -10,10 +10,9 @@
 
 import re
 from pathlib import Path
-from contextlib import contextmanager
 
-from mutagen.easyid3 import EasyID3
-from mutagen.id3._util import ID3NoHeaderError
+from lib import open_audio
+
 
 NO_UPPER = ('a', 'an', 'and', 'at', 'but', 'by', 'de', 'for',
             'from', 'in', 'nor', 'of', 'on', 'or', 'the', 'to')
@@ -28,18 +27,6 @@ re_parens = re.compile(r'[([:.]+ *[a-z]')
 re_spec = re.compile(r'[:/\-]')
 
 
-@contextmanager
-def open_audio(song):
-    """Automatically save audio file once done editing."""
-    try:
-        audio = EasyID3(song)
-        yield audio
-    except ID3NoHeaderError:
-        yield
-    else:
-        audio.save()
-
-
 def make_unknown(song_path):
     """Move a song from the artist folder to an Unknown Album folder."""
     unknown = song_path.parent / 'Unknown Album'
@@ -51,6 +38,7 @@ def make_unknown(song_path):
 def modify_song(song):
     """Modify a song's title and album tags."""
     with open_audio(str(song)) as audio:
+        print(str(song))
         try:
             old = dict(audio)
         except TypeError:  # Invalid file type
@@ -66,6 +54,7 @@ def modify_song(song):
         except KeyError:  # Use file name as title
             # Removes any leading album identifiers, i.e. '01' and '13 -'
             title = re_nums.sub('', song.stem)
+        print(title)
         audio['title'] = [modify_tag(title)]
         return old != audio
 
@@ -140,8 +129,8 @@ def main(base):
 
 
 if __name__ == '__main__':
-    base = Path('/Users/tmcou/Music/iTunes/iTunes Media/Music - Copy')
-    modified = main(base)
-    # base = Path('/Users/tmcou/Music/iTunes/iTunes Media/Music - Copy/The Reign of Kindo')
-    # modified = mod_individual(base)
+    # base = Path('/Users/tmcou/Music/iTunes/iTunes Media/Music - Copy')
+    # modified = main(base)
+    base = Path('/Users/t/Music/Bought/Dirt Poor Robins')
+    modified = mod_individual(base)
     print(f'\nModified {modified} songs.')

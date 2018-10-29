@@ -1,6 +1,6 @@
 """
 	Expands on the data visualization aspect
-	of Iowa.py, adds a GUI, buttons, etc.
+	of iowa.py, adds a GUI, buttons, etc.
 	Tim Coutinho
 """
 
